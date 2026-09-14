@@ -1,0 +1,3 @@
+kind	label	L_um	geometry	seed	lmax	epochs	extra_flags	saved_dir	exit
+ablation	C9_L0.1_ce_s0	0.1	1d	0	8	20000	--formulation ce	data/runs/pn_sumrule_c9_seeds/C9_L0.1_ce_s0	0
+ablation	C9_L0.1_ce_s1	0.1	1d	1	8	20000	--formulation ce	data/runs/pn_sumrule_c9_seeds/C9_L0.1_ce_s1	0

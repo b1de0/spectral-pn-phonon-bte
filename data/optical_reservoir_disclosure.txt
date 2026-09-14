@@ -1,0 +1,20 @@
+CONTROLS
+  capacity share in (42, 44)                  OK  (42.3394)
+  OMEGA_OPT_THZ_DEFAULT == 14.0               OK
+  V_OPT_MS_DEFAULT == 1200.0                  OK
+  TAU_OPT_S_DEFAULT == 3.7e-12                OK
+  defensible sub-box inside the full box      OK
+  adopted central value inside the defensible OK
+  comb MFPs bracket 102 nm, neither equals it   OK
+
+ANSWER BLOCK
+omega_opt_THz      = 14.0
+v_opt_ms           = 1200
+tau_opt_ps         = 3.7
+capacity_share_pct = 42.3
+S110_defensible_lo = 0.081
+S110_defensible_hi = 0.100
+S110_box_lo        = 0.081
+S110_box_hi        = 0.130
+mfp_vtau_C_nm      = 119.4
+mfp_3D_over_v_nm   = 128.1

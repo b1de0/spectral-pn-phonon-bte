@@ -1,0 +1,3 @@
+1.0	1d	0	data/runs/pn_corridor_seedrep_L1.0/seedrep_L1.0_1d_s0
+1.0	1d	1	data/runs/pn_corridor_seedrep_L1.0/seedrep_L1.0_1d_s1
+0.01	mlp-b1b	42	data/runs/mlp_control/1d_nongray_large_dt_0.01um_100K/20260905_041128

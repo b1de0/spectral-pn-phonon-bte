@@ -1,0 +1,638 @@
+{
+ "generated_by": "analysis/transient/p101_identifiability_figure.py --write",
+ "plan": "P-101",
+ "source": "analysis/transient/gate_i/out_s3/s3_caveats.json",
+ "convention": "rho<=rho_ref",
+ "convention_note": "single-convention by construction; the prose's equal-weighting 32.6/33.5 are measured under a different cap and are NOT drawn here",
+ "bar": [
+  {
+   "label": "bar",
+   "value": 1.874
+  }
+ ],
+ "floor": [
+  {
+   "label": "minimax_D",
+   "value": 2.89272065
+  },
+  {
+   "label": "argmin_weight",
+   "value": 0.02543899793
+  },
+  {
+   "label": "margin_over_bar",
+   "value": 1.543607604
+  }
+ ],
+ "lam_phys": [
+  {
+   "label": "G_hybrid324",
+   "value": 2701.080669
+  },
+  {
+   "label": "G_logmix201",
+   "value": 2702.693275
+  }
+ ],
+ "offscale": [
+  {
+   "label": "D_max_over_weights",
+   "value": 4387.782656
+  }
+ ],
+ "crossing": [
+  {
+   "label": "G_hybrid324",
+   "lam_below": 2048.0,
+   "lam_above": 4096.0
+  },
+  {
+   "label": "G_logmix201",
+   "lam_below": 2048.0,
+   "lam_above": 4096.0
+  }
+ ],
+ "grid_spread_at_floor": [
+  {
+   "label": "G_hybrid324",
+   "value": 2.89272065
+  },
+  {
+   "label": "G_logmix201",
+   "value": 2.790423973
+  }
+ ],
+ "weight_ladder": {
+  "G_logmix201": [
+   {
+    "label": "0",
+    "weight": 0.0,
+    "D_worst": 4309.070787,
+    "worst_class": "ode",
+    "per_class": {
+     "diag": 1.895223247,
+     "free": 230.4271001,
+     "pod": 422.3003941,
+     "ode": 4309.070787
+    }
+   },
+   {
+    "label": "0.0001",
+    "weight": 0.0001,
+    "D_worst": 124.3901006,
+    "worst_class": "ode",
+    "per_class": {
+     "diag": 1.86979914,
+     "free": 86.66388024,
+     "pod": 50.94721923,
+     "ode": 124.3901006
+    }
+   },
+   {
+    "label": "0.00148148",
+    "weight": 0.00148148,
+    "D_worst": 10.45243701,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.73058952,
+     "free": 10.45243701,
+     "pod": 7.688785305,
+     "ode": 10.07268626
+    }
+   },
+   {
+    "label": "0.005",
+    "weight": 0.005,
+    "D_worst": 4.449332837,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.564695113,
+     "free": 4.449332837,
+     "pod": 3.514000686,
+     "ode": 4.082125213
+    }
+   },
+   {
+    "label": "0.0081",
+    "weight": 0.0081,
+    "D_worst": 3.750069796,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.557087134,
+     "free": 3.750069796,
+     "pod": 2.981968509,
+     "ode": 3.115223717
+    }
+   },
+   {
+    "label": "0.01",
+    "weight": 0.01,
+    "D_worst": 3.505500066,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.553733443,
+     "free": 3.505500066,
+     "pod": 2.809035941,
+     "ode": 2.818828242
+    }
+   },
+   {
+    "label": "0.02",
+    "weight": 0.02,
+    "D_worst": 2.92595633,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.65510557,
+     "free": 2.92595633,
+     "pod": 2.699064427,
+     "ode": 2.186901681
+    }
+   },
+   {
+    "label": "0.03",
+    "weight": 0.03,
+    "D_worst": 2.841435832,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.778134837,
+     "free": 2.712684752,
+     "pod": 2.841435832,
+     "ode": 1.976218277
+    }
+   },
+   {
+    "label": "0.039",
+    "weight": 0.039,
+    "D_worst": 2.993274849,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.952957057,
+     "free": 2.610465929,
+     "pod": 2.993274849,
+     "ode": 1.878972831
+    }
+   },
+   {
+    "label": "0.04",
+    "weight": 0.04,
+    "D_worst": 3.007421734,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.970095689,
+     "free": 2.601835501,
+     "pod": 3.007421734,
+     "ode": 1.870868845
+    }
+   },
+   {
+    "label": "0.05",
+    "weight": 0.05,
+    "D_worst": 3.12725685,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.121010786,
+     "free": 2.533913203,
+     "pod": 3.12725685,
+     "ode": 1.807656712
+    }
+   },
+   {
+    "label": "0.06",
+    "weight": 0.06,
+    "D_worst": 3.217839629,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.242361539,
+     "free": 2.488027313,
+     "pod": 3.217839629,
+     "ode": 1.76551426
+    }
+   },
+   {
+    "label": "0.08",
+    "weight": 0.08,
+    "D_worst": 3.345685651,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.425427634,
+     "free": 2.429976345,
+     "pod": 3.345685651,
+     "ode": 1.712835034
+    }
+   },
+   {
+    "label": "0.1",
+    "weight": 0.1,
+    "D_worst": 3.431591565,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.556959437,
+     "free": 2.394769853,
+     "pod": 3.431591565,
+     "ode": 1.68122688
+    }
+   },
+   {
+    "label": "0.2",
+    "weight": 0.2,
+    "D_worst": 3.628871845,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 3.137940573,
+     "free": 2.323494963,
+     "pod": 3.628871845,
+     "ode": 1.618009181
+    }
+   },
+   {
+    "label": "1",
+    "weight": 1.0,
+    "D_worst": 3.901363978,
+    "worst_class": "diag",
+    "per_class": {
+     "diag": 3.901363978,
+     "free": 2.265631989,
+     "pod": 3.817180093,
+     "ode": 1.567433686
+    }
+   }
+  ],
+  "G_hybrid324": [
+   {
+    "label": "0",
+    "weight": 0.0,
+    "D_worst": 4387.782656,
+    "worst_class": "ode",
+    "per_class": {
+     "diag": 1.953618363,
+     "free": 262.0908929,
+     "pod": 391.1832698,
+     "ode": 4387.782656
+    }
+   },
+   {
+    "label": "0.0001",
+    "weight": 0.0001,
+    "D_worst": 139.7553148,
+    "worst_class": "ode",
+    "per_class": {
+     "diag": 1.923801352,
+     "free": 97.88039278,
+     "pod": 60.15645087,
+     "ode": 139.7553148
+    }
+   },
+   {
+    "label": "0.00148148",
+    "weight": 0.00148148,
+    "D_worst": 11.53687947,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.770890965,
+     "free": 11.53687947,
+     "pod": 8.976097038,
+     "ode": 11.12284877
+    }
+   },
+   {
+    "label": "0.005",
+    "weight": 0.005,
+    "D_worst": 4.641370948,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.56181999,
+     "free": 4.641370948,
+     "pod": 3.866949798,
+     "ode": 4.361678208
+    }
+   },
+   {
+    "label": "0.0081",
+    "weight": 0.0081,
+    "D_worst": 3.911365599,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.542930995,
+     "free": 3.911365599,
+     "pod": 3.295706829,
+     "ode": 3.27020557
+    }
+   },
+   {
+    "label": "0.01",
+    "weight": 0.01,
+    "D_worst": 3.657991808,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.53714098,
+     "free": 3.657991808,
+     "pod": 3.104323323,
+     "ode": 2.935613202
+    }
+   },
+   {
+    "label": "0.02",
+    "weight": 0.02,
+    "D_worst": 3.040100656,
+    "worst_class": "free",
+    "per_class": {
+     "diag": 1.598068082,
+     "free": 3.040100656,
+     "pod": 2.869316185,
+     "ode": 2.222232685
+    }
+   },
+   {
+    "label": "0.03",
+    "weight": 0.03,
+    "D_worst": 2.907569304,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.696126547,
+     "free": 2.80629856,
+     "pod": 2.907569304,
+     "ode": 1.984387594
+    }
+   },
+   {
+    "label": "0.039",
+    "weight": 0.039,
+    "D_worst": 2.938713213,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.848676505,
+     "free": 2.6929763,
+     "pod": 2.938713213,
+     "ode": 1.874604234
+    }
+   },
+   {
+    "label": "0.04",
+    "weight": 0.04,
+    "D_worst": 2.944345965,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.863597303,
+     "free": 2.683370487,
+     "pod": 2.944345965,
+     "ode": 1.865455373
+    }
+   },
+   {
+    "label": "0.05",
+    "weight": 0.05,
+    "D_worst": 2.991071847,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 1.994817774,
+     "free": 2.607564429,
+     "pod": 2.991071847,
+     "ode": 1.794092945
+    }
+   },
+   {
+    "label": "0.06",
+    "weight": 0.06,
+    "D_worst": 3.025259074,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.100117119,
+     "free": 2.556143359,
+     "pod": 3.025259074,
+     "ode": 1.746516702
+    }
+   },
+   {
+    "label": "0.08",
+    "weight": 0.08,
+    "D_worst": 3.071934456,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.258607185,
+     "free": 2.490846552,
+     "pod": 3.071934456,
+     "ode": 1.687044948
+    }
+   },
+   {
+    "label": "0.1",
+    "weight": 0.1,
+    "D_worst": 3.102308431,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.372213827,
+     "free": 2.451112637,
+     "pod": 3.102308431,
+     "ode": 1.651361121
+    }
+   },
+   {
+    "label": "0.2",
+    "weight": 0.2,
+    "D_worst": 3.16922839,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.657697298,
+     "free": 2.370362801,
+     "pod": 3.16922839,
+     "ode": 1.579991725
+    }
+   },
+   {
+    "label": "1",
+    "weight": 1.0,
+    "D_worst": 3.229665427,
+    "worst_class": "pod",
+    "per_class": {
+     "diag": 2.967506051,
+     "free": 2.3045015,
+     "pod": 3.229665427,
+     "ode": 1.522894536
+    }
+   }
+  ]
+ },
+ "binding_ladder": [
+  {
+   "weight": 0.0,
+   "D_worst": 4387.782656,
+   "derived": false
+  },
+  {
+   "weight": 0.0001,
+   "D_worst": 139.7553148,
+   "derived": false
+  },
+  {
+   "weight": 0.00148148,
+   "D_worst": 11.53687947,
+   "derived": false
+  },
+  {
+   "weight": 0.005,
+   "D_worst": 4.641370948,
+   "derived": false
+  },
+  {
+   "weight": 0.0081,
+   "D_worst": 3.911365599,
+   "derived": false
+  },
+  {
+   "weight": 0.01,
+   "D_worst": 3.657991808,
+   "derived": false
+  },
+  {
+   "weight": 0.02,
+   "D_worst": 3.040100656,
+   "derived": false
+  },
+  {
+   "weight": 0.02543899793,
+   "D_worst": 2.89272065,
+   "derived": true
+  },
+  {
+   "weight": 0.03,
+   "D_worst": 2.907569304,
+   "derived": false
+  },
+  {
+   "weight": 0.039,
+   "D_worst": 2.993274849,
+   "derived": false
+  },
+  {
+   "weight": 0.04,
+   "D_worst": 3.007421734,
+   "derived": false
+  },
+  {
+   "weight": 0.05,
+   "D_worst": 3.12725685,
+   "derived": false
+  },
+  {
+   "weight": 0.06,
+   "D_worst": 3.217839629,
+   "derived": false
+  },
+  {
+   "weight": 0.08,
+   "D_worst": 3.345685651,
+   "derived": false
+  },
+  {
+   "weight": 0.1,
+   "D_worst": 3.431591565,
+   "derived": false
+  },
+  {
+   "weight": 0.2,
+   "D_worst": 3.628871845,
+   "derived": false
+  },
+  {
+   "weight": 1.0,
+   "D_worst": 3.901363978,
+   "derived": false
+  }
+ ],
+ "bandwidth_ladder": {
+  "G_logmix201": {
+   "weight": 0.00148148,
+   "rows": [
+    {
+     "label": "16",
+     "lam_max": 16.0,
+     "D": 1.0643643,
+     "D_unbounded": 1.068462797,
+     "n_coef": 15840
+    },
+    {
+     "label": "1024",
+     "lam_max": 1024.0,
+     "D": 1.29978057,
+     "D_unbounded": 1.426302149,
+     "n_coef": 31680
+    },
+    {
+     "label": "2048",
+     "lam_max": 2048.0,
+     "D": 1.738034127,
+     "D_unbounded": 1.946878445,
+     "n_coef": 34320
+    },
+    {
+     "label": "4096",
+     "lam_max": 4096.0,
+     "D": 2.865802397,
+     "D_unbounded": 3.2809232,
+     "n_coef": 36960
+    },
+    {
+     "label": "8192",
+     "lam_max": 8192.0,
+     "D": 4.652534071,
+     "D_unbounded": 5.457505924,
+     "n_coef": 39600
+    },
+    {
+     "label": "1.04858e+06",
+     "lam_max": 1048576.0,
+     "D": 10.45243701,
+     "D_unbounded": 13.85899431,
+     "n_coef": 58080
+    }
+   ]
+  },
+  "G_hybrid324": {
+   "weight": 0.00148148,
+   "rows": [
+    {
+     "label": "16",
+     "lam_max": 16.0,
+     "D": 1.053908153,
+     "D_unbounded": 1.056697945,
+     "n_coef": 15840
+    },
+    {
+     "label": "1024",
+     "lam_max": 1024.0,
+     "D": 1.297493392,
+     "D_unbounded": 1.422292378,
+     "n_coef": 31680
+    },
+    {
+     "label": "2048",
+     "lam_max": 2048.0,
+     "D": 1.747069754,
+     "D_unbounded": 1.95463676,
+     "n_coef": 34320
+    },
+    {
+     "label": "4096",
+     "lam_max": 4096.0,
+     "D": 2.91325724,
+     "D_unbounded": 3.327063407,
+     "n_coef": 36960
+    },
+    {
+     "label": "8192",
+     "lam_max": 8192.0,
+     "D": 4.803342183,
+     "D_unbounded": 5.627885629,
+     "n_coef": 39600
+    },
+    {
+     "label": "1.04858e+06",
+     "lam_max": 1048576.0,
+     "D": 11.53687947,
+     "D_unbounded": 15.54796738,
+     "n_coef": 58080
+    }
+   ]
+  }
+ }
+}

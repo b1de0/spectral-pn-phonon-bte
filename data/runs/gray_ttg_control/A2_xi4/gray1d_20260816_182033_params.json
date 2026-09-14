@@ -1,0 +1,43 @@
+{
+  "args": {
+    "xi": 4.0,
+    "window": "ndecay",
+    "n_decay": 7.0,
+    "window_tau": null,
+    "epochs": 20000,
+    "lr": 0.001,
+    "seed": 42,
+    "nx": 60,
+    "nt_train": 0,
+    "ns": 16,
+    "eval_nt": 801,
+    "eval_nx": 64,
+    "arbiter_nsteps": 12000,
+    "device": "cuda",
+    "outdir": "runs/transient/p136_gray_ttg_control/A2_xi4",
+    "no_wandb": false,
+    "tag": "A2_xi4"
+  },
+  "derived": {
+    "t_end_tau": 1.75,
+    "nt_train_effective": 60,
+    "gamma_ref_per_tau": 1.7901774205052086,
+    "gamma_dominant_per_tau": null,
+    "gamma_window_per_tau": 4.0,
+    "gamma_dom_own_window_per_tau": 1.7901774205052086,
+    "gamma_eff_per_tau": 1.7919505532666273,
+    "gamma_ratio": 1.0009904787878054,
+    "rmse": 0.0009404996635633509,
+    "field_rmse": 0.0012727623671908704,
+    "A0": 0.9984280102551134,
+    "A_min": -0.068580964118143,
+    "Kn": 0.6366197723675814,
+    "run_id": "gray1d_20260816_182033",
+    "outdir": "runs/transient/p136_gray_ttg_control/A2_xi4",
+    "device": "cuda",
+    "wall_s": 152.46315455436707,
+    "git_sha": "f39de4f56741deedd65f3b53bfe1c76b8f4d5b56",
+    "dt_train_tau": 0.029661016949152543,
+    "zhou_dt_train_max_tau": 0.05
+  }
+}

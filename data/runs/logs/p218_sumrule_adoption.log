@@ -1,0 +1,55 @@
+[2026-09-10 08:25:55] P-218 queued: 6 seed arms at 60k, then 16 Table-4 controls at 20k
+[2026-09-10 08:25:55] PRECONDITION: both completed sum-rule ladders must still pass
+[2026-09-10 08:25:57] GPU GATE CLEAN 1/2 (free=14500MiB)
+[2026-09-10 08:27:57] GPU GATE CLEAN 2/2 (free=14450MiB)
+[2026-09-10 08:27:57] GPU GATE OPEN
+[2026-09-10 08:27:57] SEED SKIP seedrep_L0.1_1d_s0: existing artefact runs/transient/pn_sumrule_adoption/seedrep_L0.1_1d_s0/20260909_130800_results.npz
+[2026-09-10 08:28:00] SEED SKIP seedrep_L0.1_2d_s0: existing artefact runs/transient/pn_sumrule_adoption/seedrep_L0.1_2d_s0/20260909_130803_results.npz
+[2026-09-10 08:28:00] SEED SKIP seedrep_L0.1_1d_s1: existing artefact runs/transient/pn_sumrule_adoption/seedrep_L0.1_1d_s1/20260909_185306_results.npz
+[2026-09-10 08:28:03] SEED SKIP seedrep_L0.1_2d_s1: existing artefact runs/transient/pn_sumrule_adoption/seedrep_L0.1_2d_s1/20260909_185309_results.npz
+[2026-09-10 08:28:03] SEED SKIP seedrep_L1.0_1d_s0: existing artefact runs/transient/pn_sumrule_adoption/seedrep_L1.0_1d_s0/20260910_004113_results.npz
+[2026-09-10 08:28:06] SEED SKIP seedrep_L1.0_1d_s1: existing artefact runs/transient/pn_sumrule_adoption/seedrep_L1.0_1d_s1/20260910_004116_results.npz
+runs/transient/pn_sumrule_adoption/seedrep_L0.1_1d_s0/20260909_130800_results.npz: gamma=0.9946943, rmse=0.0009007048, xpin=0.896
+runs/transient/pn_sumrule_adoption/seedrep_L0.1_1d_s1/20260909_185306_results.npz: gamma=0.9937941, rmse=0.00103743, xpin=1.032
+(0.1, '1d'): three-seed spread=0.09003 pp
+runs/transient/pn_sumrule_adoption/seedrep_L0.1_2d_s0/20260909_130803_results.npz: gamma=0.9946080, rmse=0.0009046674, xpin=0.945
+runs/transient/pn_sumrule_adoption/seedrep_L0.1_2d_s1/20260909_185309_results.npz: gamma=0.9937512, rmse=0.001045928, xpin=1.093
+(0.1, '2d'): three-seed spread=0.08568 pp
+runs/transient/pn_sumrule_adoption/seedrep_L1.0_1d_s0/20260910_004113_results.npz: gamma=0.9977801, rmse=0.0004960071, xpin=0.627
+runs/transient/pn_sumrule_adoption/seedrep_L1.0_1d_s1/20260910_004116_results.npz: gamma=0.9967086, rmse=0.001053789, xpin=1.331
+(1.0, '1d'): three-seed spread=0.11877 pp
+SEED GATE PASSED: artefacts, metadata, rate, shape, and spread
+[2026-09-10 08:28:08] ABLATION START C8_L10_plain
+[2026-09-10 09:20:23] ABLATION DONE C8_L10_plain
+C8 freeze gate: gamma_ratio=0.146594, required <0.5
+[2026-09-10 09:20:23] ABLATION START C9_L0.1_ce
+[2026-09-10 10:14:35] ABLATION DONE C9_L0.1_ce
+[2026-09-10 10:14:35] ABLATION START C2_L0.01_plain
+[2026-09-10 11:06:39] ABLATION DONE C2_L0.01_plain
+[2026-09-10 11:06:39] ABLATION START C1_L0.01_duhamel
+[2026-09-10 12:00:33] ABLATION DONE C1_L0.01_duhamel
+[2026-09-10 12:00:33] ABLATION START C7_L10_ce
+[2026-09-10 12:56:11] ABLATION DONE C7_L10_ce
+[2026-09-10 12:56:11] ABLATION START C6_L0.1_duhamel
+[2026-09-10 13:52:33] ABLATION DONE C6_L0.1_duhamel
+[2026-09-10 13:52:33] ABLATION START C10_L1.0_ce
+[2026-09-10 14:49:11] ABLATION DONE C10_L1.0_ce
+[2026-09-10 14:49:11] ABLATION START C3_L1.0_plain_s42
+[2026-09-10 15:40:57] ABLATION DONE C3_L1.0_plain_s42
+[2026-09-10 15:40:57] ABLATION START C3_L1.0_plain_s0
+[2026-09-10 16:31:43] ABLATION DONE C3_L1.0_plain_s0
+[2026-09-10 16:31:43] ABLATION START C3_L1.0_plain_s1
+[2026-09-10 17:24:41] ABLATION DONE C3_L1.0_plain_s1
+[2026-09-10 17:24:41] ABLATION START C7_L100_ce
+[2026-09-10 18:21:37] ABLATION DONE C7_L100_ce
+[2026-09-10 18:21:37] ABLATION START C5_L0.1_plain_lmax16
+[2026-09-10 19:15:32] ABLATION DONE C5_L0.1_plain_lmax16
+[2026-09-10 19:15:32] ABLATION START C43_L0.01_ce
+[2026-09-10 20:12:03] ABLATION DONE C43_L0.01_ce
+[2026-09-10 20:12:03] ABLATION START C44_L1.0_duhamel
+[2026-09-10 21:05:58] ABLATION DONE C44_L1.0_duhamel
+[2026-09-10 21:05:58] ABLATION START C44_L10.0_duhamel
+[2026-09-10 21:59:52] ABLATION DONE C44_L10.0_duhamel
+[2026-09-10 21:59:52] ABLATION START C44_L100.0_duhamel
+[2026-09-10 22:54:00] ABLATION DONE C44_L100.0_duhamel
+[2026-09-10 22:54:00] P-218 TRAINING COMPLETE: score and review before changing the paper pin

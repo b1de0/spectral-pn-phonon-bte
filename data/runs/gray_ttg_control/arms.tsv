@@ -1,0 +1,5 @@
+#label	git_sha	epochs	wall_s	full_flags	saved_dir
+A0_zhou_fidelity	62eb915e4fc3d4d32655a4c79573af551b3d4b3b	20000	165	--epochs 20000 --seed 42 --lr 1e-3 --nx 60 --ns 16 --eval-nt 801 --eval-nx 64 --arbiter-nsteps 12000 --device cuda --xi 0.6 --window zhou --window-tau 3.0 --nt-train 60 --tag A0_zhou_fidelity	data/runs/gray_ttg_control/A0_zhou_fidelity
+A2_xi4	62eb915e4fc3d4d32655a4c79573af551b3d4b3b	20000	155	--epochs 20000 --seed 42 --lr 1e-3 --nx 60 --ns 16 --eval-nt 801 --eval-nx 64 --arbiter-nsteps 12000 --device cuda --xi 4.0 --window ndecay --tag A2_xi4	data/runs/gray_ttg_control/A2_xi4
+A3_xi36	62eb915e4fc3d4d32655a4c79573af551b3d4b3b	20000	155	--epochs 20000 --seed 42 --lr 1e-3 --nx 60 --ns 16 --eval-nt 801 --eval-nx 64 --arbiter-nsteps 12000 --device cuda --xi 36.0 --window ndecay --tag A3_xi36	data/runs/gray_ttg_control/A3_xi36
+A1_primary_retry_k8	3203b0386de98fad1034c286ea1bb3cbaf2f09ab	20000	2628	--epochs 20000 --seed 42 --lr 1e-3 --nx 60 --ns 16 --eval-nt 801 --eval-nx 64 --arbiter-nsteps 12000 --device cuda --xi 0.6 --window ndecay --residual-chunks 8 --tag A1_primary_retry_k8	data/runs/gray_ttg_control/A1_primary_retry_k8

@@ -1,0 +1,998 @@
+# Figures registry -- spectral-PN manuscript.  Maps every figure/table
+# quantity to its archived runs under data/runs and the derived artefacts
+# under data/.  The machine-read pin of the active ladder is data/ladders.yaml;
+# entries marked superseded_by are the earlier generations kept for the
+# adoption comparison.
+
+composition_sumrule60k:
+  config: --gauge corridor --epochs 60000 --snapshot-selection final --mode-source joint-sumrule --seed
+    42 (else == the corridor ladder command byte-for-byte; per-arm --geometry {1d,2d}; SOLO arms)
+  provenance:
+    scripts:
+    - scripts/queues/p203_sumrule_ladder_1d_queue.sh
+    - scripts/queues/p206_sumrule_ladder_2d_queue.sh
+    logs:
+    - data/runs/logs/p203_sumrule_ladder_1d.log
+    - data/runs/logs/p206_sumrule_ladder_2d.log
+    machine_pin: data/ladders.yaml
+    manifests:
+    - data/runs/pn_sumrule_ladder_1d/arms.tsv
+    - data/runs/pn_sumrule_ladder_2d/arms.tsv
+    gpu: true
+    epochs: 60000
+    snapshot_selection: final
+    gauge: corridor
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seed: 42
+    mode_source: joint-sumrule
+    grid:
+      k_lo: 0.026032178927110378
+      k_hi: 0.9847450218426953
+      quadrature: midpoint
+  geometry_1d:
+    ladder_L0.01_1d:
+      timestamp: '20260907_102035'
+      gamma_ratio: 0.998236
+      rmse: 0.004289
+    ladder_L0.1_1d:
+      timestamp: '20260907_045035'
+      gamma_ratio: 0.994153
+      rmse: 0.001005
+    ladder_L0.3_1d:
+      timestamp: '20260907_184221'
+      gamma_ratio: 0.995116
+      rmse: 0.00082
+    ladder_L0.5_1d:
+      timestamp: '20260907_212936'
+      gamma_ratio: 0.994612
+      rmse: 0.001055
+    ladder_L0.7_1d:
+      timestamp: '20260908_002120'
+      gamma_ratio: 0.995861
+      rmse: 0.001001
+    ladder_L1.0_1d:
+      timestamp: '20260907_130646'
+      gamma_ratio: 0.996592
+      rmse: 0.000791
+    ladder_L1.5_1d:
+      timestamp: '20260908_030614'
+      gamma_ratio: 0.999199
+      rmse: 0.000259
+    ladder_L10.0_1d:
+      timestamp: '20260907_155322'
+      gamma_ratio: 0.996506
+      rmse: 0.000692
+    ladder_L100.0_1d:
+      timestamp: '20260907_073525'
+      gamma_ratio: 1.001679
+      rmse: 0.000248
+    figures:
+    - fig2_regime_map
+    - fig3_traces
+    - figB_repin
+    - fig_absolute_ladder
+    tables:
+    - tab_ladder
+    - tab_absolute
+    status: publication
+    role: primary
+  geometry_2d:
+    ladder_L0.01_2d:
+      timestamp: '20260908_160443'
+      gamma_ratio: 0.998491
+      rmse: 0.004277
+    ladder_L0.1_2d:
+      timestamp: '20260908_095407'
+      gamma_ratio: 0.994433
+      rmse: 0.000957
+    ladder_L0.3_2d:
+      timestamp: '20260909_002313'
+      gamma_ratio: 0.995142
+      rmse: 0.000814
+    ladder_L0.5_2d:
+      timestamp: '20260909_030810'
+      gamma_ratio: 0.994567
+      rmse: 0.001058
+    ladder_L0.7_2d:
+      timestamp: '20260909_055308'
+      gamma_ratio: 0.995321
+      rmse: 0.001027
+    ladder_L1.0_2d:
+      timestamp: '20260908_184950'
+      gamma_ratio: 0.996471
+      rmse: 0.000792
+    ladder_L1.5_2d:
+      timestamp: '20260909_083805'
+      gamma_ratio: 0.999273
+      rmse: 0.000254
+    ladder_L10.0_2d:
+      timestamp: '20260908_213632'
+      gamma_ratio: 0.99644
+      rmse: 0.000694
+    ladder_L100.0_2d:
+      timestamp: '20260908_131748'
+      gamma_ratio: 1.002374
+      rmse: 0.00036
+    figures:
+    - fig2_regime_map
+    - fig3_traces
+    - figB_repin
+    - fig_absolute_ladder
+    tables:
+    - tab_ladder_2d
+    - tab_absolute
+    status: publication
+    role: primary
+sumrule_seedrep:
+  config: == composition_sumrule60k config with --seed {0,1} and a per-arm --outdir; --geometry {1d,2d}
+    at L=0.1, 1d at L=1.0
+  provenance:
+    log: data/runs/logs/p218_sumrule_adoption.log
+    manifest: data/runs/pn_sumrule_adoption/arms.tsv
+    score: data/p218_sumrule_adoption_score.json
+    gpu: true
+    epochs: 60000
+    snapshot_selection: final
+    gauge: corridor
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seeds:
+    - 0
+    - 1
+    mode_source: joint-sumrule
+  seed_42_pins: ladders.yaml sumrule60k 1d/0.1 0.994153, 2d/0.1 0.994433, 1d/1.0 0.996592
+  arms:
+    seedrep_L0.1_1d_s0:
+      path: data/runs/pn_sumrule_adoption/seedrep_L0.1_1d_s0
+      timestamp: '20260909_130800'
+      seed: 0
+      gamma_ratio: 0.994694
+      rmse: 0.000901
+    seedrep_L0.1_1d_s1:
+      path: data/runs/pn_sumrule_adoption/seedrep_L0.1_1d_s1
+      timestamp: '20260909_185306'
+      seed: 1
+      gamma_ratio: 0.993794
+      rmse: 0.001037
+    seedrep_L0.1_2d_s0:
+      path: data/runs/pn_sumrule_adoption/seedrep_L0.1_2d_s0
+      timestamp: '20260909_130803'
+      seed: 0
+      gamma_ratio: 0.994608
+      rmse: 0.000905
+    seedrep_L0.1_2d_s1:
+      path: data/runs/pn_sumrule_adoption/seedrep_L0.1_2d_s1
+      timestamp: '20260909_185309'
+      seed: 1
+      gamma_ratio: 0.993751
+      rmse: 0.001046
+    seedrep_L1.0_1d_s0:
+      path: data/runs/pn_sumrule_adoption/seedrep_L1.0_1d_s0
+      timestamp: '20260910_004113'
+      seed: 0
+      gamma_ratio: 0.99778
+      rmse: 0.000496
+    seedrep_L1.0_1d_s1:
+      path: data/runs/pn_sumrule_adoption/seedrep_L1.0_1d_s1
+      timestamp: '20260910_004116'
+      seed: 1
+      gamma_ratio: 0.996709
+      rmse: 0.001054
+  status: publication
+  role: seed-replication-reference
+sumrule_ablations:
+  provenance:
+    manifest: data/runs/pn_sumrule_adoption/arms.tsv
+    gpu: true
+    epochs: 20000
+    snapshot_selection: final
+    gauge: additive
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    mode_source: joint-sumrule
+  cells:
+    C3 L=1 plain s42:
+      path: data/runs/pn_sumrule_adoption/C3_L1.0_plain_s42
+      timestamp: '20260910_144912'
+      formulation: plain
+      gamma_ratio: 0.1442
+      rmse: 0.8787
+      band: outside
+    C3 L=1 plain s0:
+      path: data/runs/pn_sumrule_adoption/C3_L1.0_plain_s0
+      timestamp: '20260910_154058'
+      formulation: plain
+      gamma_ratio: 0.2401
+      rmse: 0.472
+      band: outside
+    C3 L=1 plain s1:
+      path: data/runs/pn_sumrule_adoption/C3_L1.0_plain_s1
+      timestamp: '20260910_163144'
+      formulation: plain
+      gamma_ratio: 0.3748
+      rmse: 0.2569
+      band: outside
+    C5 L=0.1 plain l16:
+      path: data/runs/pn_sumrule_adoption/C5_L0.1_plain_lmax16
+      timestamp: '20260910_182138'
+      formulation: plain
+      gamma_ratio: 0.6278
+      rmse: 0.0969
+      band: outside
+    C6 L=0.1 duhamel:
+      path: data/runs/pn_sumrule_adoption/C6_L0.1_duhamel
+      timestamp: '20260910_125612'
+      formulation: duhamel
+      gamma_ratio: 0.9112
+      rmse: 0.0182
+      band: inside
+    C8 L=10 plain freeze:
+      path: data/runs/pn_sumrule_adoption/C8_L10_plain
+      timestamp: '20260910_082809'
+      formulation: plain
+      gamma_ratio: 0.1466
+      rmse: 0.8604
+      band: outside
+    C1 L=0.01 duhamel:
+      path: data/runs/pn_sumrule_adoption/C1_L0.01_duhamel
+      timestamp: '20260910_110640'
+      formulation: duhamel
+      gamma_ratio: 1.0011
+      rmse: 0.0046
+      band: inside
+    C2 L=0.01 plain:
+      path: data/runs/pn_sumrule_adoption/C2_L0.01_plain
+      timestamp: '20260910_101436'
+      formulation: plain
+      gamma_ratio: 0.9481
+      rmse: 0.0205
+      band: inside
+    C7 L=10 ce:
+      path: data/runs/pn_sumrule_adoption/C7_L10_ce
+      timestamp: '20260910_120034'
+      formulation: ce
+      gamma_ratio: 1.0133
+      rmse: 0.0032
+      band: inside
+    C7 L=100 ce:
+      path: data/runs/pn_sumrule_adoption/C7_L100_ce
+      timestamp: '20260910_172442'
+      formulation: ce
+      gamma_ratio: 0.9988
+      rmse: 0.0002
+      band: inside
+    C9 L=0.1 ce 20k:
+      path: data/runs/pn_sumrule_adoption/C9_L0.1_ce
+      timestamp: '20260910_092024'
+      formulation: ce
+      gamma_ratio: 0.8525
+      rmse: 0.0337
+      band: outside
+    C10 L=1.0 ce:
+      path: data/runs/pn_sumrule_adoption/C10_L1.0_ce
+      timestamp: '20260910_135234'
+      formulation: ce
+      gamma_ratio: 1.094
+      rmse: 0.0265
+      band: inside
+    C43 L=0.01 ce:
+      path: data/runs/pn_sumrule_adoption/C43_L0.01_ce
+      timestamp: '20260910_191533'
+      formulation: ce
+      gamma_ratio: 0.5877
+      rmse: 0.1342
+      band: outside
+    C44 L=1.0 duhamel:
+      path: data/runs/pn_sumrule_adoption/C44_L1.0_duhamel
+      timestamp: '20260910_201205'
+      formulation: duhamel
+      gamma_ratio: 0.5806
+      rmse: 0.1398
+      band: outside
+    C44 L=10 duhamel:
+      path: data/runs/pn_sumrule_adoption/C44_L10.0_duhamel
+      timestamp: '20260910_210558'
+      formulation: duhamel
+      gamma_ratio: 5.3519
+      rmse: 0.2386
+      band: outside
+    C44 L=100 duhamel:
+      path: data/runs/pn_sumrule_adoption/C44_L100.0_duhamel
+      timestamp: '20260910_215953'
+      formulation: duhamel
+      gamma_ratio: 100.0533
+      rmse: 0.2658
+      band: outside
+  figures:
+  - fig_reduced_formulations
+  - fig_reduced_traces_appendix
+  tables:
+  - tab_regime
+  status: publication
+composition_corridor60k:
+  superseded_by: composition_sumrule60k
+  status: superseded-by-repin
+  config: --gauge corridor --epochs 60000 --snapshot-selection final --mode-source joint --seed 42 (else
+    == the pinned ladder command byte-for-byte; per-arm --geometry {1d,2d})
+  provenance:
+    machine_pin: data/ladders.yaml
+    manifest: data/runs/pn_corridor_ladder_60k/arms.tsv
+    gpu: true
+    epochs: 60000
+    snapshot_selection: final
+    gauge: corridor
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seed: 42
+    mode_source: joint
+  geometry_1d:
+    ladder_L0.01_1d:
+      gamma_ratio: 0.9986
+      rmse: 0.00414
+    ladder_L0.1_1d:
+      gamma_ratio: 0.9945
+      rmse: 0.00095
+    ladder_L0.3_1d:
+      gamma_ratio: 0.9947
+      rmse: 0.0009
+    ladder_L0.5_1d:
+      gamma_ratio: 0.9947
+      rmse: 0.00105
+    ladder_L0.7_1d:
+      gamma_ratio: 0.9956
+      rmse: 0.0009
+    ladder_L1.0_1d:
+      gamma_ratio: 0.9972
+      rmse: 0.00075
+    ladder_L1.5_1d:
+      gamma_ratio: 0.9992
+      rmse: 0.00027
+    ladder_L10.0_1d:
+      gamma_ratio: 0.9976
+      rmse: 0.00056
+    ladder_L100.0_1d:
+      gamma_ratio: 1.0019
+      rmse: 0.00028
+    figures:
+    - fig2_regime_map
+    - fig3_traces
+    - figB_repin
+    - fig_absolute_ladder
+    tables:
+    - tab_ladder
+    status: superseded-by-repin
+    role: superseded
+  geometry_2d:
+    ladder_L0.01_2d:
+      gamma_ratio: 0.9985
+      rmse: 0.00414
+    ladder_L0.1_2d:
+      gamma_ratio: 0.9945
+      rmse: 0.00095
+    ladder_L0.3_2d:
+      gamma_ratio: 0.9948
+      rmse: 0.00088
+    ladder_L0.5_2d:
+      gamma_ratio: 0.9947
+      rmse: 0.00107
+    ladder_L0.7_2d:
+      gamma_ratio: 0.9949
+      rmse: 0.00095
+    ladder_L1.0_2d:
+      gamma_ratio: 0.9972
+      rmse: 0.00075
+    ladder_L1.5_2d:
+      gamma_ratio: 0.9992
+      rmse: 0.00027
+    ladder_L10.0_2d:
+      gamma_ratio: 0.9975
+      rmse: 0.00056
+    ladder_L100.0_2d:
+      gamma_ratio: 1.0021
+      rmse: 0.00032
+    figures:
+    - fig2_regime_map
+    - fig3_traces
+    - figB_repin
+    - fig_absolute_ladder
+    tables:
+    - tab_ladder_2d
+    status: superseded-by-repin
+    role: superseded
+seed_replication_L0.1:
+  superseded_by: sumrule_seedrep
+  config: == composition_corridor60k config with --seed {0,1} and per-arm --outdir; per-arm --geometry
+    {1d,2d}
+  provenance:
+    log: data/runs/logs/p140_seedrep_L0.1.log
+    manifest: data/runs/pn_corridor_seedrep_L0.1/arms.tsv
+    gpu: true
+    epochs: 60000
+    snapshot_selection: final
+    gauge: corridor
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seeds:
+    - 0
+    - 1
+    mode_source: joint
+  seed_42_pins: ladders.yaml corridor60k {1d,2d}/0.1 (gamma 0.9945 / 0.9945)
+  arms:
+    seedrep_L0.1_1d_s0:
+      path: data/runs/pn_corridor_seedrep_L0.1/seedrep_L0.1_1d_s0
+      timestamp: '20260817_124841'
+      seed: 0
+      gamma_ratio: 0.9945
+      rmse: 0.00092
+    seedrep_L0.1_1d_s1:
+      path: data/runs/pn_corridor_seedrep_L0.1/seedrep_L0.1_1d_s1
+      timestamp: '20260817_183808'
+      seed: 1
+      gamma_ratio: 0.994
+      rmse: 0.00101
+    seedrep_L0.1_2d_s0:
+      path: data/runs/pn_corridor_seedrep_L0.1/seedrep_L0.1_2d_s0
+      timestamp: '20260817_124844'
+      seed: 0
+      gamma_ratio: 0.9944
+      rmse: 0.00092
+    seedrep_L0.1_2d_s1:
+      path: data/runs/pn_corridor_seedrep_L0.1/seedrep_L0.1_2d_s1
+      timestamp: '20260817_183811'
+      seed: 1
+      gamma_ratio: 0.9941
+      rmse: 0.00099
+  status: superseded-by-repin
+  role: seed-replication-reference (superseded)
+composition_ugks:
+  superseded_by: composition_corridor60k
+  status: superseded-by-repin
+  config: --blend ugks --snapshot-selection min-loss (else == evaluated ugks config; per-arm --geometry
+    {1d,2d})
+  provenance:
+    eval: scripts/xiblend/campaign_eval.py
+    gpu: true
+    epochs: 20000
+    snapshot_selection: min-loss
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seed: 42
+    gate: pn_shape_battery bit-exact on every row
+  geometry_1d:
+    spectral_pn_0.01um:
+      timestamp: '20260718_125320'
+      gamma_ratio: 0.9579
+      rmse: 0.00769
+    spectral_pn_0.1um:
+      timestamp: '20260718_134841'
+      gamma_ratio: 0.995
+      rmse: 0.00092
+    spectral_pn_0.3um:
+      timestamp: '20260718_154240'
+      gamma_ratio: 0.9958
+      rmse: 0.00232
+    spectral_pn_0.5um:
+      timestamp: '20260718_173640'
+      gamma_ratio: 0.9948
+      rmse: 0.00403
+    spectral_pn_0.7um:
+      timestamp: '20260718_193041'
+      gamma_ratio: 0.9964
+      rmse: 0.00351
+    spectral_pn_1.0um:
+      timestamp: '20260718_212441'
+      gamma_ratio: 0.993
+      rmse: 0.00418
+    spectral_pn_1.5um:
+      timestamp: '20260718_231842'
+      gamma_ratio: 0.9713
+      rmse: 0.00982
+    spectral_pn_10.0um:
+      timestamp: '20260719_011313'
+      gamma_ratio: 1.0019
+      rmse: 0.0006
+    spectral_pn_100.0um:
+      timestamp: '20260719_030728'
+      gamma_ratio: 1.0
+      rmse: 6.0e-05
+    figures:
+    - figA_repin
+    - figB_repin
+    - figC_repin
+    tables:
+    - tab_ladder
+    status: publication
+    role: primary
+  geometry_2d:
+    spectral_pn_0.01um:
+      timestamp: '20260718_094154'
+      gamma_ratio: 0.9581
+      rmse: 0.00754
+    spectral_pn_0.1um:
+      timestamp: '20260718_134844'
+      gamma_ratio: 0.9947
+      rmse: 0.00103
+    spectral_pn_0.3um:
+      timestamp: '20260718_154243'
+      gamma_ratio: 0.9905
+      rmse: 0.00205
+    spectral_pn_0.5um:
+      timestamp: '20260718_173643'
+      gamma_ratio: 0.9841
+      rmse: 0.00587
+    spectral_pn_0.7um:
+      timestamp: '20260718_193044'
+      gamma_ratio: 0.9963
+      rmse: 0.00142
+    spectral_pn_1.0um:
+      timestamp: '20260718_212444'
+      gamma_ratio: 0.9898
+      rmse: 0.0043
+    spectral_pn_1.5um:
+      timestamp: '20260719_130024'
+      gamma_ratio: 0.9733
+      rmse: 0.00899
+      seed: 1
+    spectral_pn_10.0um:
+      timestamp: '20260719_011316'
+      gamma_ratio: 1.0015
+      rmse: 0.00059
+    spectral_pn_100.0um:
+      timestamp: '20260719_030732'
+      gamma_ratio: 1.0003
+      rmse: 7.0e-05
+    figures:
+    - figA_repin
+    - figB_repin
+    - figC_repin
+    tables:
+    - tab_ladder_2d
+    status: publication
+    role: primary
+composition_v5:
+  superseded_by: composition_ugks
+  status: superseded-by-repair
+  config: --formulation xihybrid --xi-split 1.0 --xi-duh 10.0 --shared-ahat --carrier-energy --carrier-row
+  provenance:
+    round: 6
+    git: 188467a
+    queue_log: spectral_pn_round6_v5.log
+    gpu: true
+    epochs: 20000
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seed: 42
+  runs:
+    spectral_pn_100.0um:
+      timestamp: '20260713_003144'
+      figures:
+      - fig2
+      tables:
+      - tab_regime
+      - tab_ladder
+      status: publication
+      role: primary
+    spectral_pn_10.0um:
+      timestamp: '20260712_223728'
+      figures:
+      - fig2
+      - fig3
+      tables:
+      - tab_regime
+      - tab_ladder
+      status: publication
+      role: primary
+    spectral_pn_1.0um:
+      timestamp: '20260712_233329'
+      figures:
+      - fig2
+      - fig3
+      tables:
+      - tab_regime
+      - tab_ladder
+      status: publication
+      role: primary
+    spectral_pn_0.1um:
+      timestamp: '20260713_012715'
+      figures:
+      - fig2
+      tables:
+      - tab_regime
+      - tab_ladder
+      status: publication
+      role: primary
+    spectral_pn_0.01um:
+      timestamp: '20260713_022235'
+      figures:
+      - fig2
+      tables:
+      - tab_regime
+      - tab_ladder
+      status: publication
+      role: primary
+fig_main:
+  generator: scripts/make_figures.py
+  discovery: data/ladders.yaml (via make_repin_figures.campaign_rows; )
+  guard: tests/test_figure_burned_values.py
+  pins: composition_sumrule60k
+  figures:
+    fig2_regime_map:
+      file: figures/fig2_regime_map.pdf
+      shows: '(a) cell-D gamma_ratio vs L at ALL NINE rungs, PN 1d (C0 filled circles, solid) + PN 2d
+        (C3 open squares, dashed), y zoomed to [0.985, 1.015] so the worst 0.58% rung (sum-rule pin, L=0.1
+        1d) is clearly resolved; thin black unity line; the +-0.3% floor band (legend: ''DOM floor'')
+        in figB''s convention. NO +-10% band -- that band now appears only in fig_reduced_formulations,
+        where it is the claim being tested. (b) shape RMSE of A(t)/A_0 vs DOM, same nine rungs, both geometries,
+        log y on [1e-4, 2e-2]. data_check refuses a clipped rung, so the zoomed limits cannot silently
+        delete a future re-pin''s worst point.'
+      status: publication
+    fig3_traces:
+      file: figures/fig3_traces.pdf
+      shows: Signed A(t)/A0 at five decade periods in a two-plus-three panel layout. Ballistic panel includes
+        a late-window inset scaled by1000. Original PN1D/PN2D/reference arrays unchanged; shared reference
+        line uses the existing geometry-separation check. Duplicate rate annotations removed; PDF Subject
+        carries the plotted trace-array SHA256, checked independently against active and retired pins
+        by the content test.
+      status: publication
+    fig_reduced_formulations:
+      file: figures/fig_reduced_formulations.pdf
+      shows: Rate and shape summaries plus CEballistic, plain10umfreeze and Duhamel100umfast-decay traces.
+        Same current pins; pure20kvsproduction60k.
+      status: publication
+    fig_reduced_traces_appendix:
+      file: figures/fig_reduced_traces_appendix.pdf
+      shows: Every original seven-panel reduced-comparison data line, including historical MLP metric
+        references with distinct finite-amplitude physics disclosed. AppendixE.1; no evidence removed.
+      status: publication
+      tex: main.tex app:controls, fig:reduced-full
+fig_repin:
+  generator: scripts/make_repin_figures.py
+  discovery: data/ladders.yaml (ladder_source; )
+  pins: composition_sumrule60k
+  figures:
+    figB_repin_banded_rates:
+      file: figures/figB_repin_banded_rates.pdf
+      shows: 'barrier-2 axes: early/mid/late banded local rates, 1d-vs-2d panels; late points NOT band-robust
+        drawn HOLLOW -- quote the terminal axis, never the late rate, for those'
+      status: publication
+fig_mode_spectrum:
+  generator: scripts/make_mode_spectrum_figure.py
+  artefact: scripts/p101_mode_spectrum.py
+  artefact_generator: scripts/p101_mode_spectrum.py
+  convention: 'K0, K1 reduced at y = gamma_hat tau_m = 0 (the slow-collective form K0 = arctan(xi)/xi,
+    in which Eq. (ugks-limits)''s two exact limits are stated). DECLARED, not silent, AND QUOTED AT ALL
+    THREE DRAWN PERIODS rather than at the mildest one. With gamma_hat taken as the DOM reference''s own
+    effective rate ON THE SAME JOINT COMB the heat-capacity-weighted mean of K0 moves 0.582 -> 0.564 at
+    L=0.1um, 0.864 -> 0.920 at 1um and 0.993 -> 0.996 at 10um; over the nine sweep periods it is non-monotone
+    (falls from L=0.1 to 0.3) and at L=0.01um it leaves [0,1] and turns negative (-0.2295). (Legacy-comb
+    history: the sign flip sat at the DRAWN L=0.1um rung, 0.247 -> -0.048.) So the monotonicity and the
+    [0,1] bounding drawn in panel (b) are properties of the y=0 form, not of Eq. (ugks-c). Bound as `pn.modespec.slaved.share.ydep`.
+    The y-dependent form is not drawn because at L=0.01um no single collective rate exists (`dominant_gamma`
+    returns ok=False on the joint comb) and because K0(y,xi) is a resolvent that passes through 1 and
+    changes sign as y crosses 1, not a share. Neither form has a threshold.'
+  figures:
+    fig_mode_spectrum:
+      file: figures/fig_mode_spectrum.pdf
+      status: publication
+budget_nonmonotonicity:
+  provenance:
+    gpu: true
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seed: 42
+  runs:
+    spectral_pn_1.0um_1500ep:
+      timestamp: '20260711_112449'
+      status: publication
+      role: budget_probe
+    spectral_pn_1.0um_20kep:
+      timestamp: '20260712_233329'
+      status: publication
+      role: budget_probe_reference
+carrier_row_toggle:
+  provenance:
+    gpu: true
+    epochs: 20000
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seed: 42
+  runs:
+    spectral_pn_10.0um_on:
+      timestamp: '20260713_174705'
+      status: publication
+      role: ablation_on
+    spectral_pn_10.0um_off:
+      timestamp: '20260713_184238'
+      status: publication
+      role: ablation_off
+composition_seed_spread:
+  provenance:
+    gpu: true
+    epochs: 20000
+    Nk: 20
+    L_max: 8
+    dtype: float64
+  runs:
+    spectral_pn_1.0um:
+      seed_42:
+        timestamp: '20260712_233329'
+        gamma_ratio: 1.0332988895
+      seed_0:
+        timestamp: '20260713_135616'
+        gamma_ratio: 1.03766462
+      seed_1:
+        timestamp: '20260713_145703'
+        gamma_ratio: 1.0245468314
+      spread: +-0.64% about the midpoint 1.0311
+    spectral_pn_10.0um:
+      seed_42:
+        timestamp: '20260712_223728'
+        gamma_ratio: 1.0080831116
+      seed_0:
+        timestamp: '20260713_155552'
+        gamma_ratio: 1.0111664724
+      seed_1:
+        timestamp: '20260713_165133'
+        gamma_ratio: 1.001675658
+      spread: +-0.47% about the midpoint 1.0064
+p135_ablation_cells:
+  superseded_by: sumrule_ablations
+  abl_L0.01_ce:
+    label: C43 L=0.01 ce
+    gamma_ratio: 0.6461
+    rmse: 0.114
+  abl_L1.0_duhamel:
+    label: C44 L=1.0 duhamel
+    gamma_ratio: 0.5623
+    rmse: 0.148
+  abl_L10.0_duhamel:
+    label: C44 L=10 duhamel
+    gamma_ratio: 5.1742
+    rmse: 0.237
+  abl_L100.0_duhamel:
+    label: C44 L=100 duhamel
+    gamma_ratio: 97.4507
+    rmse: 0.266
+  figures:
+  - fig_reduced_formulations
+  tables:
+  - tab_regime
+  status: superseded-by-repin
+runs:
+  spectral_pn_0.01um:
+  - timestamp: '20260708_231945'
+    formulation: duhamel
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260709_001714'
+    formulation: plain
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  spectral_pn_0.1um:
+  - timestamp: '20260707_201435'
+    formulation: plain (lmax16)
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260709_010959'
+    formulation: duhamel
+    figures:
+    - fig2
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260709_050612'
+    formulation: ce
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  spectral_pn_1.0um:
+  - timestamp: '20260707_164346'
+    formulation: plain, seed 42
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260707_173627'
+    formulation: plain, seed 0
+    figures:
+    - fig2
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260707_182908'
+    formulation: plain, seed 1
+    figures:
+    - fig2
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260709_040747'
+    formulation: ce
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  spectral_pn_10.0um:
+  - timestamp: '20260707_192149'
+    formulation: plain
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  - timestamp: '20260709_030913'
+    formulation: ce
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+  spectral_pn_100.0um:
+  - timestamp: '20260709_020952'
+    formulation: ce
+    figures:
+    - fig2
+    - fig3
+    tables:
+    - tab_regime
+    status: publication
+references:
+  supervised_r9:
+    scoring: cell D ; store pn.gamma_ratio.celld.supervised
+    gamma_ratio:
+      0.01: 0.93
+      0.1: 0.993
+      1.0: 0.960-0.968 (3 seeds)
+      10.0: 0.999
+      100.0: 1.003
+    rmse:
+      0.01: 0.0155
+      0.1: 0.0034
+      1.0: 0.0075-0.0088
+      10.0: 0.0015
+      100.0: 0.0019
+  mlp_control_b1b:
+    source: architecture-campaign batch 1b (Jul 2026), sampled-residual MLP with waypoints and dt-IC off,
+      seeds 0/1/2 (queue log data/runs/arch_campaign_b1b.log), plus the seed-42 member of the SAME configuration
+      at each pole (member_set below).
+    member_set:
+      1.0:
+      - 1d_nongray_large_dt_1.0um_100K/20260707_061448
+      - 1d_nongray_large_dt_1.0um_100K/20260707_073337
+      - 1d_nongray_large_dt_1.0um_100K/20260707_085244
+      - 1d_nongray_large_dt_1.0um_100K/20260703_233149
+      0.01:
+      - 1d_nongray_large_dt_0.01um_100K/20260707_101129
+      - 1d_nongray_large_dt_0.01um_100K/20260707_112951
+      - 1d_nongray_large_dt_0.01um_100K/20260707_124826
+      - 1d_nongray_large_dt_0.01um_100K/20260805_141042
+    replicate_0.01_seed42: 1d_nongray_large_dt_0.01um_100K/20260905_041128
+    retired: 1d_nongray_large_dt_0.01um_100K/20260704_034543 (uniform quadrature)
+    scoring: cell D (ruled |A| estimator, common-window arbiter) at 2 dp, the precision the 0.003 floor
+      supports; ledger pn_mlp_datafree
+    gamma_ratio_range_2dp:
+      1.0: 2.68-5.53
+      0.01: 0.16-0.18
+  mlp_control_arch:
+    source: 'architecture-campaign batch 1, Question A/B arms (Jul 4 2026, queue log data/runs/arch_campaign_b1.log)
+      + the batch-2c uniform- quadrature arm (Jul 6, arch_campaign_b2c.log). Same family and flags as
+      mlp_control_b1b''s base modulo the architecture knobs: seed 42, 15 000 epochs, L = 1.0 um, --waypoint-weight
+      0 --dtic-weight 0 --spectral-t. Arm identity verified against the queue logs AND the checkpoint
+      tensor shapes (net_n width/depth; npz net_arch). Bit-identical copies are archived in the release
+      repo (spectral-pn-phonon-bte, data/runs/mlp_control/, md5-verified).'
+    runs_by_arm:
+      cap-w64d8-wp0: 1d_nongray_large_dt_1.0um_100K/20260704_081414
+      cap-w40d12-wp0: 1d_nongray_large_dt_1.0um_100K/20260704_094805
+      cap-w64d12-wp0: 1d_nongray_large_dt_1.0um_100K/20260704_112310
+      pirate-wp0: 1d_nongray_large_dt_1.0um_100K/20260704_134526
+      pir-uni-wp0-L1: 1d_nongray_large_dt_1.0um_100K/20260706_172258
+    tables:
+    - tab_ladder
+    scoring: 'PREVIOUS mode set by construction (the tab:ladder caption stamp): clip-integral over the
+      run''s own window / legacy-early-stopped spectral-AP DOM at Nk=20 on the LEGACY comb, i.e. inside
+      shipped_mode_source() -- NEVER a bare arbiter call. Ledger section pn_mlp_datafree (rows ''T3 ...'')
+      carries the per-run values under both the published and the cell-D convention; pinned by tests/test_p086_cited_ablation_ledger.py.'
+    gamma_ratio:
+      cap-w64d8-wp0: 8.7159
+      cap-w40d12-wp0: 4.5368
+      cap-w64d12-wp0: 3.6596
+      pirate-wp0: 0.542014
+      pir-uni-wp0-L1: 0.315006
+  plain_L100_cpu:
+    source: decisive simple-limit experiment (Jul 8 ~00:15), CPU 1500 epochs Nk=20 — quoted in tab_regime
+      footnote a (trend only)
+    gamma_ratio:
+      100.0: 0.165
+fig_absolute:
+  generator: scripts/make_absolute_ladder_figure.py
+  artefact: data/pn_absolute_ladder.json
+  artefact_generator: scripts/pn_absolute_ladder.py
+  pins: composition_sumrule60k
+  pins_manifest:
+  - data/runs/pn_sumrule_ladder_1d/arms.tsv
+  - data/runs/pn_sumrule_ladder_2d/arms.tsv
+  pins_uniformity: nine periods x {1d, 2d} = 18 arms, ALL at epochs=60000, seed=42, Nk=20, L_max=8, float64,
+    formulation=xihybrid, gauge=corridor, n_decay=7, snapshot=final, mode_source=joint-sumrule. Verified
+    field-by-field by the artefact writer, which refuses to build a rung whose budget, seed, comb, snapshot
+    or geometry differs (uniform_params_within_experiment_type).
+  pins_excluded: data/runs/pn_joint_weight_2d_budget_probe/ (60k additive + two seed-1 arms) and data/runs/pn_joint_weight_2d_settle_probe/
+    (100k) are DIAGNOSTIC lineage of the superseded joint/additive ladder. They are read into the artefact's
+    `disclosures` section and quoted in the manuscript TEXT only; none is a corridor-ladder rung (other
+    gauge and snapshot rule).
+  figures:
+    fig_absolute_ladder:
+      file: figures/fig_absolute_ladder.pdf
+      shows: (a) kappa_eff(L) in W/m/K,1D+2D+DOM; (b) kappa_bulk vsNk on production k-range and with the
+        zone centre restored (k >= 1e-3 of 2pi/a on the sum-rule radius, FULLZONE_GRID; not the full sphere)
+        against the 142-156 experimental band. Redundant suppression panel and twin diffusivity axis removed;
+        values retained in Table5. Same pinned data; presentation-only revision.
+      status: publication
+      tex: main.tex sec:absolute (fig:absolute + tab:absolute)
+propagator_miss_report:
+  artefact: data/c22_sumrule_repin_report.json
+  former_artefact: data/c22_joint_repin_report.json
+  generator: scripts/pn_expm_miss_converged.py
+seed_replication_L1.0:
+  superseded_by: sumrule_seedrep
+  config: == composition_corridor60k config with --L 1.0 --seed {0,1} and a per-arm output directory;
+    --geometry 1d
+  provenance:
+    manifest: data/runs/pn_corridor_seedrep_L1.0/arms.tsv
+    gpu: true
+    epochs: 60000
+    snapshot_selection: final
+    gauge: corridor
+    Nk: 20
+    L_max: 8
+    dtype: float64
+    seeds:
+    - 0
+    - 1
+    mode_source: joint
+  seed_42_pin: data/ladders.yaml corridor60k 1d/1.0 (gamma 0.9972)
+  arms:
+    seedrep_L1.0_1d_s0:
+      path: data/runs/pn_corridor_seedrep_L1.0/seedrep_L1.0_1d_s0
+      timestamp: '20260904_222728'
+      seed: 0
+      gamma_ratio: 0.9978
+      rmse: 0.0005
+    seedrep_L1.0_1d_s1:
+      path: data/runs/pn_corridor_seedrep_L1.0/seedrep_L1.0_1d_s1
+      timestamp: '20260904_222731'
+      seed: 1
+      gamma_ratio: 0.9965
+      rmse: 0.00094
+  status: superseded-by-repin
+  role: seed-replication-reference (superseded)

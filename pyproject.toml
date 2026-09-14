@@ -1,0 +1,34 @@
+[project]
+name = "spectral-pn-phonon-bte"
+version = "1.0.0"
+description = "Data-free spectral-PN neural solver for the transient phonon Boltzmann transport equation - code, DOM reference solver, and archived runs for the JCP manuscript"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Marko Herkaliuk" },
+    { name = "Andrii Gilchuk" },
+]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "matplotlib>=3.10,<3.11",  # figure-layout guards are calibrated on the 3.10 text metrics
+    "numpy>=2.3",
+    "scipy>=1.16",
+    "torch>=2.10,<2.11",  # the archived runs and the RNG-sensitive test fixtures were produced on the 2.10 kernels
+    "pyyaml>=6.0",
+    "rich>=13.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pinn_bte*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

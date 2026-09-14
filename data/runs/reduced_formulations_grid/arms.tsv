@@ -1,0 +1,5 @@
+#label	L_um	seed	lmax	epochs	snapshot	wall_s	extra_flags	saved_dir
+CE_L0.01	0.01	42	8	20000	final	3300	--formulation ce	data/runs/reduced_formulations_grid/abl_L0.01_ce
+DUH_L1.0	1.0	42	8	20000	final	3232	--formulation plain --duhamel	data/runs/reduced_formulations_grid/abl_L1.0_duhamel
+DUH_L10.0	10.0	42	8	20000	final	3232	--formulation plain --duhamel	data/runs/reduced_formulations_grid/abl_L10.0_duhamel
+DUH_L100.0	100.0	42	8	20000	final	3246	--formulation plain --duhamel	data/runs/reduced_formulations_grid/abl_L100.0_duhamel

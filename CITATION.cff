@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the manuscript below."
+title: "Data-free spectral-PN neural solver for the transient phonon Boltzmann transport equation"
+type: software
+authors:
+  - family-names: Herkaliuk
+    given-names: Marko
+    affiliation: "National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'"
+  - family-names: Gilchuk
+    given-names: Andrii
+    affiliation: "National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'"
+license: MIT
+date-released: 2026-09-14
+repository-code: "https://github.com/b1de0/spectral-pn-phonon-bte"
+preferred-citation:
+  type: article
+  title: "A data-free spectral-P_N neural solver for the transient phonon Boltzmann transport equation across the ballistic-to-diffusive crossover"
+  authors:
+    - family-names: Herkaliuk
+      given-names: Marko
+      affiliation: "National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'"
+    - family-names: Gilchuk
+      given-names: Andrii
+      affiliation: "National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'"
+  journal: "Journal of Computational Physics"
+  status: submitted

@@ -1,0 +1,209 @@
+# =====================================================================
+#
+# Read by ALL THREE consumers, so they cannot disagree:
+#   scripts/make_figures.py -- LADDER_SOURCE
+#   scripts/p086_cell_d_ledger.py -- the artefact G1 checks against
+#
+# alone.  Flipping it there would have shipped a page whose Figure 11(c) shows
+# L = 1 um with NO zero crossing (joint: 0/1200 samples) while its own caption
+# and sec:metrics both print 20.9 % of the window (legacy).  Three consumers,
+# three chances to forget one; one file, none.
+#
+# phonon_modes(20, 300) returns the MEASURE-ONLY ACOUSTIC comb -- 60 modes,
+# kappa = 143.03 -- which is NEITHER of the two below.  Never rely on the
+#
+# DIMENSIONAL AXIS, the reason `joint` is the target:
+#   legacy  kappa = 72.98  W/(m K)  -- FAILS against measured bulk Si 142-156
+#   joint   kappa = 144.264         -- passes
+# corridor60k RIDES THE JOINT COMB (--mode-source joint): same kappa, same
+#
+# checked to resolve to a directory at write time.  Do not hand-edit a rung.
+# =====================================================================
+ladder_source: sumrule60k
+
+# Which MODE COMB each named ladder was trained on.  Consumers that dispatch
+# comb-dependent behaviour (arbiter context manager, npz mode_source guard,
+# which ablation directory layout) MUST key on THIS map, never on the ladder's
+# name: `LADDER_SOURCE == "joint"` silently misroutes every later ladder that
+# also rides the joint comb, which is exactly what corridor60k is.
+combs:
+  legacy: legacy
+  joint: joint
+  corridor60k: joint
+  # that closes the 3-modes-per-cell sum rule (ttg_dispersion.sum_rule_grid(20):
+  # midpoint rule, radius K_NORM_HI_SUM_RULE, first node anchored at the
+  # production floor).  Dimensional axis: kappa = 142.30 W/(m K) (in band),
+  # mode count 0.9989 of exact, C = 1.0028 rho c_p, D = 0.989 alpha_meas.
+  sumrule60k: joint-sumrule
+
+# Uniformity CONTRACT of a named ladder: what EVERY arm must satisfy, declared
+# once and verified field-by-field by consumers that re-read the arms (the
+# absolute-artefact writer refuses an arm that differs --
+# uniform_params_within_experiment_type).  `legacy` deliberately has no entry:
+# it predates the contract, carries one disclosed seed deviation (2D L=1.5 =
+# seed 1), and is never routed through the absolute writer.
+ladder_meta:
+  joint: {epochs: 20000, seed: 42, snapshot: min-loss, gauge: additive}
+  corridor60k: {epochs: 60000, seed: 42, snapshot: final, gauge: corridor}
+  sumrule60k: {epochs: 60000, seed: 42, snapshot: final, gauge: corridor}
+ladders:
+  legacy:
+    1d:
+      0.01: data/runs/spectral_pn_0.01um/20260718_125320
+      0.1: data/runs/spectral_pn_0.1um/20260718_134841
+      0.3: data/runs/spectral_pn_0.3um/20260718_154240
+      0.5: data/runs/spectral_pn_0.5um/20260718_173640
+      0.7: data/runs/spectral_pn_0.7um/20260718_193041
+      1.0: data/runs/spectral_pn_1.0um/20260718_212441
+      1.5: data/runs/spectral_pn_1.5um/20260718_231842
+      10.0: data/runs/spectral_pn_10.0um/20260719_011313
+      100.0: data/runs/spectral_pn_100.0um/20260719_030728
+    2d:
+      0.01: data/runs/spectral_pn_0.01um/20260718_094154
+      0.1: data/runs/spectral_pn_0.1um/20260718_134844
+      0.3: data/runs/spectral_pn_0.3um/20260718_154243
+      0.5: data/runs/spectral_pn_0.5um/20260718_173643
+      0.7: data/runs/spectral_pn_0.7um/20260718_193044
+      1.0: data/runs/spectral_pn_1.0um/20260718_212444
+      1.5: data/runs/spectral_pn_1.5um/20260719_130024
+      10.0: data/runs/spectral_pn_10.0um/20260719_011316
+      100.0: data/runs/spectral_pn_100.0um/20260719_030732
+  joint:
+    1d:
+      0.01: data/runs/pn_joint_weight_ladder/ladder_L0.01_1d
+      0.1: data/runs/pn_joint_weight_ladder/ladder_L0.1_1d
+      0.3: data/runs/pn_joint_weight_ladder/ladder_L0.3_1d
+      0.5: data/runs/pn_joint_weight_ladder/ladder_L0.5_1d
+      0.7: data/runs/pn_joint_weight_ladder/ladder_L0.7_1d
+      1.0: data/runs/pn_joint_weight_ladder/ladder_L1.0_1d
+      1.5: data/runs/pn_joint_weight_ladder/ladder_L1.5_1d
+      10.0: data/runs/pn_joint_weight_ladder/ladder_L10.0_1d
+      100.0: data/runs/pn_joint_weight_ladder/ladder_L100.0_1d
+    2d:
+      0.01: data/runs/pn_joint_weight_ladder/ladder_L0.01_2d
+      0.1: data/runs/pn_joint_weight_ladder/ladder_L0.1_2d
+      0.3: data/runs/pn_joint_weight_ladder/ladder_L0.3_2d
+      0.5: data/runs/pn_joint_weight_ladder/ladder_L0.5_2d
+      0.7: data/runs/pn_joint_weight_ladder/ladder_L0.7_2d
+      1.0: data/runs/pn_joint_weight_ladder/ladder_L1.0_2d
+      1.5: data/runs/pn_joint_weight_ladder/ladder_L1.5_2d
+      10.0: data/runs/pn_joint_weight_ladder/ladder_L10.0_2d
+      100.0: data/runs/pn_joint_weight_ladder/ladder_L100.0_2d
+  # --snapshot-selection final --mode-source joint --seed 42, otherwise the
+  # ladder command byte-for-byte.  One budget, one gauge, one snapshot rule.
+  corridor60k:
+    1d:
+      0.01: data/runs/pn_corridor_ladder_60k/ladder_L0.01_1d
+      0.1: data/runs/pn_corridor_ladder_60k/ladder_L0.1_1d
+      0.3: data/runs/pn_corridor_ladder_60k/ladder_L0.3_1d
+      0.5: data/runs/pn_corridor_ladder_60k/ladder_L0.5_1d
+      0.7: data/runs/pn_corridor_ladder_60k/ladder_L0.7_1d
+      1.0: data/runs/pn_corridor_ladder_60k/ladder_L1.0_1d
+      1.5: data/runs/pn_corridor_ladder_60k/ladder_L1.5_1d
+      10.0: data/runs/pn_corridor_ladder_60k/ladder_L10.0_1d
+      100.0: data/runs/pn_corridor_ladder_60k/ladder_L100.0_1d
+    2d:
+      0.01: data/runs/pn_corridor_ladder_60k/ladder_L0.01_2d
+      0.1: data/runs/pn_corridor_ladder_60k/ladder_L0.1_2d
+      0.3: data/runs/pn_corridor_ladder_60k/ladder_L0.3_2d
+      0.5: data/runs/pn_corridor_ladder_60k/ladder_L0.5_2d
+      0.7: data/runs/pn_corridor_ladder_60k/ladder_L0.7_2d
+      1.0: data/runs/pn_corridor_ladder_60k/ladder_L1.0_2d
+      1.5: data/runs/pn_corridor_ladder_60k/ladder_L1.5_2d
+      10.0: data/runs/pn_corridor_ladder_60k/ladder_L10.0_2d
+      100.0: data/runs/pn_corridor_ladder_60k/ladder_L100.0_2d
+  # corridor60k except --mode-source joint-sumrule.
+  sumrule60k:
+    1d:
+      0.01: data/runs/pn_sumrule_ladder_1d/ladder_L0.01_1d
+      0.1: data/runs/pn_sumrule_ladder_1d/ladder_L0.1_1d
+      0.3: data/runs/pn_sumrule_ladder_1d/ladder_L0.3_1d
+      0.5: data/runs/pn_sumrule_ladder_1d/ladder_L0.5_1d
+      0.7: data/runs/pn_sumrule_ladder_1d/ladder_L0.7_1d
+      1.0: data/runs/pn_sumrule_ladder_1d/ladder_L1.0_1d
+      1.5: data/runs/pn_sumrule_ladder_1d/ladder_L1.5_1d
+      10.0: data/runs/pn_sumrule_ladder_1d/ladder_L10.0_1d
+      100.0: data/runs/pn_sumrule_ladder_1d/ladder_L100.0_1d
+    2d:
+      0.01: data/runs/pn_sumrule_ladder_2d/ladder_L0.01_2d
+      0.1: data/runs/pn_sumrule_ladder_2d/ladder_L0.1_2d
+      0.3: data/runs/pn_sumrule_ladder_2d/ladder_L0.3_2d
+      0.5: data/runs/pn_sumrule_ladder_2d/ladder_L0.5_2d
+      0.7: data/runs/pn_sumrule_ladder_2d/ladder_L0.7_2d
+      1.0: data/runs/pn_sumrule_ladder_2d/ladder_L1.0_2d
+      1.5: data/runs/pn_sumrule_ladder_2d/ladder_L1.5_2d
+      10.0: data/runs/pn_sumrule_ladder_2d/ladder_L10.0_2d
+      100.0: data/runs/pn_sumrule_ladder_2d/ladder_L100.0_2d
+
+# ABLATION ARMS, keyed BY THE LABEL the claim store looks rows up by.
+# Renaming a key here silently EMPTIES a claim rather than moving it.
+# The joint set is the twelve arms of p118_joint_repin_queue.sh, run to
+# replace the twelve legacy entries one for one.
+ablations:
+  legacy:
+    main:
+      C3 L=1 plain s42: data/runs/spectral_pn_1.0um/20260707_164346
+      C3 L=1 plain s0: data/runs/spectral_pn_1.0um/20260707_173627
+      C3 L=1 plain s1: data/runs/spectral_pn_1.0um/20260707_182908
+      C5 L=0.1 plain l16: data/runs/spectral_pn_0.1um/20260707_201435
+      C6 L=0.1 duhamel: data/runs/spectral_pn_0.1um/20260709_010959
+      C8 L=10 plain freeze: data/runs/spectral_pn_10.0um/20260707_192149
+    cited:
+      C1 L=0.01 duhamel: data/runs/spectral_pn_0.01um/20260708_231945
+      C2 L=0.01 plain: data/runs/spectral_pn_0.01um/20260709_001714
+      C7 L=10 ce: data/runs/spectral_pn_10.0um/20260709_030913
+      C7 L=100 ce: data/runs/spectral_pn_100.0um/20260709_020952
+      C9 L=0.1 ce 20k: data/runs/spectral_pn_0.1um/20260709_050612
+      C10 L=1.0 ce: data/runs/spectral_pn_1.0um/20260709_040747
+  joint: &joint_ablations
+    main:
+      C3 L=1 plain s42: data/runs/p118_joint_repin/abl_L1.0_plain_s42
+      C3 L=1 plain s0: data/runs/p118_joint_repin/abl_L1.0_plain_s0
+      C3 L=1 plain s1: data/runs/p118_joint_repin/abl_L1.0_plain_s1
+      C5 L=0.1 plain l16: data/runs/p118_joint_repin/abl_L0.1_plain_lmax16
+      C6 L=0.1 duhamel: data/runs/p118_joint_repin/abl_L0.1_duhamel
+      C8 L=10 plain freeze: data/runs/p118_joint_repin/abl_L10.0_plain
+    cited:
+      C1 L=0.01 duhamel: data/runs/p118_joint_repin/abl_L0.01_duhamel
+      C2 L=0.01 plain: data/runs/p118_joint_repin/abl_L0.01_plain
+      C7 L=10 ce: data/runs/p118_joint_repin/abl_L10.0_ce
+      C7 L=100 ce: data/runs/p118_joint_repin/abl_L100.0_ce
+      C9 L=0.1 ce 20k: data/runs/p118_joint_repin/abl_L0.1_ce
+      C10 L=1.0 ce: data/runs/p118_joint_repin/abl_L1.0_ce
+      # battery never had -- CE at the ballistic pole, Duhamel at the three
+      # slow-collective lengths.  Same command byte-for-byte (20k, joint,
+      # seed 42, final snapshot); with them every pure formulation is
+      # measured at every decade it is quoted at, and each fails the +-10%
+      # rate band somewhere: the "no single pure structure spans the ladder"
+      # universal is EARNED, not scoped.
+      C43 L=0.01 ce: data/runs/p135_ablation_cells/abl_L0.01_ce
+      C44 L=1.0 duhamel: data/runs/p135_ablation_cells/abl_L1.0_duhamel
+      C44 L=10 duhamel: data/runs/p135_ablation_cells/abl_L10.0_duhamel
+      C44 L=100 duhamel: data/runs/p135_ablation_cells/abl_L100.0_duhamel
+  # A YAML ALIAS, NOT A COPY: under corridor60k the ablation battery IS the
+  # arms; the reduced-formulation battery stays at 20k on the additive gauge,
+  # and the manuscript must SAY so where it quotes the battery (a stated mixed
+  # budget, not a silent one).  An alias cannot drift from its target.
+  corridor60k: *joint_ablations
+  # arms, 20k, additive gauge, seed 42 (C3: 42/0/1), plus the two C9 seeds
+  sumrule60k:
+    main:
+      C3 L=1 plain s42: data/runs/pn_sumrule_adoption/C3_L1.0_plain_s42
+      C3 L=1 plain s0: data/runs/pn_sumrule_adoption/C3_L1.0_plain_s0
+      C3 L=1 plain s1: data/runs/pn_sumrule_adoption/C3_L1.0_plain_s1
+      C5 L=0.1 plain l16: data/runs/pn_sumrule_adoption/C5_L0.1_plain_lmax16
+      C6 L=0.1 duhamel: data/runs/pn_sumrule_adoption/C6_L0.1_duhamel
+      C8 L=10 plain freeze: data/runs/pn_sumrule_adoption/C8_L10_plain
+    cited:
+      C1 L=0.01 duhamel: data/runs/pn_sumrule_adoption/C1_L0.01_duhamel
+      C2 L=0.01 plain: data/runs/pn_sumrule_adoption/C2_L0.01_plain
+      C7 L=10 ce: data/runs/pn_sumrule_adoption/C7_L10_ce
+      C7 L=100 ce: data/runs/pn_sumrule_adoption/C7_L100_ce
+      C9 L=0.1 ce 20k: data/runs/pn_sumrule_adoption/C9_L0.1_ce
+      C10 L=1.0 ce: data/runs/pn_sumrule_adoption/C10_L1.0_ce
+      C43 L=0.01 ce: data/runs/pn_sumrule_adoption/C43_L0.01_ce
+      C44 L=1.0 duhamel: data/runs/pn_sumrule_adoption/C44_L1.0_duhamel
+      C44 L=10 duhamel: data/runs/pn_sumrule_adoption/C44_L10.0_duhamel
+      C44 L=100 duhamel: data/runs/pn_sumrule_adoption/C44_L100.0_duhamel
+      C9 L=0.1 ce 20k s0: data/runs/pn_sumrule_c9_seeds/C9_L0.1_ce_s0
+      C9 L=0.1 ce 20k s1: data/runs/pn_sumrule_c9_seeds/C9_L0.1_ce_s1

@@ -1,0 +1,273 @@
+[08/16/26 18:17:44] INFO     W&B tracking enabled: project=pinn-bte,            
+                             group=transient_1d_gray_small_dt                   
+[08/16/26 18:17:44] INFO     W&B tracking enabled: project=pinn-bte,            
+                             group=transient_1d_gray_small_dt                   
+[08/16/26 18:17:44] INFO     Logging to:                                        
+                             runs/transient/p136_gray_ttg_control/A0_zhou_fideli
+                             ty/training_gray1d_20260816_181743.log             
+                    INFO     Logging to:                                        
+                             runs/transient/p136_gray_ttg_control/A0_zhou_fideli
+                             ty/training_gray1d_20260816_181743.log             
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/markoherkaliuk/.netrc.
+wandb: Currently logged in as: m-herkaliuk (m-herkaliuk-igor-sikorsky-kyiv-polytechnic-institute) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run s9m62783
+wandb: Tracking run with wandb version 0.24.1
+wandb: Run data is saved locally in /home/markoherkaliuk/src/pinn-bte-zoo/wandb/run-20260816_181745-s9m62783
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run tr_1d_gray_Kn0.095_eta0.6 · gray1d_20260816_181743
+wandb: ⭐️ View project at https://wandb.ai/m-herkaliuk-igor-sikorsky-kyiv-polytechnic-institute/pinn-bte
+wandb: 🚀 View run at https://wandb.ai/m-herkaliuk-igor-sikorsky-kyiv-polytechnic-institute/pinn-bte/runs/s9m62783
+[08/16/26 18:17:46] INFO     Started W&B run: tr_1d_gray_Kn0.095_eta0.6 ·       
+                             gray1d_20260816_181743 (s9m62783)                  
+[08/16/26 18:17:46] INFO     Started W&B run: tr_1d_gray_Kn0.095_eta0.6 ·       
+                             gray1d_20260816_181743 (s9m62783)                  
+╭───────────────────────────── Starting Training ──────────────────────────────╮
+│   Mode      Transient1D_Gray                                                 │
+│   Epochs    20000                                                            │
+│   Device    cuda                                                             │
+│   Run ID    gray1d_20260816_181743                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Transient 1D Gray BTE Training
+  η = 0.6, L = 10.472, Lt = 3.0
+  Kn = 0.095
+  Mesh: Nx=60, Nt=60, Ns=16
+
+      0.2s | Epoch     0 | BTE=3.58e-02 | Flux=2.65e-01 | BC=1.22e+00 | 
+IC_n=9.06e-05 | IC_T=8.85e-01 | Total=2.40e+00
+      1.8s | Epoch   200 | BTE=1.71e-02 | Flux=1.93e-03 | BC=4.39e-03 | 
+IC_n=2.71e-03 | IC_T=4.64e-03 | Total=3.08e-02
+      3.4s | Epoch   400 | BTE=9.82e-04 | Flux=1.54e-04 | BC=1.00e-04 | 
+IC_n=1.04e-04 | IC_T=3.10e-04 | Total=1.65e-03
+      4.9s | Epoch   600 | BTE=2.48e-04 | Flux=4.83e-05 | BC=4.44e-05 | 
+IC_n=3.32e-05 | IC_T=9.20e-05 | Total=4.66e-04
+      6.5s | Epoch   800 | BTE=1.17e-04 | Flux=1.73e-05 | BC=1.61e-05 | 
+IC_n=1.95e-05 | IC_T=2.37e-05 | Total=1.94e-04
+      8.0s | Epoch  1000 | BTE=7.29e-05 | Flux=1.03e-05 | BC=2.48e-05 | 
+IC_n=1.09e-05 | IC_T=2.42e-05 | Total=1.43e-04
+      9.5s | Epoch  1200 | BTE=6.30e-05 | Flux=2.07e-05 | BC=6.98e-05 | 
+IC_n=6.90e-06 | IC_T=3.55e-05 | Total=1.96e-04
+     10.9s | Epoch  1400 | BTE=4.67e-05 | Flux=5.13e-06 | BC=1.06e-05 | 
+IC_n=4.54e-06 | IC_T=1.57e-05 | Total=8.26e-05
+     12.4s | Epoch  1600 | BTE=3.98e-05 | Flux=5.40e-06 | BC=5.47e-06 | 
+IC_n=3.49e-06 | IC_T=9.48e-06 | Total=6.36e-05
+     13.9s | Epoch  1800 | BTE=3.75e-05 | Flux=1.20e-05 | BC=8.70e-06 | 
+IC_n=2.94e-06 | IC_T=1.21e-05 | Total=7.32e-05
+     15.3s | Epoch  2000 | BTE=3.06e-05 | Flux=4.27e-06 | BC=3.19e-06 | 
+IC_n=2.48e-06 | IC_T=9.91e-06 | Total=5.04e-05
+     16.8s | Epoch  2200 | BTE=3.10e-05 | Flux=1.15e-05 | BC=9.03e-06 | 
+IC_n=2.24e-06 | IC_T=9.62e-06 | Total=6.34e-05
+     18.3s | Epoch  2400 | BTE=2.84e-05 | Flux=7.87e-06 | BC=1.13e-05 | 
+IC_n=2.01e-06 | IC_T=1.58e-05 | Total=6.54e-05
+     19.8s | Epoch  2600 | BTE=2.39e-05 | Flux=5.55e-06 | BC=1.10e-05 | 
+IC_n=1.90e-06 | IC_T=1.23e-05 | Total=5.47e-05
+     21.3s | Epoch  2800 | BTE=5.37e-05 | Flux=9.14e-05 | BC=1.13e-04 | 
+IC_n=3.97e-06 | IC_T=2.71e-05 | Total=2.89e-04
+     22.8s | Epoch  3000 | BTE=2.01e-05 | Flux=3.34e-06 | BC=1.54e-05 | 
+IC_n=1.74e-06 | IC_T=1.09e-05 | Total=5.15e-05
+     24.2s | Epoch  3200 | BTE=2.28e-05 | Flux=4.49e-06 | BC=3.04e-05 | 
+IC_n=1.53e-06 | IC_T=9.07e-06 | Total=6.83e-05
+     25.7s | Epoch  3400 | BTE=3.07e-05 | Flux=8.48e-06 | BC=7.06e-05 | 
+IC_n=1.48e-06 | IC_T=8.26e-05 | Total=1.94e-04
+     27.2s | Epoch  3600 | BTE=1.73e-05 | Flux=8.14e-06 | BC=1.06e-05 | 
+IC_n=1.50e-06 | IC_T=7.77e-06 | Total=4.53e-05
+     28.6s | Epoch  3800 | BTE=2.27e-05 | Flux=5.40e-06 | BC=8.16e-05 | 
+IC_n=1.23e-06 | IC_T=7.44e-05 | Total=1.85e-04
+     30.1s | Epoch  4000 | BTE=2.80e-05 | Flux=6.63e-06 | BC=8.03e-05 | 
+IC_n=1.19e-06 | IC_T=9.28e-05 | Total=2.09e-04
+     31.6s | Epoch  4200 | BTE=1.52e-05 | Flux=1.19e-05 | BC=2.13e-05 | 
+IC_n=1.33e-06 | IC_T=7.32e-06 | Total=5.70e-05
+     33.1s | Epoch  4400 | BTE=1.60e-05 | Flux=9.51e-06 | BC=2.19e-05 | 
+IC_n=1.15e-06 | IC_T=2.02e-05 | Total=6.88e-05
+     34.6s | Epoch  4600 | BTE=3.07e-05 | Flux=3.07e-05 | BC=1.63e-04 | 
+IC_n=1.53e-06 | IC_T=1.14e-04 | Total=3.40e-04
+     36.1s | Epoch  4800 | BTE=1.56e-05 | Flux=2.37e-06 | BC=1.05e-05 | 
+IC_n=9.35e-07 | IC_T=1.66e-05 | Total=4.60e-05
+     37.5s | Epoch  5000 | BTE=1.16e-05 | Flux=3.24e-06 | BC=5.03e-06 | 
+IC_n=9.65e-07 | IC_T=5.52e-06 | Total=2.64e-05
+     39.0s | Epoch  5200 | BTE=1.15e-05 | Flux=4.32e-06 | BC=4.08e-06 | 
+IC_n=8.69e-07 | IC_T=5.91e-06 | Total=2.67e-05
+     40.5s | Epoch  5400 | BTE=1.55e-05 | Flux=3.32e-06 | BC=4.46e-06 | 
+IC_n=8.28e-07 | IC_T=1.70e-05 | Total=4.11e-05
+     42.0s | Epoch  5600 | BTE=1.89e-05 | Flux=3.90e-06 | BC=1.93e-05 | 
+IC_n=8.06e-07 | IC_T=3.30e-05 | Total=7.59e-05
+     43.5s | Epoch  5800 | BTE=1.03e-05 | Flux=4.02e-06 | BC=7.95e-06 | 
+IC_n=7.94e-07 | IC_T=4.01e-06 | Total=2.70e-05
+     44.9s | Epoch  6000 | BTE=1.07e-05 | Flux=1.19e-05 | BC=1.19e-05 | 
+IC_n=1.02e-06 | IC_T=5.98e-06 | Total=4.15e-05
+     46.4s | Epoch  6200 | BTE=1.05e-05 | Flux=1.04e-05 | BC=2.09e-06 | 
+IC_n=7.66e-07 | IC_T=3.76e-06 | Total=2.74e-05
+     47.9s | Epoch  6400 | BTE=1.32e-05 | Flux=4.15e-06 | BC=2.48e-06 | 
+IC_n=7.50e-07 | IC_T=1.75e-05 | Total=3.80e-05
+     49.4s | Epoch  6600 | BTE=9.17e-06 | Flux=2.01e-06 | BC=3.39e-06 | 
+IC_n=6.95e-07 | IC_T=4.12e-06 | Total=1.94e-05
+     50.9s | Epoch  6800 | BTE=1.03e-05 | Flux=8.70e-06 | BC=1.59e-05 | 
+IC_n=6.59e-07 | IC_T=4.22e-06 | Total=3.98e-05
+     52.3s | Epoch  7000 | BTE=1.41e-05 | Flux=3.36e-06 | BC=1.25e-05 | 
+IC_n=6.52e-07 | IC_T=2.58e-05 | Total=5.64e-05
+     53.8s | Epoch  7200 | BTE=7.48e-06 | Flux=2.72e-06 | BC=1.69e-06 | 
+IC_n=6.79e-07 | IC_T=2.74e-06 | Total=1.53e-05
+     55.3s | Epoch  7400 | BTE=8.12e-06 | Flux=2.59e-06 | BC=4.03e-06 | 
+IC_n=6.08e-07 | IC_T=4.54e-06 | Total=1.99e-05
+     56.8s | Epoch  7600 | BTE=9.30e-06 | Flux=1.25e-05 | BC=1.63e-06 | 
+IC_n=7.51e-07 | IC_T=3.08e-06 | Total=2.73e-05
+     58.4s | Epoch  7800 | BTE=1.54e-05 | Flux=2.07e-05 | BC=3.76e-05 | 
+IC_n=1.41e-06 | IC_T=5.36e-06 | Total=8.04e-05
+     59.8s | Epoch  8000 | BTE=6.54e-06 | Flux=1.13e-06 | BC=4.20e-06 | 
+IC_n=5.68e-07 | IC_T=3.09e-06 | Total=1.55e-05
+     61.3s | Epoch  8200 | BTE=2.32e-05 | Flux=2.01e-05 | BC=5.84e-05 | 
+IC_n=1.33e-06 | IC_T=4.08e-05 | Total=1.44e-04
+     62.8s | Epoch  8400 | BTE=8.03e-06 | Flux=2.11e-06 | BC=1.37e-05 | 
+IC_n=6.63e-07 | IC_T=2.28e-06 | Total=2.67e-05
+     64.2s | Epoch  8600 | BTE=7.14e-06 | Flux=2.29e-06 | BC=4.79e-06 | 
+IC_n=5.69e-07 | IC_T=5.49e-06 | Total=2.03e-05
+     65.7s | Epoch  8800 | BTE=7.21e-06 | Flux=3.20e-06 | BC=4.92e-07 | 
+IC_n=5.21e-07 | IC_T=5.33e-06 | Total=1.68e-05
+     67.2s | Epoch  9000 | BTE=1.14e-05 | Flux=6.41e-06 | BC=3.26e-05 | 
+IC_n=6.63e-07 | IC_T=2.62e-05 | Total=7.72e-05
+     68.7s | Epoch  9200 | BTE=6.54e-06 | Flux=2.84e-06 | BC=1.02e-06 | 
+IC_n=4.93e-07 | IC_T=5.57e-06 | Total=1.65e-05
+     70.3s | Epoch  9400 | BTE=5.78e-06 | Flux=1.01e-06 | BC=5.19e-06 | 
+IC_n=4.87e-07 | IC_T=3.49e-06 | Total=1.60e-05
+     72.0s | Epoch  9600 | BTE=5.81e-06 | Flux=6.44e-06 | BC=7.41e-07 | 
+IC_n=4.70e-07 | IC_T=3.41e-06 | Total=1.69e-05
+     73.8s | Epoch  9800 | BTE=8.15e-06 | Flux=2.79e-06 | BC=7.72e-06 | 
+IC_n=5.13e-07 | IC_T=8.76e-06 | Total=2.79e-05
+     76.4s | Epoch 10000 | BTE=4.74e-06 | Flux=8.20e-07 | BC=2.29e-06 | 
+IC_n=4.44e-07 | IC_T=1.70e-06 | Total=9.99e-06
+     78.7s | Epoch 10200 | BTE=5.37e-06 | Flux=3.90e-06 | BC=2.76e-06 | 
+IC_n=5.33e-07 | IC_T=1.07e-06 | Total=1.36e-05
+     80.9s | Epoch 10400 | BTE=6.81e-06 | Flux=9.18e-06 | BC=1.71e-05 | 
+IC_n=8.60e-07 | IC_T=3.03e-06 | Total=3.70e-05
+     82.7s | Epoch 10600 | BTE=4.62e-06 | Flux=7.87e-07 | BC=6.58e-07 | 
+IC_n=4.20e-07 | IC_T=1.03e-06 | Total=7.51e-06
+     84.4s | Epoch 10800 | BTE=4.89e-06 | Flux=1.99e-06 | BC=6.31e-06 | 
+IC_n=4.45e-07 | IC_T=1.59e-06 | Total=1.52e-05
+     86.2s | Epoch 11000 | BTE=6.76e-06 | Flux=1.19e-05 | BC=1.97e-06 | 
+IC_n=5.71e-07 | IC_T=2.94e-06 | Total=2.41e-05
+     88.1s | Epoch 11200 | BTE=1.86e-05 | Flux=3.71e-05 | BC=5.97e-05 | 
+IC_n=1.80e-06 | IC_T=1.07e-05 | Total=1.28e-04
+     90.2s | Epoch 11400 | BTE=1.01e-05 | Flux=1.74e-05 | BC=4.58e-05 | 
+IC_n=1.54e-06 | IC_T=4.72e-06 | Total=7.96e-05
+     92.2s | Epoch 11600 | BTE=1.02e-05 | Flux=9.41e-06 | BC=2.43e-05 | 
+IC_n=6.94e-07 | IC_T=1.76e-05 | Total=6.22e-05
+     94.2s | Epoch 11800 | BTE=4.05e-06 | Flux=2.88e-06 | BC=1.23e-06 | 
+IC_n=4.06e-07 | IC_T=7.21e-07 | Total=9.29e-06
+     96.3s | Epoch 12000 | BTE=1.55e-05 | Flux=3.17e-06 | BC=5.60e-05 | 
+IC_n=3.66e-07 | IC_T=3.96e-05 | Total=1.15e-04
+     98.3s | Epoch 12200 | BTE=4.22e-06 | Flux=3.08e-06 | BC=2.24e-06 | 
+IC_n=4.27e-07 | IC_T=5.61e-07 | Total=1.05e-05
+    100.4s | Epoch 12400 | BTE=9.36e-06 | Flux=1.91e-06 | BC=3.71e-05 | 
+IC_n=3.68e-07 | IC_T=1.97e-05 | Total=6.84e-05
+    102.5s | Epoch 12600 | BTE=4.45e-06 | Flux=6.63e-06 | BC=1.70e-05 | 
+IC_n=4.74e-07 | IC_T=4.25e-06 | Total=3.28e-05
+    104.3s | Epoch 12800 | BTE=5.94e-06 | Flux=4.55e-06 | BC=2.25e-05 | 
+IC_n=5.60e-07 | IC_T=2.34e-06 | Total=3.59e-05
+    105.8s | Epoch 13000 | BTE=3.64e-06 | Flux=8.13e-07 | BC=6.83e-07 | 
+IC_n=3.23e-07 | IC_T=1.82e-06 | Total=7.28e-06
+    107.5s | Epoch 13200 | BTE=4.07e-06 | Flux=5.04e-06 | BC=8.57e-06 | 
+IC_n=5.39e-07 | IC_T=4.72e-07 | Total=1.87e-05
+    109.1s | Epoch 13400 | BTE=3.33e-06 | Flux=1.21e-06 | BC=1.10e-06 | 
+IC_n=3.30e-07 | IC_T=7.18e-07 | Total=6.68e-06
+    110.8s | Epoch 13600 | BTE=6.49e-06 | Flux=1.91e-06 | BC=1.04e-05 | 
+IC_n=3.36e-07 | IC_T=7.03e-06 | Total=2.62e-05
+    112.3s | Epoch 13800 | BTE=5.38e-06 | Flux=3.65e-06 | BC=1.60e-05 | 
+IC_n=5.18e-07 | IC_T=2.30e-06 | Total=2.78e-05
+    113.8s | Epoch 14000 | BTE=3.99e-06 | Flux=2.97e-06 | BC=7.45e-06 | 
+IC_n=4.51e-07 | IC_T=1.58e-06 | Total=1.64e-05
+    115.3s | Epoch 14200 | BTE=3.85e-06 | Flux=2.18e-06 | BC=2.02e-06 | 
+IC_n=3.17e-07 | IC_T=1.40e-06 | Total=9.75e-06
+    116.7s | Epoch 14400 | BTE=3.14e-05 | Flux=7.50e-05 | BC=1.37e-04 | 
+IC_n=3.77e-06 | IC_T=2.24e-05 | Total=2.69e-04
+    118.2s | Epoch 14600 | BTE=5.45e-06 | Flux=1.10e-05 | BC=1.50e-05 | 
+IC_n=6.84e-07 | IC_T=2.87e-06 | Total=3.50e-05
+    119.7s | Epoch 14800 | BTE=3.00e-06 | Flux=5.16e-07 | BC=3.54e-06 | 
+IC_n=2.82e-07 | IC_T=1.15e-06 | Total=8.48e-06
+    121.2s | Epoch 15000 | BTE=9.16e-06 | Flux=1.66e-05 | BC=1.86e-05 | 
+IC_n=9.00e-07 | IC_T=7.55e-06 | Total=5.29e-05
+    122.7s | Epoch 15200 | BTE=7.33e-06 | Flux=8.46e-06 | BC=3.41e-06 | 
+IC_n=3.19e-07 | IC_T=3.79e-06 | Total=2.33e-05
+    124.2s | Epoch 15400 | BTE=3.20e-06 | Flux=1.05e-06 | BC=2.35e-06 | 
+IC_n=2.82e-07 | IC_T=1.36e-06 | Total=8.24e-06
+    125.7s | Epoch 15600 | BTE=6.27e-06 | Flux=1.31e-05 | BC=2.26e-05 | 
+IC_n=9.48e-07 | IC_T=2.74e-06 | Total=4.57e-05
+    127.2s | Epoch 15800 | BTE=3.64e-06 | Flux=1.97e-06 | BC=3.28e-06 | 
+IC_n=2.99e-07 | IC_T=1.59e-06 | Total=1.08e-05
+    128.6s | Epoch 16000 | BTE=7.63e-06 | Flux=3.52e-06 | BC=9.06e-06 | 
+IC_n=3.04e-07 | IC_T=1.08e-05 | Total=3.13e-05
+    130.1s | Epoch 16200 | BTE=3.39e-06 | Flux=2.07e-06 | BC=5.25e-06 | 
+IC_n=3.46e-07 | IC_T=8.31e-07 | Total=1.19e-05
+    131.6s | Epoch 16400 | BTE=2.55e-05 | Flux=1.46e-05 | BC=2.50e-05 | 
+IC_n=2.94e-07 | IC_T=4.55e-05 | Total=1.11e-04
+    133.1s | Epoch 16600 | BTE=3.46e-06 | Flux=1.96e-06 | BC=6.28e-07 | 
+IC_n=2.60e-07 | IC_T=2.06e-06 | Total=8.37e-06
+    134.5s | Epoch 16800 | BTE=3.08e-06 | Flux=3.11e-06 | BC=1.56e-05 | 
+IC_n=3.74e-07 | IC_T=2.80e-06 | Total=2.49e-05
+    136.0s | Epoch 17000 | BTE=2.44e-06 | Flux=7.86e-07 | BC=2.62e-06 | 
+IC_n=2.49e-07 | IC_T=2.47e-06 | Total=8.56e-06
+    137.5s | Epoch 17200 | BTE=9.31e-06 | Flux=1.60e-05 | BC=1.41e-05 | 
+IC_n=5.50e-07 | IC_T=1.06e-05 | Total=5.05e-05
+    139.0s | Epoch 17400 | BTE=2.48e-06 | Flux=4.65e-07 | BC=8.34e-07 | 
+IC_n=2.38e-07 | IC_T=2.70e-06 | Total=6.71e-06
+    140.5s | Epoch 17600 | BTE=3.12e-06 | Flux=5.47e-06 | BC=3.68e-06 | 
+IC_n=3.96e-07 | IC_T=4.52e-07 | Total=1.31e-05
+    142.0s | Epoch 17800 | BTE=6.26e-06 | Flux=1.31e-05 | BC=1.65e-05 | 
+IC_n=7.63e-07 | IC_T=1.03e-06 | Total=3.76e-05
+    143.4s | Epoch 18000 | BTE=2.31e-06 | Flux=9.77e-07 | BC=2.02e-06 | 
+IC_n=2.71e-07 | IC_T=2.28e-07 | Total=5.80e-06
+    144.9s | Epoch 18200 | BTE=3.69e-06 | Flux=7.52e-06 | BC=1.19e-05 | 
+IC_n=6.05e-07 | IC_T=2.95e-07 | Total=2.40e-05
+    146.4s | Epoch 18400 | BTE=7.75e-06 | Flux=1.29e-05 | BC=5.01e-06 | 
+IC_n=2.64e-07 | IC_T=8.85e-07 | Total=2.68e-05
+    147.9s | Epoch 18600 | BTE=5.30e-06 | Flux=2.95e-06 | BC=9.32e-06 | 
+IC_n=2.87e-07 | IC_T=5.96e-06 | Total=2.38e-05
+    149.4s | Epoch 18800 | BTE=3.48e-06 | Flux=1.36e-06 | BC=1.06e-05 | 
+IC_n=2.74e-07 | IC_T=4.71e-06 | Total=2.04e-05
+    150.9s | Epoch 19000 | BTE=6.02e-06 | Flux=1.15e-05 | BC=1.38e-05 | 
+IC_n=6.97e-07 | IC_T=1.30e-06 | Total=3.33e-05
+    152.4s | Epoch 19200 | BTE=4.54e-06 | Flux=1.29e-06 | BC=2.94e-06 | 
+IC_n=2.22e-07 | IC_T=6.77e-06 | Total=1.58e-05
+    153.8s | Epoch 19400 | BTE=4.40e-06 | Flux=4.86e-06 | BC=9.20e-06 | 
+IC_n=3.23e-07 | IC_T=1.28e-06 | Total=2.01e-05
+    155.3s | Epoch 19600 | BTE=2.58e-06 | Flux=9.29e-07 | BC=4.68e-07 | 
+IC_n=2.12e-07 | IC_T=8.28e-07 | Total=5.02e-06
+    156.8s | Epoch 19800 | BTE=1.77e-05 | Flux=1.72e-05 | BC=5.95e-05 | 
+IC_n=1.39e-06 | IC_T=3.33e-05 | Total=1.29e-04
+wandb: WARNING Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+wandb: WARNING Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+wandb: WARNING Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+╭───────────────────────────── Training Complete ──────────────────────────────╮
+│   Time      158.28s                                                          │
+│   Output    runs/transient/p136_gray_ttg_control/A0_zhou_fidelity            │
+│   Saved     model0_gray1d_20260816_181743.pt                                 │
+│   Saved     model1_gray1d_20260816_181743.pt                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+wandb: updating run metadata
+wandb: uploading output.log; uploading runs/transient/p136_gray_ttg_control/A0_zhou_fidelity/model0_gray1d_20260816_181743.pt; uploading runs/transient/p136_gray_ttg_control/A0_zhou_fidelity/model1_gray1d_20260816_181743.pt; uploading runs/transient/p136_gray_ttg_control/A0_zhou_fidelity/Loss_gray1d_20260816_181743.txt; uploading config.yaml
+wandb: uploading runs/transient/p136_gray_ttg_control/A0_zhou_fidelity/Loss_gray1d_20260816_181743.txt
+wandb: uploading history steps 18880-19999, summary, console lines 206-224
+wandb: 
+wandb: Run history:
+wandb:         bte █▅▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   heat_flux █▁▁▃▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:        ic_T █▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▂▁▁▁▁▂▁▂▁▁▁▁▁▂▁▂▁▁▂▁▁▁▁▁
+wandb:     ic_fneq █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: periodic_bc █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  total_loss █▄▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               bte 0.0
+wandb:         heat_flux 0.0
+wandb:              ic_T 0.0
+wandb:           ic_fneq 0.0
+wandb:       periodic_bc 0.0
+wandb: physics/local_dir runs/transient/p136_...
+wandb:        total_loss 1e-05
+wandb: 
+wandb: 🚀 View run tr_1d_gray_Kn0.095_eta0.6 · gray1d_20260816_181743 at: https://wandb.ai/m-herkaliuk-igor-sikorsky-kyiv-polytechnic-institute/pinn-bte/runs/s9m62783
+wandb: ⭐️ View project at: https://wandb.ai/m-herkaliuk-igor-sikorsky-kyiv-polytechnic-institute/pinn-bte
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20260816_181745-s9m62783/logs
+[gray-ttg] xi=0.6 window=zhou t_end=3.0000 tau  nt_train=60  gamma_eff=0.367295/tau  gamma_ref=0.367165/tau  gamma_ratio=1.0004  rmse=0.00114  field_rmse=0.00278  A0=0.9991
+[gray-ttg] saved: runs/transient/p136_gray_ttg_control/A0_zhou_fidelity

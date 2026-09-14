@@ -1,0 +1,43 @@
+{
+  "args": {
+    "xi": 0.6,
+    "window": "zhou",
+    "n_decay": 7.0,
+    "window_tau": 3.0,
+    "epochs": 20000,
+    "lr": 0.001,
+    "seed": 42,
+    "nx": 60,
+    "nt_train": 60,
+    "ns": 16,
+    "eval_nt": 801,
+    "eval_nx": 64,
+    "arbiter_nsteps": 12000,
+    "device": "cuda",
+    "outdir": "runs/transient/p136_gray_ttg_control/A0_zhou_fidelity",
+    "no_wandb": false,
+    "tag": "A0_zhou_fidelity"
+  },
+  "derived": {
+    "t_end_tau": 3.0,
+    "nt_train_effective": 60,
+    "gamma_ref_per_tau": 0.3671650368436721,
+    "gamma_dominant_per_tau": 0.12298243175313872,
+    "gamma_window_per_tau": 0.12298243175313872,
+    "gamma_dom_own_window_per_tau": 0.11034885727588357,
+    "gamma_eff_per_tau": 0.36729499789477443,
+    "gamma_ratio": 1.000353958133431,
+    "rmse": 0.0011398304726880197,
+    "field_rmse": 0.0027823158028782644,
+    "A0": 0.9991036783781778,
+    "A_min": 0.7764346502661659,
+    "Kn": 0.0954929658551372,
+    "run_id": "gray1d_20260816_181743",
+    "outdir": "runs/transient/p136_gray_ttg_control/A0_zhou_fidelity",
+    "device": "cuda",
+    "wall_s": 162.46483206748962,
+    "git_sha": "f39de4f56741deedd65f3b53bfe1c76b8f4d5b56",
+    "dt_train_tau": 0.05084745762711865,
+    "zhou_dt_train_max_tau": 0.05
+  }
+}

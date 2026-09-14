@@ -1,0 +1,10 @@
+L_um	geometry	seed	mode_source	outdir	exit
+0.1	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L0.1_1d	0
+100.0	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L100.0_1d	0
+0.01	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L0.01_1d	0
+1.0	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L1.0_1d	0
+10.0	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L10.0_1d	0
+0.3	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L0.3_1d	0
+0.5	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L0.5_1d	0
+0.7	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L0.7_1d	0
+1.5	1d	42	joint-sumrule	data/runs/pn_sumrule_ladder_1d/ladder_L1.5_1d	0

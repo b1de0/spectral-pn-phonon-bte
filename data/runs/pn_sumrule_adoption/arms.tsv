@@ -1,0 +1,23 @@
+kind	label	L_um	geometry	seed	lmax	epochs	extra_flags	saved_dir	exit
+seed	seedrep_L0.1_1d_s0	0.1	1d	0	8	60000	xihybrid ugks corridor final	data/runs/pn_sumrule_adoption/seedrep_L0.1_1d_s0	0
+seed	seedrep_L0.1_2d_s0	0.1	2d	0	8	60000	xihybrid ugks corridor final	data/runs/pn_sumrule_adoption/seedrep_L0.1_2d_s0	0
+seed	seedrep_L0.1_1d_s1	0.1	1d	1	8	60000	xihybrid ugks corridor final	data/runs/pn_sumrule_adoption/seedrep_L0.1_1d_s1	0
+seed	seedrep_L0.1_2d_s1	0.1	2d	1	8	60000	xihybrid ugks corridor final	data/runs/pn_sumrule_adoption/seedrep_L0.1_2d_s1	0
+seed	seedrep_L1.0_1d_s0	1.0	1d	0	8	60000	xihybrid ugks corridor final	data/runs/pn_sumrule_adoption/seedrep_L1.0_1d_s0	0
+seed	seedrep_L1.0_1d_s1	1.0	1d	1	8	60000	xihybrid ugks corridor final	data/runs/pn_sumrule_adoption/seedrep_L1.0_1d_s1	0
+ablation	C8_L10_plain	10.0	1d	42	8	20000	--formulation plain	data/runs/pn_sumrule_adoption/C8_L10_plain	0
+ablation	C9_L0.1_ce	0.1	1d	42	8	20000	--formulation ce	data/runs/pn_sumrule_adoption/C9_L0.1_ce	0
+ablation	C2_L0.01_plain	0.01	1d	42	8	20000	--formulation plain	data/runs/pn_sumrule_adoption/C2_L0.01_plain	0
+ablation	C1_L0.01_duhamel	0.01	1d	42	8	20000	--formulation plain --duhamel	data/runs/pn_sumrule_adoption/C1_L0.01_duhamel	0
+ablation	C7_L10_ce	10.0	1d	42	8	20000	--formulation ce	data/runs/pn_sumrule_adoption/C7_L10_ce	0
+ablation	C6_L0.1_duhamel	0.1	1d	42	8	20000	--formulation plain --duhamel	data/runs/pn_sumrule_adoption/C6_L0.1_duhamel	0
+ablation	C10_L1.0_ce	1.0	1d	42	8	20000	--formulation ce	data/runs/pn_sumrule_adoption/C10_L1.0_ce	0
+ablation	C3_L1.0_plain_s42	1.0	1d	42	8	20000	--formulation plain	data/runs/pn_sumrule_adoption/C3_L1.0_plain_s42	0
+ablation	C3_L1.0_plain_s0	1.0	1d	0	8	20000	--formulation plain	data/runs/pn_sumrule_adoption/C3_L1.0_plain_s0	0
+ablation	C3_L1.0_plain_s1	1.0	1d	1	8	20000	--formulation plain	data/runs/pn_sumrule_adoption/C3_L1.0_plain_s1	0
+ablation	C7_L100_ce	100.0	1d	42	8	20000	--formulation ce	data/runs/pn_sumrule_adoption/C7_L100_ce	0
+ablation	C5_L0.1_plain_lmax16	0.1	1d	42	16	20000	--formulation plain	data/runs/pn_sumrule_adoption/C5_L0.1_plain_lmax16	0
+ablation	C43_L0.01_ce	0.01	1d	42	8	20000	--formulation ce	data/runs/pn_sumrule_adoption/C43_L0.01_ce	0
+ablation	C44_L1.0_duhamel	1.0	1d	42	8	20000	--formulation plain --duhamel	data/runs/pn_sumrule_adoption/C44_L1.0_duhamel	0
+ablation	C44_L10.0_duhamel	10.0	1d	42	8	20000	--formulation plain --duhamel	data/runs/pn_sumrule_adoption/C44_L10.0_duhamel	0
+ablation	C44_L100.0_duhamel	100.0	1d	42	8	20000	--formulation plain --duhamel	data/runs/pn_sumrule_adoption/C44_L100.0_duhamel	0

@@ -1,0 +1,43 @@
+{
+  "args": {
+    "xi": 36.0,
+    "window": "ndecay",
+    "n_decay": 7.0,
+    "window_tau": null,
+    "epochs": 20000,
+    "lr": 0.001,
+    "seed": 42,
+    "nx": 60,
+    "nt_train": 0,
+    "ns": 16,
+    "eval_nt": 801,
+    "eval_nx": 64,
+    "arbiter_nsteps": 12000,
+    "device": "cuda",
+    "outdir": "runs/transient/p136_gray_ttg_control/A3_xi36",
+    "no_wandb": false,
+    "tag": "A3_xi36"
+  },
+  "derived": {
+    "t_end_tau": 0.19444444444444445,
+    "nt_train_effective": 60,
+    "gamma_ref_per_tau": 15.693610768764703,
+    "gamma_dominant_per_tau": null,
+    "gamma_window_per_tau": 36.0,
+    "gamma_dom_own_window_per_tau": 15.693610768764703,
+    "gamma_eff_per_tau": 15.656734889855938,
+    "gamma_ratio": 0.9976502616604868,
+    "rmse": 0.1092299517376322,
+    "field_rmse": 0.07853753779525,
+    "A0": 0.8392485815303274,
+    "A_min": -0.07570033928277817,
+    "Kn": 5.729577951308232,
+    "run_id": "gray1d_20260816_182308",
+    "outdir": "runs/transient/p136_gray_ttg_control/A3_xi36",
+    "device": "cuda",
+    "wall_s": 153.54300236701965,
+    "git_sha": "f39de4f56741deedd65f3b53bfe1c76b8f4d5b56",
+    "dt_train_tau": 0.003295668549905838,
+    "zhou_dt_train_max_tau": 0.05
+  }
+}

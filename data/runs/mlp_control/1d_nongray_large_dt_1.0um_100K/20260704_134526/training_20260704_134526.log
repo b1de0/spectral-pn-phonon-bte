@@ -1,0 +1,280 @@
+PINN-BTE Training Log
+Run ID: 20260704_134526
+Started: 2026-07-04T13:45:30.659267
+======================================================================
+
+                    INFO     Logging to:                                        
+                             runs/transient/1d_nongray_large_dt_1.0um_100K/20260
+                             704_134526/training_20260704_134526.log            
+                    INFO     Logging to:                                        
+                             runs/transient/1d_nongray_large_dt_1.0um_100K/20260
+                             704_134526/training_20260704_134526.log            
+[07/04/26 13:45:31] INFO     Started W&B run: tr_1d_ng_L1.0um_dT100K ·          
+                             20260704_134526 (x0tlo0sw)                         
+[07/04/26 13:45:31] INFO     Started W&B run: tr_1d_ng_L1.0um_dT100K ·          
+                             20260704_134526 (x0tlo0sw)                         
+
+Phase 1: Pretraining β-network
+  Temperature range: [250K, 350K]
+  Epochs: 200
+     0.2s | Epoch     0 | β Loss = 3.15e+00
+  β pretraining complete! Final loss: 6.90e-01
+╭───────────────────────────── Starting Training ──────────────────────────────╮
+│   Mode      Transient_Nongray_LargeDT                                        │
+│   Epochs    15000                                                            │
+│   Device    cuda                                                             │
+│   Run ID    20260704_134526                                                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Phase 2: BTE Training
+  L = 1.0 μm, ΔT = 100.0K
+  T range: [250K, 350K]
+  Kn_eff = 0.1015
+  τ(T) model = holland (full branch-resolved Holland--Callaway)
+  Waypoints: 5 (uniform), weight=0.0
+  ALL 60 modes × ALL 16 angles (vectorized)
+  Epochs: 15000
+     0.9s | Epoch     0 | BTE=6.96e+00 | Energy=1.27e+00 | BC=1.36e-05 | 
+IC_n=1.92e-04 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.10e+01 | GE=4.13e-04 | 
+Amp=0.00e+00 | Total=1.93e+01
+    92.2s | Epoch   200 | BTE=2.73e+00 | Energy=1.67e+00 | BC=1.44e-02 | 
+IC_n=3.18e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=5.27e+00 | GE=1.14e-04 | 
+Amp=0.00e+00 | Total=9.71e+00
+   184.3s | Epoch   400 | BTE=2.12e+00 | Energy=1.42e+00 | BC=3.66e-02 | 
+IC_n=3.80e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.77e+00 | GE=1.61e-05 | 
+Amp=0.00e+00 | Total=8.38e+00
+   274.3s | Epoch   600 | BTE=2.04e+00 | Energy=1.37e+00 | BC=4.10e-02 | 
+IC_n=3.51e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.75e+00 | GE=4.96e-04 | 
+Amp=0.00e+00 | Total=8.24e+00
+   365.3s | Epoch   800 | BTE=1.92e+00 | Energy=1.34e+00 | BC=4.45e-02 | 
+IC_n=3.36e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.59e+00 | GE=1.76e-05 | 
+Amp=0.00e+00 | Total=7.94e+00
+   455.6s | Epoch  1000 | BTE=1.97e+00 | Energy=1.23e+00 | BC=4.16e-02 | 
+IC_n=2.93e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.64e+00 | GE=2.64e-05 | 
+Amp=0.00e+00 | Total=7.91e+00
+   546.9s | Epoch  1200 | BTE=1.88e+00 | Energy=1.07e+00 | BC=3.85e-02 | 
+IC_n=2.80e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.56e+00 | GE=7.87e-07 | 
+Amp=0.00e+00 | Total=7.58e+00
+   636.3s | Epoch  1400 | BTE=1.80e+00 | Energy=1.01e+00 | BC=3.65e-02 | 
+IC_n=2.76e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.50e+00 | GE=9.15e-05 | 
+Amp=0.00e+00 | Total=7.37e+00
+   726.2s | Epoch  1600 | BTE=1.70e+00 | Energy=9.44e-01 | BC=3.45e-02 | 
+IC_n=2.67e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.40e+00 | GE=8.39e-05 | 
+Amp=0.00e+00 | Total=7.11e+00
+   817.6s | Epoch  1800 | BTE=1.65e+00 | Energy=9.15e-01 | BC=3.64e-02 | 
+IC_n=2.94e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.29e+00 | GE=8.06e-05 | 
+Amp=0.00e+00 | Total=6.93e+00
+   907.9s | Epoch  2000 | BTE=1.72e+00 | Energy=8.84e-01 | BC=3.36e-02 | 
+IC_n=2.44e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.38e+00 | GE=2.86e-05 | 
+Amp=0.00e+00 | Total=7.04e+00
+   999.4s | Epoch  2200 | BTE=1.67e+00 | Energy=9.39e-01 | BC=3.48e-02 | 
+IC_n=2.10e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.26e+00 | GE=9.88e-05 | 
+Amp=0.00e+00 | Total=6.93e+00
+  1090.0s | Epoch  2400 | BTE=1.66e+00 | Energy=8.93e-01 | BC=3.55e-02 | 
+IC_n=1.91e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.39e+00 | GE=3.18e-05 | 
+Amp=0.00e+00 | Total=7.00e+00
+  1180.8s | Epoch  2600 | BTE=1.69e+00 | Energy=8.30e-01 | BC=3.63e-02 | 
+IC_n=1.95e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.33e+00 | GE=5.51e-05 | 
+Amp=0.00e+00 | Total=6.91e+00
+  1271.7s | Epoch  2800 | BTE=1.60e+00 | Energy=8.26e-01 | BC=3.69e-02 | 
+IC_n=1.68e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.23e+00 | GE=2.06e-05 | 
+Amp=0.00e+00 | Total=6.72e+00
+  1362.4s | Epoch  3000 | BTE=1.58e+00 | Energy=8.35e-01 | BC=3.94e-02 | 
+IC_n=1.86e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.19e+00 | GE=1.01e-04 | 
+Amp=0.00e+00 | Total=6.66e+00
+  1453.4s | Epoch  3200 | BTE=1.62e+00 | Energy=8.13e-01 | BC=3.76e-02 | 
+IC_n=1.45e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.15e+00 | GE=1.27e-10 | 
+Amp=0.00e+00 | Total=6.63e+00
+  1543.9s | Epoch  3400 | BTE=1.63e+00 | Energy=7.48e-01 | BC=3.71e-02 | 
+IC_n=1.47e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.14e+00 | GE=2.78e-04 | 
+Amp=0.00e+00 | Total=6.58e+00
+  1634.6s | Epoch  3600 | BTE=1.52e+00 | Energy=7.44e-01 | BC=3.77e-02 | 
+IC_n=1.55e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.09e+00 | GE=2.98e-04 | 
+Amp=0.00e+00 | Total=6.41e+00
+  1725.9s | Epoch  3800 | BTE=1.45e+00 | Energy=7.74e-01 | BC=3.78e-02 | 
+IC_n=1.13e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.03e+00 | GE=1.19e-04 | 
+Amp=0.00e+00 | Total=6.30e+00
+  1816.1s | Epoch  4000 | BTE=1.52e+00 | Energy=7.00e-01 | BC=3.69e-02 | 
+IC_n=1.10e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=4.00e+00 | GE=2.42e-04 | 
+Amp=0.00e+00 | Total=6.27e+00
+  1906.6s | Epoch  4200 | BTE=1.54e+00 | Energy=6.84e-01 | BC=3.81e-02 | 
+IC_n=1.10e-02 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.99e+00 | GE=1.79e-04 | 
+Amp=0.00e+00 | Total=6.26e+00
+  1997.8s | Epoch  4400 | BTE=1.34e+00 | Energy=7.26e-01 | BC=4.20e-02 | 
+IC_n=9.31e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.91e+00 | GE=2.80e-06 | 
+Amp=0.00e+00 | Total=6.03e+00
+  2088.1s | Epoch  4600 | BTE=1.52e+00 | Energy=6.56e-01 | BC=4.04e-02 | 
+IC_n=9.10e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.91e+00 | GE=9.35e-05 | 
+Amp=0.00e+00 | Total=6.14e+00
+  2180.0s | Epoch  4800 | BTE=1.38e+00 | Energy=6.08e-01 | BC=4.11e-02 | 
+IC_n=9.39e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.86e+00 | GE=1.45e-04 | 
+Amp=0.00e+00 | Total=5.90e+00
+  2270.9s | Epoch  5000 | BTE=1.37e+00 | Energy=6.42e-01 | BC=4.21e-02 | 
+IC_n=8.17e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.77e+00 | GE=4.84e-05 | 
+Amp=0.00e+00 | Total=5.84e+00
+  2362.6s | Epoch  5200 | BTE=1.42e+00 | Energy=6.14e-01 | BC=4.30e-02 | 
+IC_n=7.95e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.78e+00 | GE=1.14e-04 | 
+Amp=0.00e+00 | Total=5.87e+00
+  2454.5s | Epoch  5400 | BTE=1.36e+00 | Energy=6.07e-01 | BC=4.35e-02 | 
+IC_n=7.46e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.73e+00 | GE=7.42e-05 | 
+Amp=0.00e+00 | Total=5.75e+00
+  2544.8s | Epoch  5600 | BTE=1.32e+00 | Energy=5.99e-01 | BC=4.54e-02 | 
+IC_n=8.07e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.75e+00 | GE=1.05e-04 | 
+Amp=0.00e+00 | Total=5.72e+00
+  2635.5s | Epoch  5800 | BTE=1.35e+00 | Energy=5.76e-01 | BC=4.32e-02 | 
+IC_n=4.80e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.73e+00 | GE=1.82e-05 | 
+Amp=0.00e+00 | Total=5.71e+00
+  2725.8s | Epoch  6000 | BTE=1.38e+00 | Energy=6.06e-01 | BC=4.48e-02 | 
+IC_n=4.89e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.70e+00 | GE=2.50e-04 | 
+Amp=0.00e+00 | Total=5.73e+00
+  2816.0s | Epoch  6200 | BTE=1.27e+00 | Energy=5.98e-01 | BC=4.43e-02 | 
+IC_n=5.61e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.76e+00 | GE=1.49e-05 | 
+Amp=0.00e+00 | Total=5.68e+00
+  2906.9s | Epoch  6400 | BTE=1.38e+00 | Energy=5.94e-01 | BC=4.46e-02 | 
+IC_n=4.81e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.72e+00 | GE=2.03e-06 | 
+Amp=0.00e+00 | Total=5.74e+00
+  2997.0s | Epoch  6600 | BTE=1.37e+00 | Energy=5.89e-01 | BC=4.40e-02 | 
+IC_n=3.90e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.78e+00 | GE=7.73e-05 | 
+Amp=0.00e+00 | Total=5.79e+00
+  3088.1s | Epoch  6800 | BTE=1.34e+00 | Energy=5.54e-01 | BC=4.42e-02 | 
+IC_n=4.20e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.73e+00 | GE=8.27e-06 | 
+Amp=0.00e+00 | Total=5.67e+00
+  3179.3s | Epoch  7000 | BTE=1.33e+00 | Energy=5.50e-01 | BC=4.35e-02 | 
+IC_n=5.05e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.80e+00 | GE=2.44e-05 | 
+Amp=0.00e+00 | Total=5.73e+00
+  3271.1s | Epoch  7200 | BTE=1.24e+00 | Energy=5.48e-01 | BC=4.42e-02 | 
+IC_n=4.95e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.67e+00 | GE=7.53e-05 | 
+Amp=0.00e+00 | Total=5.51e+00
+  3361.0s | Epoch  7400 | BTE=1.26e+00 | Energy=5.38e-01 | BC=4.54e-02 | 
+IC_n=4.79e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.74e+00 | GE=1.93e-04 | 
+Amp=0.00e+00 | Total=5.58e+00
+  3451.6s | Epoch  7600 | BTE=1.33e+00 | Energy=5.10e-01 | BC=4.14e-02 | 
+IC_n=3.88e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.81e+00 | GE=2.89e-04 | 
+Amp=0.00e+00 | Total=5.70e+00
+  3542.8s | Epoch  7800 | BTE=1.29e+00 | Energy=5.08e-01 | BC=4.31e-02 | 
+IC_n=3.16e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.75e+00 | GE=6.26e-04 | 
+Amp=0.00e+00 | Total=5.59e+00
+  3632.1s | Epoch  8000 | BTE=1.33e+00 | Energy=5.74e-01 | BC=4.41e-02 | 
+IC_n=2.94e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.69e+00 | GE=5.01e-05 | 
+Amp=0.00e+00 | Total=5.64e+00
+  3722.8s | Epoch  8200 | BTE=1.26e+00 | Energy=5.30e-01 | BC=4.42e-02 | 
+IC_n=4.12e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.71e+00 | GE=1.48e-04 | 
+Amp=0.00e+00 | Total=5.55e+00
+  3813.4s | Epoch  8400 | BTE=1.29e+00 | Energy=5.04e-01 | BC=4.58e-02 | 
+IC_n=2.86e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.73e+00 | GE=1.80e-04 | 
+Amp=0.00e+00 | Total=5.57e+00
+  3904.9s | Epoch  8600 | BTE=1.25e+00 | Energy=5.52e-01 | BC=4.42e-02 | 
+IC_n=3.14e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.65e+00 | GE=8.87e-06 | 
+Amp=0.00e+00 | Total=5.50e+00
+  3995.3s | Epoch  8800 | BTE=1.21e+00 | Energy=5.40e-01 | BC=4.29e-02 | 
+IC_n=3.37e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.63e+00 | GE=2.27e-04 | 
+Amp=0.00e+00 | Total=5.42e+00
+  4086.8s | Epoch  9000 | BTE=1.21e+00 | Energy=4.84e-01 | BC=4.13e-02 | 
+IC_n=3.85e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.57e+00 | GE=1.81e-04 | 
+Amp=0.00e+00 | Total=5.31e+00
+  4178.2s | Epoch  9200 | BTE=1.21e+00 | Energy=4.54e-01 | BC=4.25e-02 | 
+IC_n=2.93e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.55e+00 | GE=2.99e-04 | 
+Amp=0.00e+00 | Total=5.26e+00
+  4270.2s | Epoch  9400 | BTE=1.10e+00 | Energy=4.78e-01 | BC=4.16e-02 | 
+IC_n=3.13e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.37e+00 | GE=3.06e-05 | 
+Amp=0.00e+00 | Total=4.99e+00
+  4361.5s | Epoch  9600 | BTE=1.04e+00 | Energy=4.80e-01 | BC=3.84e-02 | 
+IC_n=3.25e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.21e+00 | GE=4.38e-05 | 
+Amp=0.00e+00 | Total=4.76e+00
+  4452.4s | Epoch  9800 | BTE=1.03e+00 | Energy=4.44e-01 | BC=3.84e-02 | 
+IC_n=2.87e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=3.13e+00 | GE=1.75e-05 | 
+Amp=0.00e+00 | Total=4.65e+00
+  4542.6s | Epoch 10000 | BTE=1.03e+00 | Energy=4.35e-01 | BC=3.53e-02 | 
+IC_n=2.81e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.86e+00 | GE=8.00e-05 | 
+Amp=0.00e+00 | Total=4.36e+00
+  4634.3s | Epoch 10200 | BTE=9.73e-01 | Energy=3.83e-01 | BC=3.38e-02 | 
+IC_n=3.34e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.76e+00 | GE=1.21e-04 | 
+Amp=0.00e+00 | Total=4.16e+00
+  4725.7s | Epoch 10400 | BTE=9.94e-01 | Energy=3.69e-01 | BC=3.33e-02 | 
+IC_n=2.86e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.68e+00 | GE=4.90e-08 | 
+Amp=0.00e+00 | Total=4.08e+00
+  4816.7s | Epoch 10600 | BTE=9.00e-01 | Energy=3.45e-01 | BC=3.12e-02 | 
+IC_n=2.59e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.46e+00 | GE=1.64e-04 | 
+Amp=0.00e+00 | Total=3.74e+00
+  4908.7s | Epoch 10800 | BTE=8.37e-01 | Energy=3.32e-01 | BC=2.92e-02 | 
+IC_n=2.58e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.42e+00 | GE=1.60e-05 | 
+Amp=0.00e+00 | Total=3.62e+00
+  4999.4s | Epoch 11000 | BTE=7.76e-01 | Energy=3.10e-01 | BC=2.81e-02 | 
+IC_n=2.25e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.24e+00 | GE=2.68e-04 | 
+Amp=0.00e+00 | Total=3.36e+00
+  5089.3s | Epoch 11200 | BTE=7.59e-01 | Energy=3.21e-01 | BC=2.74e-02 | 
+IC_n=2.35e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.12e+00 | GE=6.16e-07 | 
+Amp=0.00e+00 | Total=3.23e+00
+  5180.6s | Epoch 11400 | BTE=7.62e-01 | Energy=2.86e-01 | BC=2.53e-02 | 
+IC_n=2.15e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=2.00e+00 | GE=6.68e-07 | 
+Amp=0.00e+00 | Total=3.07e+00
+  5270.4s | Epoch 11600 | BTE=6.86e-01 | Energy=2.84e-01 | BC=2.43e-02 | 
+IC_n=2.49e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.84e+00 | GE=4.59e-05 | 
+Amp=0.00e+00 | Total=2.84e+00
+  5361.9s | Epoch 11800 | BTE=7.15e-01 | Energy=2.57e-01 | BC=2.33e-02 | 
+IC_n=2.92e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.78e+00 | GE=2.80e-07 | 
+Amp=0.00e+00 | Total=2.78e+00
+  5452.3s | Epoch 12000 | BTE=6.41e-01 | Energy=2.37e-01 | BC=2.20e-02 | 
+IC_n=2.42e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.70e+00 | GE=1.35e-05 | 
+Amp=0.00e+00 | Total=2.61e+00
+  5542.8s | Epoch 12200 | BTE=6.68e-01 | Energy=2.35e-01 | BC=2.11e-02 | 
+IC_n=2.34e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.63e+00 | GE=9.72e-05 | 
+Amp=0.00e+00 | Total=2.56e+00
+  5634.1s | Epoch 12400 | BTE=6.19e-01 | Energy=2.33e-01 | BC=2.01e-02 | 
+IC_n=2.11e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.56e+00 | GE=4.60e-05 | 
+Amp=0.00e+00 | Total=2.43e+00
+  5726.4s | Epoch 12600 | BTE=5.51e-01 | Energy=2.07e-01 | BC=1.90e-02 | 
+IC_n=2.14e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.47e+00 | GE=1.60e-05 | 
+Amp=0.00e+00 | Total=2.24e+00
+  5817.9s | Epoch 12800 | BTE=5.76e-01 | Energy=1.97e-01 | BC=1.87e-02 | 
+IC_n=2.18e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.41e+00 | GE=7.04e-05 | 
+Amp=0.00e+00 | Total=2.20e+00
+  5909.0s | Epoch 13000 | BTE=6.00e-01 | Energy=1.90e-01 | BC=1.80e-02 | 
+IC_n=1.92e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.35e+00 | GE=6.87e-08 | 
+Amp=0.00e+00 | Total=2.16e+00
+  5998.7s | Epoch 13200 | BTE=5.84e-01 | Energy=1.84e-01 | BC=1.75e-02 | 
+IC_n=2.31e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.31e+00 | GE=1.14e-04 | 
+Amp=0.00e+00 | Total=2.10e+00
+  6089.7s | Epoch 13400 | BTE=5.54e-01 | Energy=1.72e-01 | BC=1.70e-02 | 
+IC_n=2.22e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.29e+00 | GE=2.08e-04 | 
+Amp=0.00e+00 | Total=2.03e+00
+  6180.5s | Epoch 13600 | BTE=5.80e-01 | Energy=1.79e-01 | BC=1.68e-02 | 
+IC_n=2.07e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.29e+00 | GE=1.71e-05 | 
+Amp=0.00e+00 | Total=2.07e+00
+  6269.3s | Epoch 13800 | BTE=5.80e-01 | Energy=1.81e-01 | BC=1.65e-02 | 
+IC_n=1.97e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.21e+00 | GE=5.60e-07 | 
+Amp=0.00e+00 | Total=1.99e+00
+  6361.4s | Epoch 14000 | BTE=5.55e-01 | Energy=1.73e-01 | BC=1.62e-02 | 
+IC_n=1.97e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.25e+00 | GE=6.29e-06 | 
+Amp=0.00e+00 | Total=1.99e+00
+  6452.9s | Epoch 14200 | BTE=5.39e-01 | Energy=1.64e-01 | BC=1.65e-02 | 
+IC_n=2.02e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.20e+00 | GE=9.23e-05 | 
+Amp=0.00e+00 | Total=1.92e+00
+  6544.0s | Epoch 14400 | BTE=5.06e-01 | Energy=1.65e-01 | BC=1.62e-02 | 
+IC_n=1.82e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.18e+00 | GE=3.50e-05 | 
+Amp=0.00e+00 | Total=1.87e+00
+  6634.9s | Epoch 14600 | BTE=5.98e-01 | Energy=1.67e-01 | BC=1.61e-02 | 
+IC_n=1.99e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.17e+00 | GE=1.48e-04 | 
+Amp=0.00e+00 | Total=1.95e+00
+  6725.8s | Epoch 14800 | BTE=5.24e-01 | Energy=1.66e-01 | BC=1.60e-02 | 
+IC_n=2.04e-03 | IC_T=0.00e+00 | dT=0.00e+00 | WP=1.18e+00 | GE=1.11e-04 | 
+Amp=0.00e+00 | Total=1.89e+00
+╭───────────────────────────── Training Complete ──────────────────────────────╮
+│   Time      6815.33s                                                         │
+│   Output    runs/transient/1d_nongray_large_dt_1.0um_100K/20260704_134526    │
+│   Saved     net_T_20260704_134526.pt                                         │
+│   Saved     net_n_20260704_134526.pt                                         │
+│   Saved     net_beta_20260704_134526.pt                                      │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Results saved to: 
+runs/transient/1d_nongray_large_dt_1.0um_100K/20260704_134526/20260704_134526_re
+sults.npz
+  Generating visualizations...
+  Amplitude: A(0)=50.0000, A(end)=4.9040 (90.2% decay)
+  Energy drift: 0.0619
+  ⚠ Oscillation at t≈44τ
+  Saved: 
+runs/transient/1d_nongray_large_dt_1.0um_100K/20260704_134526/amplitude_decay_20
+260704_134526.png
+
+Done!

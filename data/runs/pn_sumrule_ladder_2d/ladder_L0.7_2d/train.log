@@ -1,0 +1,731 @@
+[spectral-pn] case: L=0.7 um, Nk=20, L_max=8, run=20260909_055308
+[spectral-pn] window t_end=3.136e-09 s (465.1 tau_ref), gamma_dom=2.2320e+09 Hz
+[spectral-pn] window mode=n_decay rule=n_decay (t_1% at 0.01*A0: nan s; n_dec=7/gamma_dom: 3.1361e-09 s)
+  epoch      0  residual 5.712e-02
+  epoch    250  residual 8.234e-04
+  epoch    500  residual 3.267e-04
+  epoch    750  residual 1.718e-04
+  epoch   1000  residual 1.311e-04
+  epoch   1250  residual 2.358e-04
+  epoch   1500  residual 5.750e-05
+  epoch   1750  residual 4.294e-05
+  epoch   2000  residual 3.602e-05
+  epoch   2250  residual 2.666e-05
+  epoch   2500  residual 2.202e-05
+  epoch   2750  residual 2.230e-05
+  epoch   3000  residual 1.800e-05
+  epoch   3250  residual 1.388e-05
+  epoch   3500  residual 1.259e-05
+  epoch   3750  residual 1.102e-05
+  epoch   4000  residual 1.021e-05
+  epoch   4250  residual 9.365e-06
+  epoch   4500  residual 8.184e-06
+  epoch   4750  residual 7.041e-05
+  epoch   5000  residual 1.251e-05
+  epoch   5250  residual 3.894e-05
+  epoch   5500  residual 4.399e-05
+  epoch   5750  residual 6.346e-06
+  epoch   6000  residual 5.036e-06
+  epoch   6250  residual 4.600e-06
+  epoch   6500  residual 5.383e-06
+  epoch   6750  residual 6.808e-06
+  epoch   7000  residual 4.280e-06
+  epoch   7250  residual 1.018e-05
+  epoch   7500  residual 3.442e-06
+  epoch   7750  residual 6.134e-06
+  epoch   8000  residual 3.669e-06
+  epoch   8250  residual 9.093e-06
+  epoch   8500  residual 3.440e-06
+  epoch   8750  residual 6.319e-06
+  epoch   9000  residual 1.028e-05
+  epoch   9250  residual 3.907e-06
+  epoch   9500  residual 5.349e-06
+  epoch   9750  residual 2.478e-06
+  epoch  10000  residual 2.393e-05
+  epoch  10250  residual 2.128e-06
+  epoch  10500  residual 1.227e-05
+  epoch  10750  residual 3.035e-06
+  epoch  11000  residual 1.544e-05
+  epoch  11250  residual 2.035e-06
+  epoch  11500  residual 1.874e-06
+  epoch  11750  residual 2.008e-06
+  epoch  12000  residual 1.334e-05
+  epoch  12250  residual 2.408e-06
+  epoch  12500  residual 1.732e-06
+  epoch  12750  residual 1.505e-06
+  epoch  13000  residual 1.558e-06
+  epoch  13250  residual 3.564e-06
+  epoch  13500  residual 2.650e-06
+  epoch  13750  residual 1.314e-06
+  epoch  14000  residual 1.769e-06
+  epoch  14250  residual 1.261e-06
+  epoch  14500  residual 3.393e-06
+  epoch  14750  residual 6.589e-06
+  epoch  15000  residual 1.441e-06
+  epoch  15250  residual 1.163e-06
+  epoch  15500  residual 1.066e-06
+  epoch  15750  residual 2.140e-06
+  epoch  16000  residual 1.304e-06
+  epoch  16250  residual 6.312e-06
+  epoch  16500  residual 1.192e-05
+  epoch  16750  residual 1.053e-06
+  epoch  17000  residual 1.158e-06
+  epoch  17250  residual 1.035e-06
+  epoch  17500  residual 9.403e-07
+  epoch  17750  residual 1.352e-06
+  epoch  18000  residual 2.455e-06
+  epoch  18250  residual 1.033e-05
+  epoch  18500  residual 8.216e-07
+  epoch  18750  residual 1.101e-06
+  epoch  19000  residual 1.065e-06
+  epoch  19250  residual 1.016e-06
+  epoch  19500  residual 6.234e-06
+  epoch  19750  residual 9.395e-07
+  epoch  20000  residual 1.208e-06
+  epoch  20250  residual 7.161e-07
+  epoch  20500  residual 1.429e-06
+  epoch  20750  residual 3.904e-06
+  epoch  21000  residual 2.684e-06
+  epoch  21250  residual 1.299e-06
+  epoch  21500  residual 7.186e-07
+  epoch  21750  residual 6.698e-07
+  epoch  22000  residual 2.195e-06
+  epoch  22250  residual 1.285e-06
+  epoch  22500  residual 1.045e-06
+  epoch  22750  residual 1.392e-06
+  epoch  23000  residual 1.240e-06
+  epoch  23250  residual 9.641e-07
+  epoch  23500  residual 8.474e-07
+  epoch  23750  residual 2.794e-06
+  epoch  24000  residual 5.588e-07
+  epoch  24250  residual 3.711e-06
+  epoch  24500  residual 5.279e-06
+  epoch  24750  residual 5.735e-07
+  epoch  25000  residual 1.156e-06
+  epoch  25250  residual 1.356e-05
+  epoch  25500  residual 6.721e-07
+  epoch  25750  residual 5.487e-07
+  epoch  26000  residual 5.924e-06
+  epoch  26250  residual 6.984e-06
+  epoch  26500  residual 7.868e-07
+  epoch  26750  residual 9.491e-07
+  epoch  27000  residual 6.873e-07
+  epoch  27250  residual 5.564e-07
+  epoch  27500  residual 1.161e-06
+  epoch  27750  residual 5.021e-07
+  epoch  28000  residual 4.486e-07
+  epoch  28250  residual 5.173e-07
+  epoch  28500  residual 4.792e-07
+  epoch  28750  residual 5.052e-07
+  epoch  29000  residual 2.642e-06
+  epoch  29250  residual 4.102e-07
+  epoch  29500  residual 4.216e-07
+  epoch  29750  residual 5.640e-07
+  epoch  30000  residual 1.686e-06
+  epoch  30250  residual 1.017e-06
+  epoch  30500  residual 4.372e-07
+  epoch  30750  residual 4.114e-07
+  epoch  31000  residual 5.603e-07
+  epoch  31250  residual 4.133e-07
+  epoch  31500  residual 1.181e-06
+  epoch  31750  residual 5.140e-07
+  epoch  32000  residual 3.769e-07
+  epoch  32250  residual 4.313e-07
+  epoch  32500  residual 4.045e-07
+  epoch  32750  residual 4.975e-07
+  epoch  33000  residual 4.600e-07
+  epoch  33250  residual 4.150e-07
+  epoch  33500  residual 4.095e-07
+  epoch  33750  residual 1.449e-06
+  epoch  34000  residual 5.256e-06
+  epoch  34250  residual 1.043e-06
+  epoch  34500  residual 6.015e-07
+  epoch  34750  residual 4.031e-07
+  epoch  35000  residual 3.523e-07
+  epoch  35250  residual 3.378e-07
+  epoch  35500  residual 3.438e-07
+  epoch  35750  residual 3.368e-07
+  epoch  36000  residual 5.255e-07
+  epoch  36250  residual 3.080e-07
+  epoch  36500  residual 5.528e-07
+  epoch  36750  residual 2.996e-07
+  epoch  37000  residual 3.115e-07
+  epoch  37250  residual 2.942e-07
+  epoch  37500  residual 2.913e-07
+  epoch  37750  residual 3.094e-07
+  epoch  38000  residual 3.066e-07
+  epoch  38250  residual 2.868e-07
+  epoch  38500  residual 6.765e-07
+  epoch  38750  residual 3.233e-07
+  epoch  39000  residual 3.479e-07
+  epoch  39250  residual 3.460e-07
+  epoch  39500  residual 1.070e-06
+  epoch  39750  residual 2.803e-07
+  epoch  40000  residual 2.751e-07
+  epoch  40250  residual 9.584e-07
+  epoch  40500  residual 7.692e-07
+  epoch  40750  residual 2.601e-07
+  epoch  41000  residual 2.734e-07
+  epoch  41250  residual 4.302e-07
+  epoch  41500  residual 6.714e-07
+  epoch  41750  residual 2.753e-07
+  epoch  42000  residual 2.536e-07
+  epoch  42250  residual 2.488e-07
+  epoch  42500  residual 2.921e-07
+  epoch  42750  residual 3.201e-07
+  epoch  43000  residual 2.452e-07
+  epoch  43250  residual 2.450e-07
+  epoch  43500  residual 2.982e-07
+  epoch  43750  residual 2.531e-07
+  epoch  44000  residual 2.400e-07
+  epoch  44250  residual 2.373e-07
+  epoch  44500  residual 2.650e-07
+  epoch  44750  residual 2.943e-07
+  epoch  45000  residual 5.876e-07
+  epoch  45250  residual 2.295e-07
+  epoch  45500  residual 2.707e-07
+  epoch  45750  residual 2.369e-07
+  epoch  46000  residual 2.404e-07
+  epoch  46250  residual 2.269e-07
+  epoch  46500  residual 3.896e-07
+  epoch  46750  residual 2.208e-07
+  epoch  47000  residual 2.400e-07
+  epoch  47250  residual 2.530e-07
+  epoch  47500  residual 2.191e-07
+  epoch  47750  residual 4.781e-07
+  epoch  48000  residual 2.269e-07
+  epoch  48250  residual 2.143e-07
+  epoch  48500  residual 2.159e-07
+  epoch  48750  residual 2.109e-07
+  epoch  49000  residual 2.101e-07
+  epoch  49250  residual 4.107e-07
+  epoch  49500  residual 2.114e-07
+  epoch  49750  residual 2.178e-07
+  epoch  50000  residual 2.213e-07
+  epoch  50250  residual 2.040e-07
+  epoch  50500  residual 2.051e-07
+  epoch  50750  residual 2.230e-07
+  epoch  51000  residual 2.005e-07
+  epoch  51250  residual 2.014e-07
+  epoch  51500  residual 2.098e-07
+  epoch  51750  residual 2.024e-07
+  epoch  52000  residual 1.964e-07
+  epoch  52250  residual 2.065e-07
+  epoch  52500  residual 1.946e-07
+  epoch  52750  residual 2.217e-07
+  epoch  53000  residual 1.935e-07
+  epoch  53250  residual 1.930e-07
+  epoch  53500  residual 2.694e-07
+  epoch  53750  residual 1.955e-07
+  epoch  54000  residual 1.897e-07
+  epoch  54250  residual 1.931e-07
+  epoch  54500  residual 1.883e-07
+  epoch  54750  residual 1.899e-07
+  epoch  55000  residual 2.262e-07
+  epoch  55250  residual 1.847e-07
+  epoch  55500  residual 1.940e-07
+  epoch  55750  residual 1.833e-07
+  epoch  56000  residual 1.856e-07
+  epoch  56250  residual 1.825e-07
+  epoch  56500  residual 1.810e-07
+  epoch  56750  residual 1.799e-07
+  epoch  57000  residual 1.804e-07
+  epoch  57250  residual 1.798e-07
+  epoch  57500  residual 1.783e-07
+  epoch  57750  residual 2.065e-07
+  epoch  58000  residual 1.775e-07
+  epoch  58250  residual 1.768e-07
+  epoch  58500  residual 2.218e-07
+  epoch  58750  residual 1.757e-07
+  epoch  59000  residual 1.741e-07
+  epoch  59250  residual 1.738e-07
+  epoch  59500  residual 1.754e-07
+  epoch  59750  residual 1.717e-07
+  epoch  59999  residual 1.737e-07
+  [gamma] epoch      0  gamma_ratio 2.4548  residual 5.712e-02
+  [gamma] epoch    250  gamma_ratio 0.7594  residual 8.234e-04
+  [gamma] epoch    500  gamma_ratio 0.7357  residual 3.267e-04
+  [gamma] epoch    750  gamma_ratio 0.7316  residual 1.718e-04
+  [gamma] epoch   1000  gamma_ratio 0.7725  residual 1.311e-04
+  [gamma] epoch   1250  gamma_ratio 0.8438  residual 2.358e-04
+  [gamma] epoch   1500  gamma_ratio 0.8310  residual 5.750e-05
+  [gamma] epoch   1750  gamma_ratio 0.8592  residual 4.294e-05
+  [gamma] epoch   2000  gamma_ratio 0.8855  residual 3.602e-05
+  [gamma] epoch   2250  gamma_ratio 0.8976  residual 2.666e-05
+  [gamma] epoch   2500  gamma_ratio 0.9073  residual 2.202e-05
+  [gamma] epoch   2750  gamma_ratio 0.9332  residual 2.230e-05
+  [gamma] epoch   3000  gamma_ratio 0.9221  residual 1.800e-05
+  [gamma] epoch   3250  gamma_ratio 0.9357  residual 1.388e-05
+  [gamma] epoch   3500  gamma_ratio 0.9430  residual 1.259e-05
+  [gamma] epoch   3750  gamma_ratio 0.9453  residual 1.102e-05
+  [gamma] epoch   4000  gamma_ratio 0.9533  residual 1.021e-05
+  [gamma] epoch   4250  gamma_ratio 0.9512  residual 9.365e-06
+  [gamma] epoch   4500  gamma_ratio 0.9563  residual 8.184e-06
+  [gamma] epoch   4750  gamma_ratio 0.9864  residual 7.041e-05
+  [gamma] epoch   5000  gamma_ratio 0.9560  residual 1.251e-05
+  [gamma] epoch   5250  gamma_ratio 0.9822  residual 3.894e-05
+  [gamma] epoch   5500  gamma_ratio 0.9387  residual 4.399e-05
+  [gamma] epoch   5750  gamma_ratio 0.9721  residual 6.346e-06
+  [gamma] epoch   6000  gamma_ratio 0.9729  residual 5.036e-06
+  [gamma] epoch   6250  gamma_ratio 0.9734  residual 4.600e-06
+  [gamma] epoch   6500  gamma_ratio 0.9748  residual 5.383e-06
+  [gamma] epoch   6750  gamma_ratio 0.9814  residual 6.808e-06
+  [gamma] epoch   7000  gamma_ratio 0.9779  residual 4.280e-06
+  [gamma] epoch   7250  gamma_ratio 0.9679  residual 1.018e-05
+  [gamma] epoch   7500  gamma_ratio 0.9794  residual 3.442e-06
+  [gamma] epoch   7750  gamma_ratio 0.9823  residual 6.134e-06
+  [gamma] epoch   8000  gamma_ratio 0.9808  residual 3.669e-06
+  [gamma] epoch   8250  gamma_ratio 0.9795  residual 9.093e-06
+  [gamma] epoch   8500  gamma_ratio 0.9823  residual 3.440e-06
+  [gamma] epoch   8750  gamma_ratio 0.9858  residual 6.319e-06
+  [gamma] epoch   9000  gamma_ratio 0.9873  residual 1.028e-05
+  [gamma] epoch   9250  gamma_ratio 0.9901  residual 3.907e-06
+  [gamma] epoch   9500  gamma_ratio 0.9947  residual 5.349e-06
+  [gamma] epoch   9750  gamma_ratio 0.9890  residual 2.478e-06
+  [gamma] epoch  10000  gamma_ratio 0.9864  residual 2.393e-05
+  [gamma] epoch  10250  gamma_ratio 0.9878  residual 2.128e-06
+  [gamma] epoch  10500  gamma_ratio 1.0135  residual 1.227e-05
+  [gamma] epoch  10750  gamma_ratio 0.9897  residual 3.035e-06
+  [gamma] epoch  11000  gamma_ratio 0.9961  residual 1.544e-05
+  [gamma] epoch  11250  gamma_ratio 0.9881  residual 2.035e-06
+  [gamma] epoch  11500  gamma_ratio 0.9891  residual 1.874e-06
+  [gamma] epoch  11750  gamma_ratio 0.9924  residual 2.008e-06
+  [gamma] epoch  12000  gamma_ratio 1.0033  residual 1.334e-05
+  [gamma] epoch  12250  gamma_ratio 0.9901  residual 2.408e-06
+  [gamma] epoch  12500  gamma_ratio 0.9917  residual 1.732e-06
+  [gamma] epoch  12750  gamma_ratio 0.9911  residual 1.505e-06
+  [gamma] epoch  13000  gamma_ratio 0.9909  residual 1.558e-06
+  [gamma] epoch  13250  gamma_ratio 0.9847  residual 3.564e-06
+  [gamma] epoch  13500  gamma_ratio 0.9985  residual 2.650e-06
+  [gamma] epoch  13750  gamma_ratio 0.9919  residual 1.314e-06
+  [gamma] epoch  14000  gamma_ratio 0.9925  residual 1.769e-06
+  [gamma] epoch  14250  gamma_ratio 0.9910  residual 1.261e-06
+  [gamma] epoch  14500  gamma_ratio 0.9987  residual 3.393e-06
+  [gamma] epoch  14750  gamma_ratio 0.9765  residual 6.589e-06
+  [gamma] epoch  15000  gamma_ratio 0.9934  residual 1.441e-06
+  [gamma] epoch  15250  gamma_ratio 0.9918  residual 1.163e-06
+  [gamma] epoch  15500  gamma_ratio 0.9914  residual 1.066e-06
+  [gamma] epoch  15750  gamma_ratio 0.9911  residual 2.140e-06
+  [gamma] epoch  16000  gamma_ratio 0.9887  residual 1.304e-06
+  [gamma] epoch  16250  gamma_ratio 0.9815  residual 6.312e-06
+  [gamma] epoch  16500  gamma_ratio 1.0096  residual 1.192e-05
+  [gamma] epoch  16750  gamma_ratio 0.9899  residual 1.053e-06
+  [gamma] epoch  17000  gamma_ratio 0.9940  residual 1.158e-06
+  [gamma] epoch  17250  gamma_ratio 0.9937  residual 1.035e-06
+  [gamma] epoch  17500  gamma_ratio 0.9904  residual 9.403e-07
+  [gamma] epoch  17750  gamma_ratio 0.9905  residual 1.352e-06
+  [gamma] epoch  18000  gamma_ratio 0.9952  residual 2.455e-06
+  [gamma] epoch  18250  gamma_ratio 0.9905  residual 1.033e-05
+  [gamma] epoch  18500  gamma_ratio 0.9919  residual 8.216e-07
+  [gamma] epoch  18750  gamma_ratio 0.9910  residual 1.101e-06
+  [gamma] epoch  19000  gamma_ratio 0.9931  residual 1.065e-06
+  [gamma] epoch  19250  gamma_ratio 0.9935  residual 1.016e-06
+  [gamma] epoch  19500  gamma_ratio 0.9886  residual 6.234e-06
+  [gamma] epoch  19750  gamma_ratio 0.9926  residual 9.395e-07
+  [gamma] epoch  20000  gamma_ratio 0.9879  residual 1.208e-06
+  [gamma] epoch  20250  gamma_ratio 0.9928  residual 7.161e-07
+  [gamma] epoch  20500  gamma_ratio 0.9952  residual 1.429e-06
+  [gamma] epoch  20750  gamma_ratio 1.0055  residual 3.904e-06
+  [gamma] epoch  21000  gamma_ratio 1.0048  residual 2.684e-06
+  [gamma] epoch  21250  gamma_ratio 0.9889  residual 1.299e-06
+  [gamma] epoch  21500  gamma_ratio 0.9930  residual 7.186e-07
+  [gamma] epoch  21750  gamma_ratio 0.9928  residual 6.698e-07
+  [gamma] epoch  22000  gamma_ratio 0.9873  residual 2.195e-06
+  [gamma] epoch  22250  gamma_ratio 0.9946  residual 1.285e-06
+  [gamma] epoch  22500  gamma_ratio 0.9905  residual 1.045e-06
+  [gamma] epoch  22750  gamma_ratio 0.9854  residual 1.392e-06
+  [gamma] epoch  23000  gamma_ratio 0.9942  residual 1.240e-06
+  [gamma] epoch  23250  gamma_ratio 0.9892  residual 9.641e-07
+  [gamma] epoch  23500  gamma_ratio 0.9916  residual 8.474e-07
+  [gamma] epoch  23750  gamma_ratio 0.9913  residual 2.794e-06
+  [gamma] epoch  24000  gamma_ratio 0.9936  residual 5.588e-07
+  [gamma] epoch  24250  gamma_ratio 0.9934  residual 3.711e-06
+  [gamma] epoch  24500  gamma_ratio 0.9916  residual 5.279e-06
+  [gamma] epoch  24750  gamma_ratio 0.9924  residual 5.735e-07
+  [gamma] epoch  25000  gamma_ratio 0.9996  residual 1.156e-06
+  [gamma] epoch  25250  gamma_ratio 0.9957  residual 1.356e-05
+  [gamma] epoch  25500  gamma_ratio 0.9953  residual 6.721e-07
+  [gamma] epoch  25750  gamma_ratio 0.9940  residual 5.487e-07
+  [gamma] epoch  26000  gamma_ratio 0.9990  residual 5.924e-06
+  [gamma] epoch  26250  gamma_ratio 0.9959  residual 6.984e-06
+  [gamma] epoch  26500  gamma_ratio 0.9977  residual 7.868e-07
+  [gamma] epoch  26750  gamma_ratio 0.9985  residual 9.491e-07
+  [gamma] epoch  27000  gamma_ratio 0.9929  residual 6.873e-07
+  [gamma] epoch  27250  gamma_ratio 0.9918  residual 5.564e-07
+  [gamma] epoch  27500  gamma_ratio 0.9956  residual 1.161e-06
+  [gamma] epoch  27750  gamma_ratio 0.9936  residual 5.021e-07
+  [gamma] epoch  28000  gamma_ratio 0.9939  residual 4.486e-07
+  [gamma] epoch  28250  gamma_ratio 0.9939  residual 5.173e-07
+  [gamma] epoch  28500  gamma_ratio 0.9937  residual 4.792e-07
+  [gamma] epoch  28750  gamma_ratio 0.9925  residual 5.052e-07
+  [gamma] epoch  29000  gamma_ratio 0.9995  residual 2.642e-06
+  [gamma] epoch  29250  gamma_ratio 0.9943  residual 4.102e-07
+  [gamma] epoch  29500  gamma_ratio 0.9934  residual 4.216e-07
+  [gamma] epoch  29750  gamma_ratio 0.9931  residual 5.640e-07
+  [gamma] epoch  30000  gamma_ratio 0.9920  residual 1.686e-06
+  [gamma] epoch  30250  gamma_ratio 0.9937  residual 1.017e-06
+  [gamma] epoch  30500  gamma_ratio 0.9934  residual 4.372e-07
+  [gamma] epoch  30750  gamma_ratio 0.9937  residual 4.114e-07
+  [gamma] epoch  31000  gamma_ratio 0.9925  residual 5.603e-07
+  [gamma] epoch  31250  gamma_ratio 0.9941  residual 4.133e-07
+  [gamma] epoch  31500  gamma_ratio 0.9965  residual 1.181e-06
+  [gamma] epoch  31750  gamma_ratio 0.9926  residual 5.140e-07
+  [gamma] epoch  32000  gamma_ratio 0.9938  residual 3.769e-07
+  [gamma] epoch  32250  gamma_ratio 0.9941  residual 4.313e-07
+  [gamma] epoch  32500  gamma_ratio 0.9943  residual 4.045e-07
+  [gamma] epoch  32750  gamma_ratio 0.9965  residual 4.975e-07
+  [gamma] epoch  33000  gamma_ratio 0.9953  residual 4.600e-07
+  [gamma] epoch  33250  gamma_ratio 0.9939  residual 4.150e-07
+  [gamma] epoch  33500  gamma_ratio 0.9935  residual 4.095e-07
+  [gamma] epoch  33750  gamma_ratio 0.9992  residual 1.449e-06
+  [gamma] epoch  34000  gamma_ratio 0.9931  residual 5.256e-06
+  [gamma] epoch  34250  gamma_ratio 0.9945  residual 1.043e-06
+  [gamma] epoch  34500  gamma_ratio 0.9918  residual 6.015e-07
+  [gamma] epoch  34750  gamma_ratio 0.9948  residual 4.031e-07
+  [gamma] epoch  35000  gamma_ratio 0.9932  residual 3.523e-07
+  [gamma] epoch  35250  gamma_ratio 0.9939  residual 3.378e-07
+  [gamma] epoch  35500  gamma_ratio 0.9943  residual 3.438e-07
+  [gamma] epoch  35750  gamma_ratio 0.9941  residual 3.368e-07
+  [gamma] epoch  36000  gamma_ratio 0.9930  residual 5.255e-07
+  [gamma] epoch  36250  gamma_ratio 0.9946  residual 3.080e-07
+  [gamma] epoch  36500  gamma_ratio 0.9921  residual 5.528e-07
+  [gamma] epoch  36750  gamma_ratio 0.9946  residual 2.996e-07
+  [gamma] epoch  37000  gamma_ratio 0.9943  residual 3.115e-07
+  [gamma] epoch  37250  gamma_ratio 0.9944  residual 2.942e-07
+  [gamma] epoch  37500  gamma_ratio 0.9948  residual 2.913e-07
+  [gamma] epoch  37750  gamma_ratio 0.9951  residual 3.094e-07
+  [gamma] epoch  38000  gamma_ratio 0.9953  residual 3.066e-07
+  [gamma] epoch  38250  gamma_ratio 0.9944  residual 2.868e-07
+  [gamma] epoch  38500  gamma_ratio 0.9979  residual 6.765e-07
+  [gamma] epoch  38750  gamma_ratio 0.9941  residual 3.233e-07
+  [gamma] epoch  39000  gamma_ratio 0.9938  residual 3.479e-07
+  [gamma] epoch  39250  gamma_ratio 0.9960  residual 3.460e-07
+  [gamma] epoch  39500  gamma_ratio 0.9935  residual 1.070e-06
+  [gamma] epoch  39750  gamma_ratio 0.9948  residual 2.803e-07
+  [gamma] epoch  40000  gamma_ratio 0.9949  residual 2.751e-07
+  [gamma] epoch  40250  gamma_ratio 0.9934  residual 9.584e-07
+  [gamma] epoch  40500  gamma_ratio 0.9913  residual 7.692e-07
+  [gamma] epoch  40750  gamma_ratio 0.9950  residual 2.601e-07
+  [gamma] epoch  41000  gamma_ratio 0.9949  residual 2.734e-07
+  [gamma] epoch  41250  gamma_ratio 0.9921  residual 4.302e-07
+  [gamma] epoch  41500  gamma_ratio 0.9918  residual 6.714e-07
+  [gamma] epoch  41750  gamma_ratio 0.9952  residual 2.753e-07
+  [gamma] epoch  42000  gamma_ratio 0.9947  residual 2.536e-07
+  [gamma] epoch  42250  gamma_ratio 0.9950  residual 2.488e-07
+  [gamma] epoch  42500  gamma_ratio 0.9959  residual 2.921e-07
+  [gamma] epoch  42750  gamma_ratio 0.9942  residual 3.201e-07
+  [gamma] epoch  43000  gamma_ratio 0.9951  residual 2.452e-07
+  [gamma] epoch  43250  gamma_ratio 0.9951  residual 2.450e-07
+  [gamma] epoch  43500  gamma_ratio 0.9941  residual 2.982e-07
+  [gamma] epoch  43750  gamma_ratio 0.9950  residual 2.531e-07
+  [gamma] epoch  44000  gamma_ratio 0.9950  residual 2.400e-07
+  [gamma] epoch  44250  gamma_ratio 0.9952  residual 2.373e-07
+  [gamma] epoch  44500  gamma_ratio 0.9946  residual 2.650e-07
+  [gamma] epoch  44750  gamma_ratio 0.9969  residual 2.943e-07
+  [gamma] epoch  45000  gamma_ratio 0.9928  residual 5.876e-07
+  [gamma] epoch  45250  gamma_ratio 0.9949  residual 2.295e-07
+  [gamma] epoch  45500  gamma_ratio 0.9958  residual 2.707e-07
+  [gamma] epoch  45750  gamma_ratio 0.9950  residual 2.369e-07
+  [gamma] epoch  46000  gamma_ratio 0.9951  residual 2.404e-07
+  [gamma] epoch  46250  gamma_ratio 0.9953  residual 2.269e-07
+  [gamma] epoch  46500  gamma_ratio 0.9973  residual 3.896e-07
+  [gamma] epoch  46750  gamma_ratio 0.9952  residual 2.208e-07
+  [gamma] epoch  47000  gamma_ratio 0.9951  residual 2.400e-07
+  [gamma] epoch  47250  gamma_ratio 0.9940  residual 2.530e-07
+  [gamma] epoch  47500  gamma_ratio 0.9950  residual 2.191e-07
+  [gamma] epoch  47750  gamma_ratio 0.9965  residual 4.781e-07
+  [gamma] epoch  48000  gamma_ratio 0.9950  residual 2.269e-07
+  [gamma] epoch  48250  gamma_ratio 0.9952  residual 2.143e-07
+  [gamma] epoch  48500  gamma_ratio 0.9953  residual 2.159e-07
+  [gamma] epoch  48750  gamma_ratio 0.9952  residual 2.109e-07
+  [gamma] epoch  49000  gamma_ratio 0.9953  residual 2.101e-07
+  [gamma] epoch  49250  gamma_ratio 0.9920  residual 4.107e-07
+  [gamma] epoch  49500  gamma_ratio 0.9951  residual 2.114e-07
+  [gamma] epoch  49750  gamma_ratio 0.9951  residual 2.178e-07
+  [gamma] epoch  50000  gamma_ratio 0.9951  residual 2.213e-07
+  [gamma] epoch  50250  gamma_ratio 0.9954  residual 2.040e-07
+  [gamma] epoch  50500  gamma_ratio 0.9951  residual 2.051e-07
+  [gamma] epoch  50750  gamma_ratio 0.9959  residual 2.230e-07
+  [gamma] epoch  51000  gamma_ratio 0.9952  residual 2.005e-07
+  [gamma] epoch  51250  gamma_ratio 0.9953  residual 2.014e-07
+  [gamma] epoch  51500  gamma_ratio 0.9953  residual 2.098e-07
+  [gamma] epoch  51750  gamma_ratio 0.9952  residual 2.024e-07
+  [gamma] epoch  52000  gamma_ratio 0.9953  residual 1.964e-07
+  [gamma] epoch  52250  gamma_ratio 0.9952  residual 2.065e-07
+  [gamma] epoch  52500  gamma_ratio 0.9953  residual 1.946e-07
+  [gamma] epoch  52750  gamma_ratio 0.9938  residual 2.217e-07
+  [gamma] epoch  53000  gamma_ratio 0.9954  residual 1.935e-07
+  [gamma] epoch  53250  gamma_ratio 0.9959  residual 1.930e-07
+  [gamma] epoch  53500  gamma_ratio 0.9945  residual 2.694e-07
+  [gamma] epoch  53750  gamma_ratio 0.9954  residual 1.955e-07
+  [gamma] epoch  54000  gamma_ratio 0.9955  residual 1.897e-07
+  [gamma] epoch  54250  gamma_ratio 0.9953  residual 1.931e-07
+  [gamma] epoch  54500  gamma_ratio 0.9952  residual 1.883e-07
+  [gamma] epoch  54750  gamma_ratio 0.9952  residual 1.899e-07
+  [gamma] epoch  55000  gamma_ratio 0.9969  residual 2.262e-07
+  [gamma] epoch  55250  gamma_ratio 0.9955  residual 1.847e-07
+  [gamma] epoch  55500  gamma_ratio 0.9947  residual 1.940e-07
+  [gamma] epoch  55750  gamma_ratio 0.9952  residual 1.833e-07
+  [gamma] epoch  56000  gamma_ratio 0.9956  residual 1.856e-07
+  [gamma] epoch  56250  gamma_ratio 0.9954  residual 1.825e-07
+  [gamma] epoch  56500  gamma_ratio 0.9954  residual 1.810e-07
+  [gamma] epoch  56750  gamma_ratio 0.9955  residual 1.799e-07
+  [gamma] epoch  57000  gamma_ratio 0.9953  residual 1.804e-07
+  [gamma] epoch  57250  gamma_ratio 0.9955  residual 1.798e-07
+  [gamma] epoch  57500  gamma_ratio 0.9953  residual 1.783e-07
+  [gamma] epoch  57750  gamma_ratio 0.9954  residual 2.065e-07
+  [gamma] epoch  58000  gamma_ratio 0.9956  residual 1.775e-07
+  [gamma] epoch  58250  gamma_ratio 0.9955  residual 1.768e-07
+  [gamma] epoch  58500  gamma_ratio 0.9967  residual 2.218e-07
+  [gamma] epoch  58750  gamma_ratio 0.9955  residual 1.757e-07
+  [gamma] epoch  59000  gamma_ratio 0.9954  residual 1.741e-07
+  [gamma] epoch  59250  gamma_ratio 0.9955  residual 1.738e-07
+  [gamma] epoch  59500  gamma_ratio 0.9956  residual 1.754e-07
+  [gamma] epoch  59750  gamma_ratio 0.9954  residual 1.717e-07
+  [gamma] epoch  59999  gamma_ratio 0.9953  residual 1.737e-07
+  [shape] epoch      0  rmse=0.1464  max_abs_dA=0.3742  int_signed_dA=-2.653e-10  int_abs_dA=2.722e-10  A_min=0.005898  max_dA_fwd=0.003978
+  [shape] epoch    250  rmse=0.08142  max_abs_dA=0.1391  int_signed_dA=1.418e-10  int_abs_dA=2.418e-10  A_min=0.07656  max_dA_fwd=-3.282e-05
+  [shape] epoch    500  rmse=0.06748  max_abs_dA=0.08369  int_signed_dA=1.608e-10  int_abs_dA=2.015e-10  A_min=0.06191  max_dA_fwd=-3.817e-05
+  [shape] epoch    750  rmse=0.06237  max_abs_dA=0.07988  int_signed_dA=1.643e-10  int_abs_dA=1.835e-10  A_min=0.05582  max_dA_fwd=-3.963e-05
+  [shape] epoch   1000  rmse=0.04932  max_abs_dA=0.06463  int_signed_dA=1.318e-10  int_abs_dA=1.441e-10  A_min=0.04211  max_dA_fwd=-3.684e-05
+  [shape] epoch   1250  rmse=0.03391  max_abs_dA=0.04526  int_signed_dA=8.289e-11  int_abs_dA=9.955e-11  A_min=0.02766  max_dA_fwd=-3.123e-05
+  [shape] epoch   1500  rmse=0.03328  max_abs_dA=0.04556  int_signed_dA=9.104e-11  int_abs_dA=9.613e-11  A_min=0.02429  max_dA_fwd=-3.359e-05
+  [shape] epoch   1750  rmse=0.02667  max_abs_dA=0.03758  int_signed_dA=7.337e-11  int_abs_dA=7.635e-11  A_min=0.01746  max_dA_fwd=-3.175e-05
+  [shape] epoch   2000  rmse=0.02148  max_abs_dA=0.03125  int_signed_dA=5.79e-11  int_abs_dA=6.073e-11  A_min=0.01285  max_dA_fwd=-2.963e-05
+  [shape] epoch   2250  rmse=0.0191  max_abs_dA=0.02849  int_signed_dA=5.106e-11  int_abs_dA=5.333e-11  A_min=0.01022  max_dA_fwd=-2.894e-05
+  [shape] epoch   2500  rmse=0.01694  max_abs_dA=0.0258  int_signed_dA=4.573e-11  int_abs_dA=4.66e-11  A_min=0.00793  max_dA_fwd=-2.77e-05
+  [shape] epoch   2750  rmse=0.01291  max_abs_dA=0.02049  int_signed_dA=3.202e-11  int_abs_dA=3.49e-11  A_min=0.005026  max_dA_fwd=-2.499e-05
+  [shape] epoch   3000  rmse=0.01423  max_abs_dA=0.0223  int_signed_dA=3.782e-11  int_abs_dA=3.845e-11  A_min=0.005299  max_dA_fwd=-2.571e-05
+  [shape] epoch   3250  rmse=0.01177  max_abs_dA=0.01906  int_signed_dA=3.078e-11  int_abs_dA=3.091e-11  A_min=0.003135  max_dA_fwd=-2.406e-05
+  [shape] epoch   3500  rmse=0.01062  max_abs_dA=0.01753  int_signed_dA=2.704e-11  int_abs_dA=2.739e-11  A_min=0.002207  max_dA_fwd=-2.312e-05
+  [shape] epoch   3750  rmse=0.01014  max_abs_dA=0.01688  int_signed_dA=2.588e-11  int_abs_dA=2.597e-11  A_min=0.001632  max_dA_fwd=-2.273e-05
+  [shape] epoch   4000  rmse=0.00892  max_abs_dA=0.01516  int_signed_dA=2.195e-11  int_abs_dA=2.236e-11  A_min=0.0008738  max_dA_fwd=-2.155e-05
+  [shape] epoch   4250  rmse=0.009152  max_abs_dA=0.01549  int_signed_dA=2.299e-11  int_abs_dA=2.306e-11  A_min=0.0007725  max_dA_fwd=-2.153e-05
+  [shape] epoch   4500  rmse=0.008308  max_abs_dA=0.01428  int_signed_dA=2.047e-11  int_abs_dA=2.054e-11  A_min=0.0002159  max_dA_fwd=-2.077e-05
+  [shape] epoch   4750  rmse=0.006001  max_abs_dA=0.009473  int_signed_dA=5.957e-12  int_abs_dA=1.625e-11  A_min=-0.001278  max_dA_fwd=-1.815e-05
+  [shape] epoch   5000  rmse=0.008301  max_abs_dA=0.01424  int_signed_dA=2.061e-11  int_abs_dA=2.07e-11  A_min=0.0001209  max_dA_fwd=-2.034e-05
+  [shape] epoch   5250  rmse=0.00553  max_abs_dA=0.009537  int_signed_dA=7.787e-12  int_abs_dA=1.465e-11  A_min=-0.001549  max_dA_fwd=-1.772e-05
+  [shape] epoch   5500  rmse=0.01055  max_abs_dA=0.0165  int_signed_dA=2.923e-11  int_abs_dA=2.924e-11  A_min=0.0002677  max_dA_fwd=-2.06e-05
+  [shape] epoch   5750  rmse=0.006039  max_abs_dA=0.01087  int_signed_dA=1.262e-11  int_abs_dA=1.479e-11  A_min=-0.001284  max_dA_fwd=-1.78e-05
+  [shape] epoch   6000  rmse=0.005636  max_abs_dA=0.01023  int_signed_dA=1.216e-11  int_abs_dA=1.357e-11  A_min=-0.001522  max_dA_fwd=-1.69e-05
+  [shape] epoch   6250  rmse=0.00541  max_abs_dA=0.009853  int_signed_dA=1.176e-11  int_abs_dA=1.311e-11  A_min=-0.001793  max_dA_fwd=-1.648e-05
+  [shape] epoch   6500  rmse=0.005202  max_abs_dA=0.009513  int_signed_dA=1.107e-11  int_abs_dA=1.257e-11  A_min=-0.001817  max_dA_fwd=-1.594e-05
+  [shape] epoch   6750  rmse=0.004928  max_abs_dA=0.008893  int_signed_dA=7.811e-12  int_abs_dA=1.272e-11  A_min=-0.002144  max_dA_fwd=-1.571e-05
+  [shape] epoch   7000  rmse=0.004765  max_abs_dA=0.008799  int_signed_dA=9.486e-12  int_abs_dA=1.151e-11  A_min=-0.002043  max_dA_fwd=-1.498e-05
+  [shape] epoch   7250  rmse=0.00617  max_abs_dA=0.01095  int_signed_dA=1.447e-11  int_abs_dA=1.543e-11  A_min=-0.001647  max_dA_fwd=-1.58e-05
+  [shape] epoch   7500  rmse=0.004417  max_abs_dA=0.008185  int_signed_dA=8.634e-12  int_abs_dA=1.08e-11  A_min=-0.002228  max_dA_fwd=-1.393e-05
+  [shape] epoch   7750  rmse=0.003975  max_abs_dA=0.007402  int_signed_dA=7.188e-12  int_abs_dA=9.863e-12  A_min=-0.002309  max_dA_fwd=-1.31e-05
+  [shape] epoch   8000  rmse=0.004026  max_abs_dA=0.007438  int_signed_dA=7.88e-12  int_abs_dA=1.004e-11  A_min=-0.002287  max_dA_fwd=-1.274e-05
+  [shape] epoch   8250  rmse=0.004361  max_abs_dA=0.008074  int_signed_dA=8.661e-12  int_abs_dA=1.058e-11  A_min=-0.00202  max_dA_fwd=-1.28e-05
+  [shape] epoch   8500  rmse=0.003833  max_abs_dA=0.007132  int_signed_dA=7.254e-12  int_abs_dA=9.485e-12  A_min=-0.002125  max_dA_fwd=-1.193e-05
+  [shape] epoch   8750  rmse=0.003408  max_abs_dA=0.00636  int_signed_dA=5.486e-12  int_abs_dA=8.553e-12  A_min=-0.002313  max_dA_fwd=-1.132e-05
+  [shape] epoch   9000  rmse=0.003871  max_abs_dA=0.00695  int_signed_dA=5.045e-12  int_abs_dA=1.02e-11  A_min=-0.001938  max_dA_fwd=-1.15e-05
+  [shape] epoch   9250  rmse=0.003316  max_abs_dA=0.005944  int_signed_dA=3.74e-12  int_abs_dA=8.785e-12  A_min=-0.001958  max_dA_fwd=-1.056e-05
+  [shape] epoch   9500  rmse=0.002708  max_abs_dA=0.004553  int_signed_dA=1.366e-12  int_abs_dA=7.35e-12  A_min=-0.002248  max_dA_fwd=-9.603e-06
+  [shape] epoch   9750  rmse=0.002917  max_abs_dA=0.005437  int_signed_dA=4.245e-12  int_abs_dA=7.37e-12  A_min=-0.00188  max_dA_fwd=-9.67e-06
+  [shape] epoch  10000  rmse=0.003005  max_abs_dA=0.005548  int_signed_dA=5.551e-12  int_abs_dA=7.669e-12  A_min=-0.001642  max_dA_fwd=-9.281e-06
+  [shape] epoch  10250  rmse=0.002891  max_abs_dA=0.005413  int_signed_dA=4.997e-12  int_abs_dA=7.219e-12  A_min=-0.001551  max_dA_fwd=-9.104e-06
+  [shape] epoch  10500  rmse=0.003753  max_abs_dA=0.009137  int_signed_dA=-7.173e-12  int_abs_dA=8.474e-12  A_min=-0.002211  max_dA_fwd=-6.948e-06
+  [shape] epoch  10750  rmse=0.002854  max_abs_dA=0.005278  int_signed_dA=4.284e-12  int_abs_dA=7.241e-12  A_min=-0.001213  max_dA_fwd=-8.605e-06
+  [shape] epoch  11000  rmse=0.002057  max_abs_dA=0.003528  int_signed_dA=1.198e-12  int_abs_dA=5.569e-12  A_min=-0.001467  max_dA_fwd=-7.464e-06
+  [shape] epoch  11250  rmse=0.002658  max_abs_dA=0.004945  int_signed_dA=5.07e-12  int_abs_dA=6.641e-12  A_min=-0.001106  max_dA_fwd=-8.025e-06
+  [shape] epoch  11500  rmse=0.002554  max_abs_dA=0.004773  int_signed_dA=4.644e-12  int_abs_dA=6.338e-12  A_min=-0.001029  max_dA_fwd=-7.82e-06
+  [shape] epoch  11750  rmse=0.002146  max_abs_dA=0.003966  int_signed_dA=3.125e-12  int_abs_dA=5.491e-12  A_min=-0.0009875  max_dA_fwd=-7.261e-06
+  [shape] epoch  12000  rmse=0.002256  max_abs_dA=0.005347  int_signed_dA=-1.928e-12  int_abs_dA=5.794e-12  A_min=-0.00123  max_dA_fwd=-6.548e-06
+  [shape] epoch  12250  rmse=0.00227  max_abs_dA=0.004212  int_signed_dA=4.264e-12  int_abs_dA=5.704e-12  A_min=-0.0008118  max_dA_fwd=-7.14e-06
+  [shape] epoch  12500  rmse=0.002106  max_abs_dA=0.003918  int_signed_dA=3.59e-12  int_abs_dA=5.274e-12  A_min=-0.000646  max_dA_fwd=-6.866e-06
+  [shape] epoch  12750  rmse=0.002148  max_abs_dA=0.003995  int_signed_dA=3.897e-12  int_abs_dA=5.353e-12  A_min=-0.0006138  max_dA_fwd=-6.901e-06
+  [shape] epoch  13000  rmse=0.002119  max_abs_dA=0.003927  int_signed_dA=4.073e-12  int_abs_dA=5.228e-12  A_min=-0.0003588  max_dA_fwd=-6.613e-06
+  [shape] epoch  13250  rmse=0.00283  max_abs_dA=0.004889  int_signed_dA=6.957e-12  int_abs_dA=7.347e-12  A_min=-0.0002028  max_dA_fwd=-6.947e-06
+  [shape] epoch  13500  rmse=0.00157  max_abs_dA=0.003268  int_signed_dA=5.828e-13  int_abs_dA=4.02e-12  A_min=-0.0004289  max_dA_fwd=-5.747e-06
+  [shape] epoch  13750  rmse=0.001912  max_abs_dA=0.003515  int_signed_dA=3.663e-12  int_abs_dA=4.762e-12  A_min=-0.000131  max_dA_fwd=-6.219e-06
+  [shape] epoch  14000  rmse=0.001778  max_abs_dA=0.003267  int_signed_dA=3.37e-12  int_abs_dA=4.486e-12  A_min=-0.0002106  max_dA_fwd=-6.058e-06
+  [shape] epoch  14250  rmse=0.001934  max_abs_dA=0.00353  int_signed_dA=4.068e-12  int_abs_dA=4.797e-12  A_min=2.409e-05  max_dA_fwd=-6.057e-06
+  [shape] epoch  14500  rmse=0.001816  max_abs_dA=0.003803  int_signed_dA=5.991e-13  int_abs_dA=4.708e-12  A_min=1.195e-05  max_dA_fwd=-5.59e-06
+  [shape] epoch  14750  rmse=0.003975  max_abs_dA=0.00595  int_signed_dA=1.076e-11  int_abs_dA=1.08e-11  A_min=0.0003869  max_dA_fwd=-6.727e-06
+  [shape] epoch  15000  rmse=0.00178  max_abs_dA=0.003171  int_signed_dA=2.967e-12  int_abs_dA=4.479e-12  A_min=0.0002338  max_dA_fwd=-5.765e-06
+  [shape] epoch  15250  rmse=0.001759  max_abs_dA=0.003182  int_signed_dA=3.719e-12  int_abs_dA=4.393e-12  A_min=0.0002631  max_dA_fwd=-5.694e-06
+  [shape] epoch  15500  rmse=0.001785  max_abs_dA=0.003221  int_signed_dA=3.881e-12  int_abs_dA=4.44e-12  A_min=0.0003492  max_dA_fwd=-5.616e-06
+  [shape] epoch  15750  rmse=0.00187  max_abs_dA=0.003363  int_signed_dA=4.019e-12  int_abs_dA=4.59e-12  A_min=0.0004137  max_dA_fwd=-5.667e-06
+  [shape] epoch  16000  rmse=0.002063  max_abs_dA=0.003607  int_signed_dA=5.113e-12  int_abs_dA=5.194e-12  A_min=0.0005514  max_dA_fwd=-5.723e-06
+  [shape] epoch  16250  rmse=0.003107  max_abs_dA=0.005058  int_signed_dA=8.445e-12  int_abs_dA=8.453e-12  A_min=0.0007619  max_dA_fwd=-6.267e-06
+  [shape] epoch  16500  rmse=0.002817  max_abs_dA=0.006613  int_signed_dA=-4.272e-12  int_abs_dA=5.985e-12  A_min=9.269e-05  max_dA_fwd=-4.601e-06
+  [shape] epoch  16750  rmse=0.00186  max_abs_dA=0.003251  int_signed_dA=4.575e-12  int_abs_dA=4.721e-12  A_min=0.0006261  max_dA_fwd=-5.502e-06
+  [shape] epoch  17000  rmse=0.001567  max_abs_dA=0.002728  int_signed_dA=2.707e-12  int_abs_dA=3.999e-12  A_min=0.000588  max_dA_fwd=-5.264e-06
+  [shape] epoch  17250  rmse=0.001533  max_abs_dA=0.002705  int_signed_dA=2.858e-12  int_abs_dA=3.904e-12  A_min=0.0005706  max_dA_fwd=-5.259e-06
+  [shape] epoch  17500  rmse=0.001791  max_abs_dA=0.003147  int_signed_dA=4.322e-12  int_abs_dA=4.552e-12  A_min=0.0006698  max_dA_fwd=-5.429e-06
+  [shape] epoch  17750  rmse=0.001819  max_abs_dA=0.003208  int_signed_dA=4.279e-12  int_abs_dA=4.582e-12  A_min=0.0007153  max_dA_fwd=-5.447e-06
+  [shape] epoch  18000  rmse=0.001534  max_abs_dA=0.002548  int_signed_dA=2.16e-12  int_abs_dA=4.049e-12  A_min=0.0006554  max_dA_fwd=-5.145e-06
+  [shape] epoch  18250  rmse=0.001717  max_abs_dA=0.002908  int_signed_dA=4.278e-12  int_abs_dA=4.51e-12  A_min=0.0007218  max_dA_fwd=-5.243e-06
+  [shape] epoch  18500  rmse=0.001609  max_abs_dA=0.002838  int_signed_dA=3.64e-12  int_abs_dA=4.129e-12  A_min=0.0007272  max_dA_fwd=-5.239e-06
+  [shape] epoch  18750  rmse=0.001669  max_abs_dA=0.002914  int_signed_dA=4.065e-12  int_abs_dA=4.297e-12  A_min=0.0007228  max_dA_fwd=-5.287e-06
+  [shape] epoch  19000  rmse=0.001463  max_abs_dA=0.002577  int_signed_dA=3.101e-12  int_abs_dA=3.808e-12  A_min=0.0006936  max_dA_fwd=-5.118e-06
+  [shape] epoch  19250  rmse=0.001482  max_abs_dA=0.002603  int_signed_dA=2.939e-12  int_abs_dA=3.834e-12  A_min=0.0007237  max_dA_fwd=-5.147e-06
+  [shape] epoch  19500  rmse=0.002002  max_abs_dA=0.003423  int_signed_dA=5.151e-12  int_abs_dA=5.2e-12  A_min=0.000888  max_dA_fwd=-5.493e-06
+  [shape] epoch  19750  rmse=0.001559  max_abs_dA=0.002743  int_signed_dA=3.341e-12  int_abs_dA=4.022e-12  A_min=0.0007629  max_dA_fwd=-5.206e-06
+  [shape] epoch  20000  rmse=0.002058  max_abs_dA=0.003446  int_signed_dA=5.484e-12  int_abs_dA=5.485e-12  A_min=0.0009856  max_dA_fwd=-5.49e-06
+  [shape] epoch  20250  rmse=0.001517  max_abs_dA=0.002676  int_signed_dA=3.231e-12  int_abs_dA=3.92e-12  A_min=0.0007342  max_dA_fwd=-5.214e-06
+  [shape] epoch  20500  rmse=0.001402  max_abs_dA=0.002384  int_signed_dA=2.181e-12  int_abs_dA=3.672e-12  A_min=0.0006747  max_dA_fwd=-5.102e-06
+  [shape] epoch  20750  rmse=0.002201  max_abs_dA=0.005121  int_signed_dA=-2.444e-12  int_abs_dA=5.026e-12  A_min=0.0006127  max_dA_fwd=-4.465e-06
+  [shape] epoch  21000  rmse=0.001929  max_abs_dA=0.004607  int_signed_dA=-2.159e-12  int_abs_dA=4.2e-12  A_min=0.0005822  max_dA_fwd=-4.27e-06
+  [shape] epoch  21250  rmse=0.00188  max_abs_dA=0.003127  int_signed_dA=5.046e-12  int_abs_dA=5.048e-12  A_min=0.0007945  max_dA_fwd=-5.429e-06
+  [shape] epoch  21500  rmse=0.001462  max_abs_dA=0.002573  int_signed_dA=3.173e-12  int_abs_dA=3.802e-12  A_min=0.0007529  max_dA_fwd=-5.154e-06
+  [shape] epoch  21750  rmse=0.00148  max_abs_dA=0.00262  int_signed_dA=3.268e-12  int_abs_dA=3.799e-12  A_min=0.000721  max_dA_fwd=-5.226e-06
+  [shape] epoch  22000  rmse=0.002077  max_abs_dA=0.003324  int_signed_dA=5.758e-12  int_abs_dA=5.759e-12  A_min=0.000859  max_dA_fwd=-5.502e-06
+  [shape] epoch  22250  rmse=0.001426  max_abs_dA=0.002427  int_signed_dA=2.416e-12  int_abs_dA=3.746e-12  A_min=0.0007494  max_dA_fwd=-5.125e-06
+  [shape] epoch  22500  rmse=0.001745  max_abs_dA=0.003036  int_signed_dA=4.286e-12  int_abs_dA=4.447e-12  A_min=0.000813  max_dA_fwd=-5.464e-06
+  [shape] epoch  22750  rmse=0.002367  max_abs_dA=0.003738  int_signed_dA=6.616e-12  int_abs_dA=6.616e-12  A_min=0.0008868  max_dA_fwd=-5.687e-06
+  [shape] epoch  23000  rmse=0.001341  max_abs_dA=0.002392  int_signed_dA=2.614e-12  int_abs_dA=3.406e-12  A_min=0.0005641  max_dA_fwd=-5.218e-06
+  [shape] epoch  23250  rmse=0.001865  max_abs_dA=0.003167  int_signed_dA=4.891e-12  int_abs_dA=4.891e-12  A_min=0.0008067  max_dA_fwd=-5.488e-06
+  [shape] epoch  23500  rmse=0.001625  max_abs_dA=0.002858  int_signed_dA=3.771e-12  int_abs_dA=4.107e-12  A_min=0.0007581  max_dA_fwd=-5.407e-06
+  [shape] epoch  23750  rmse=0.001649  max_abs_dA=0.002888  int_signed_dA=3.915e-12  int_abs_dA=4.231e-12  A_min=0.0007582  max_dA_fwd=-5.427e-06
+  [shape] epoch  24000  rmse=0.001361  max_abs_dA=0.002431  int_signed_dA=2.876e-12  int_abs_dA=3.46e-12  A_min=0.0006093  max_dA_fwd=-5.239e-06
+  [shape] epoch  24250  rmse=0.001323  max_abs_dA=0.002306  int_signed_dA=2.968e-12  int_abs_dA=3.462e-12  A_min=0.000642  max_dA_fwd=-5.177e-06
+  [shape] epoch  24500  rmse=0.001533  max_abs_dA=0.002663  int_signed_dA=3.781e-12  int_abs_dA=3.973e-12  A_min=0.0007007  max_dA_fwd=-5.307e-06
+  [shape] epoch  24750  rmse=0.001467  max_abs_dA=0.002599  int_signed_dA=3.428e-12  int_abs_dA=3.732e-12  A_min=0.0006702  max_dA_fwd=-5.307e-06
+  [shape] epoch  25000  rmse=0.001347  max_abs_dA=0.002832  int_signed_dA=1.913e-13  int_abs_dA=3.466e-12  A_min=0.0004926  max_dA_fwd=-4.941e-06
+  [shape] epoch  25250  rmse=0.001166  max_abs_dA=0.001912  int_signed_dA=1.933e-12  int_abs_dA=3.111e-12  A_min=0.000446  max_dA_fwd=-5.022e-06
+  [shape] epoch  25500  rmse=0.001271  max_abs_dA=0.002217  int_signed_dA=2.133e-12  int_abs_dA=3.273e-12  A_min=0.0005812  max_dA_fwd=-5.183e-06
+  [shape] epoch  25750  rmse=0.0013  max_abs_dA=0.002335  int_signed_dA=2.682e-12  int_abs_dA=3.291e-12  A_min=0.0005261  max_dA_fwd=-5.283e-06
+  [shape] epoch  26000  rmse=0.001413  max_abs_dA=0.002646  int_signed_dA=4.663e-13  int_abs_dA=3.762e-12  A_min=0.0003844  max_dA_fwd=-5.203e-06
+  [shape] epoch  26250  rmse=0.001347  max_abs_dA=0.002271  int_signed_dA=1.828e-12  int_abs_dA=3.583e-12  A_min=0.000525  max_dA_fwd=-5.295e-06
+  [shape] epoch  26500  rmse=0.001189  max_abs_dA=0.002063  int_signed_dA=1.036e-12  int_abs_dA=3.068e-12  A_min=0.000433  max_dA_fwd=-5.11e-06
+  [shape] epoch  26750  rmse=0.001199  max_abs_dA=0.002273  int_signed_dA=6.609e-13  int_abs_dA=3.115e-12  A_min=0.0003985  max_dA_fwd=-5.085e-06
+  [shape] epoch  27000  rmse=0.001375  max_abs_dA=0.002468  int_signed_dA=3.193e-12  int_abs_dA=3.425e-12  A_min=0.000461  max_dA_fwd=-5.415e-06
+  [shape] epoch  27250  rmse=0.001492  max_abs_dA=0.002617  int_signed_dA=3.701e-12  int_abs_dA=3.763e-12  A_min=0.0005563  max_dA_fwd=-5.46e-06
+  [shape] epoch  27500  rmse=0.001335  max_abs_dA=0.002299  int_signed_dA=1.99e-12  int_abs_dA=3.478e-12  A_min=0.0004876  max_dA_fwd=-5.372e-06
+  [shape] epoch  27750  rmse=0.001331  max_abs_dA=0.002397  int_signed_dA=2.876e-12  int_abs_dA=3.328e-12  A_min=0.0005188  max_dA_fwd=-5.383e-06
+  [shape] epoch  28000  rmse=0.001279  max_abs_dA=0.002312  int_signed_dA=2.759e-12  int_abs_dA=3.203e-12  A_min=0.0004606  max_dA_fwd=-5.361e-06
+  [shape] epoch  28250  rmse=0.001312  max_abs_dA=0.002363  int_signed_dA=2.734e-12  int_abs_dA=3.29e-12  A_min=0.00052  max_dA_fwd=-5.382e-06
+  [shape] epoch  28500  rmse=0.001323  max_abs_dA=0.002388  int_signed_dA=2.821e-12  int_abs_dA=3.293e-12  A_min=0.0004987  max_dA_fwd=-5.422e-06
+  [shape] epoch  28750  rmse=0.001452  max_abs_dA=0.002596  int_signed_dA=3.369e-12  int_abs_dA=3.596e-12  A_min=0.0005491  max_dA_fwd=-5.499e-06
+  [shape] epoch  29000  rmse=0.001343  max_abs_dA=0.002634  int_signed_dA=2.282e-13  int_abs_dA=3.547e-12  A_min=0.0003362  max_dA_fwd=-5.237e-06
+  [shape] epoch  29250  rmse=0.001255  max_abs_dA=0.002283  int_signed_dA=2.548e-12  int_abs_dA=3.118e-12  A_min=0.0004105  max_dA_fwd=-5.433e-06
+  [shape] epoch  29500  rmse=0.001331  max_abs_dA=0.002403  int_signed_dA=2.978e-12  int_abs_dA=3.301e-12  A_min=0.0004499  max_dA_fwd=-5.48e-06
+  [shape] epoch  29750  rmse=0.001341  max_abs_dA=0.002409  int_signed_dA=3.101e-12  int_abs_dA=3.343e-12  A_min=0.000439  max_dA_fwd=-5.496e-06
+  [shape] epoch  30000  rmse=0.001495  max_abs_dA=0.002657  int_signed_dA=3.595e-12  int_abs_dA=3.7e-12  A_min=0.0004816  max_dA_fwd=-5.629e-06
+  [shape] epoch  30250  rmse=0.001293  max_abs_dA=0.002335  int_signed_dA=2.82e-12  int_abs_dA=3.246e-12  A_min=0.0004398  max_dA_fwd=-5.482e-06
+  [shape] epoch  30500  rmse=0.001306  max_abs_dA=0.002358  int_signed_dA=2.964e-12  int_abs_dA=3.245e-12  A_min=0.0004082  max_dA_fwd=-5.519e-06
+  [shape] epoch  30750  rmse=0.001304  max_abs_dA=0.002369  int_signed_dA=2.837e-12  int_abs_dA=3.22e-12  A_min=0.0004145  max_dA_fwd=-5.538e-06
+  [shape] epoch  31000  rmse=0.001435  max_abs_dA=0.002564  int_signed_dA=3.393e-12  int_abs_dA=3.556e-12  A_min=0.0004674  max_dA_fwd=-5.618e-06
+  [shape] epoch  31250  rmse=0.001251  max_abs_dA=0.00228  int_signed_dA=2.674e-12  int_abs_dA=3.096e-12  A_min=0.0003794  max_dA_fwd=-5.521e-06
+  [shape] epoch  31500  rmse=0.001302  max_abs_dA=0.002161  int_signed_dA=1.553e-12  int_abs_dA=3.475e-12  A_min=0.0004351  max_dA_fwd=-5.467e-06
+  [shape] epoch  31750  rmse=0.001384  max_abs_dA=0.002469  int_signed_dA=3.318e-12  int_abs_dA=3.439e-12  A_min=0.0003959  max_dA_fwd=-5.634e-06
+  [shape] epoch  32000  rmse=0.001281  max_abs_dA=0.002332  int_signed_dA=2.806e-12  int_abs_dA=3.155e-12  A_min=0.00037  max_dA_fwd=-5.582e-06
+  [shape] epoch  32250  rmse=0.001263  max_abs_dA=0.0023  int_signed_dA=2.674e-12  int_abs_dA=3.123e-12  A_min=0.0003919  max_dA_fwd=-5.568e-06
+  [shape] epoch  32500  rmse=0.001256  max_abs_dA=0.002294  int_signed_dA=2.573e-12  int_abs_dA=3.089e-12  A_min=0.0003602  max_dA_fwd=-5.594e-06
+  [shape] epoch  32750  rmse=0.001061  max_abs_dA=0.001886  int_signed_dA=1.557e-12  int_abs_dA=2.718e-12  A_min=0.0002635  max_dA_fwd=-5.418e-06
+  [shape] epoch  33000  rmse=0.001163  max_abs_dA=0.002127  int_signed_dA=2.101e-12  int_abs_dA=2.895e-12  A_min=0.0002908  max_dA_fwd=-5.553e-06
+  [shape] epoch  33250  rmse=0.001268  max_abs_dA=0.002312  int_signed_dA=2.731e-12  int_abs_dA=3.114e-12  A_min=0.000367  max_dA_fwd=-5.619e-06
+  [shape] epoch  33500  rmse=0.001316  max_abs_dA=0.002393  int_signed_dA=2.93e-12  int_abs_dA=3.217e-12  A_min=0.0003523  max_dA_fwd=-5.67e-06
+  [shape] epoch  33750  rmse=0.001079  max_abs_dA=0.002129  int_signed_dA=3.532e-13  int_abs_dA=2.738e-12  A_min=0.0002187  max_dA_fwd=-5.288e-06
+  [shape] epoch  34000  rmse=0.001297  max_abs_dA=0.002299  int_signed_dA=3.092e-12  int_abs_dA=3.231e-12  A_min=0.0003075  max_dA_fwd=-5.658e-06
+  [shape] epoch  34250  rmse=0.001247  max_abs_dA=0.002274  int_signed_dA=2.496e-12  int_abs_dA=3.081e-12  A_min=0.0003625  max_dA_fwd=-5.654e-06
+  [shape] epoch  34500  rmse=0.001523  max_abs_dA=0.002695  int_signed_dA=3.684e-12  int_abs_dA=3.776e-12  A_min=0.0003249  max_dA_fwd=-5.865e-06
+  [shape] epoch  34750  rmse=0.001216  max_abs_dA=0.002225  int_signed_dA=2.326e-12  int_abs_dA=3e-12  A_min=0.0003113  max_dA_fwd=-5.659e-06
+  [shape] epoch  35000  rmse=0.001314  max_abs_dA=0.002374  int_signed_dA=3.047e-12  int_abs_dA=3.23e-12  A_min=0.0003226  max_dA_fwd=-5.717e-06
+  [shape] epoch  35250  rmse=0.00125  max_abs_dA=0.002281  int_signed_dA=2.752e-12  int_abs_dA=3.074e-12  A_min=0.000305  max_dA_fwd=-5.693e-06
+  [shape] epoch  35500  rmse=0.001203  max_abs_dA=0.002202  int_signed_dA=2.586e-12  int_abs_dA=2.976e-12  A_min=0.0002756  max_dA_fwd=-5.664e-06
+  [shape] epoch  35750  rmse=0.001248  max_abs_dA=0.002285  int_signed_dA=2.666e-12  int_abs_dA=3.052e-12  A_min=0.0002918  max_dA_fwd=-5.716e-06
+  [shape] epoch  36000  rmse=0.001339  max_abs_dA=0.002401  int_signed_dA=3.171e-12  int_abs_dA=3.316e-12  A_min=0.0003273  max_dA_fwd=-5.754e-06
+  [shape] epoch  36250  rmse=0.001192  max_abs_dA=0.002192  int_signed_dA=2.449e-12  int_abs_dA=2.933e-12  A_min=0.0002755  max_dA_fwd=-5.682e-06
+  [shape] epoch  36500  rmse=0.001434  max_abs_dA=0.002518  int_signed_dA=3.563e-12  int_abs_dA=3.628e-12  A_min=0.0003542  max_dA_fwd=-5.79e-06
+  [shape] epoch  36750  rmse=0.001181  max_abs_dA=0.002172  int_signed_dA=2.427e-12  int_abs_dA=2.911e-12  A_min=0.0002652  max_dA_fwd=-5.693e-06
+  [shape] epoch  37000  rmse=0.001198  max_abs_dA=0.002197  int_signed_dA=2.544e-12  int_abs_dA=2.952e-12  A_min=0.000274  max_dA_fwd=-5.697e-06
+  [shape] epoch  37250  rmse=0.0012  max_abs_dA=0.002205  int_signed_dA=2.538e-12  int_abs_dA=2.949e-12  A_min=0.0002545  max_dA_fwd=-5.716e-06
+  [shape] epoch  37500  rmse=0.001167  max_abs_dA=0.002149  int_signed_dA=2.357e-12  int_abs_dA=2.878e-12  A_min=0.0002562  max_dA_fwd=-5.7e-06
+  [shape] epoch  37750  rmse=0.001137  max_abs_dA=0.002087  int_signed_dA=2.189e-12  int_abs_dA=2.831e-12  A_min=0.0002713  max_dA_fwd=-5.663e-06
+  [shape] epoch  38000  rmse=0.001137  max_abs_dA=0.00209  int_signed_dA=2.096e-12  int_abs_dA=2.819e-12  A_min=0.000245  max_dA_fwd=-5.678e-06
+  [shape] epoch  38250  rmse=0.001201  max_abs_dA=0.002209  int_signed_dA=2.512e-12  int_abs_dA=2.938e-12  A_min=0.0002458  max_dA_fwd=-5.737e-06
+  [shape] epoch  38500  rmse=0.001088  max_abs_dA=0.001803  int_signed_dA=9.4e-13  int_abs_dA=2.881e-12  A_min=0.0001803  max_dA_fwd=-5.582e-06
+  [shape] epoch  38750  rmse=0.001209  max_abs_dA=0.002208  int_signed_dA=2.664e-12  int_abs_dA=2.983e-12  A_min=0.0002418  max_dA_fwd=-5.741e-06
+  [shape] epoch  39000  rmse=0.001237  max_abs_dA=0.002245  int_signed_dA=2.804e-12  int_abs_dA=3.058e-12  A_min=0.0002494  max_dA_fwd=-5.756e-06
+  [shape] epoch  39250  rmse=0.001092  max_abs_dA=0.001994  int_signed_dA=1.788e-12  int_abs_dA=2.736e-12  A_min=0.0002115  max_dA_fwd=-5.661e-06
+  [shape] epoch  39500  rmse=0.001252  max_abs_dA=0.002247  int_signed_dA=2.921e-12  int_abs_dA=3.12e-12  A_min=0.0002584  max_dA_fwd=-5.754e-06
+  [shape] epoch  39750  rmse=0.001155  max_abs_dA=0.002131  int_signed_dA=2.347e-12  int_abs_dA=2.837e-12  A_min=0.0002116  max_dA_fwd=-5.734e-06
+  [shape] epoch  40000  rmse=0.001139  max_abs_dA=0.002101  int_signed_dA=2.273e-12  int_abs_dA=2.808e-12  A_min=0.0002237  max_dA_fwd=-5.713e-06
+  [shape] epoch  40250  rmse=0.001271  max_abs_dA=0.002291  int_signed_dA=2.958e-12  int_abs_dA=3.148e-12  A_min=0.0002651  max_dA_fwd=-5.779e-06
+  [shape] epoch  40500  rmse=0.001537  max_abs_dA=0.002634  int_signed_dA=3.931e-12  int_abs_dA=4.016e-12  A_min=0.0003097  max_dA_fwd=-5.918e-06
+  [shape] epoch  40750  rmse=0.001129  max_abs_dA=0.002084  int_signed_dA=2.228e-12  int_abs_dA=2.784e-12  A_min=0.0002188  max_dA_fwd=-5.718e-06
+  [shape] epoch  41000  rmse=0.001142  max_abs_dA=0.002107  int_signed_dA=2.282e-12  int_abs_dA=2.809e-12  A_min=0.0002218  max_dA_fwd=-5.723e-06
+  [shape] epoch  41250  rmse=0.001471  max_abs_dA=0.002596  int_signed_dA=3.568e-12  int_abs_dA=3.665e-12  A_min=0.0002938  max_dA_fwd=-5.925e-06
+  [shape] epoch  41500  rmse=0.00146  max_abs_dA=0.002492  int_signed_dA=3.721e-12  int_abs_dA=3.839e-12  A_min=0.0002543  max_dA_fwd=-5.878e-06
+  [shape] epoch  41750  rmse=0.001111  max_abs_dA=0.002056  int_signed_dA=2.144e-12  int_abs_dA=2.739e-12  A_min=0.000185  max_dA_fwd=-5.718e-06
+  [shape] epoch  42000  rmse=0.001153  max_abs_dA=0.002125  int_signed_dA=2.407e-12  int_abs_dA=2.833e-12  A_min=0.0002044  max_dA_fwd=-5.744e-06
+  [shape] epoch  42250  rmse=0.001126  max_abs_dA=0.00208  int_signed_dA=2.267e-12  int_abs_dA=2.771e-12  A_min=0.0002009  max_dA_fwd=-5.722e-06
+  [shape] epoch  42500  rmse=0.00108  max_abs_dA=0.001986  int_signed_dA=1.857e-12  int_abs_dA=2.69e-12  A_min=0.000188  max_dA_fwd=-5.688e-06
+  [shape] epoch  42750  rmse=0.001191  max_abs_dA=0.00218  int_signed_dA=2.605e-12  int_abs_dA=2.923e-12  A_min=0.0002169  max_dA_fwd=-5.761e-06
+  [shape] epoch  43000  rmse=0.001115  max_abs_dA=0.002061  int_signed_dA=2.2e-12  int_abs_dA=2.743e-12  A_min=0.0001916  max_dA_fwd=-5.718e-06
+  [shape] epoch  43250  rmse=0.001111  max_abs_dA=0.002055  int_signed_dA=2.206e-12  int_abs_dA=2.736e-12  A_min=0.0001873  max_dA_fwd=-5.714e-06
+  [shape] epoch  43500  rmse=0.001188  max_abs_dA=0.002167  int_signed_dA=2.654e-12  int_abs_dA=2.924e-12  A_min=0.0002049  max_dA_fwd=-5.752e-06
+  [shape] epoch  43750  rmse=0.00112  max_abs_dA=0.002067  int_signed_dA=2.272e-12  int_abs_dA=2.76e-12  A_min=0.0002005  max_dA_fwd=-5.717e-06
+  [shape] epoch  44000  rmse=0.001117  max_abs_dA=0.002064  int_signed_dA=2.24e-12  int_abs_dA=2.744e-12  A_min=0.0001926  max_dA_fwd=-5.713e-06
+  [shape] epoch  44250  rmse=0.001096  max_abs_dA=0.002029  int_signed_dA=2.149e-12  int_abs_dA=2.702e-12  A_min=0.0001833  max_dA_fwd=-5.7e-06
+  [shape] epoch  44500  rmse=0.001166  max_abs_dA=0.002147  int_signed_dA=2.416e-12  int_abs_dA=2.841e-12  A_min=0.0002167  max_dA_fwd=-5.744e-06
+  [shape] epoch  44750  rmse=0.0009707  max_abs_dA=0.001756  int_signed_dA=1.398e-12  int_abs_dA=2.479e-12  A_min=0.0001365  max_dA_fwd=-5.581e-06
+  [shape] epoch  45000  rmse=0.001328  max_abs_dA=0.002329  int_signed_dA=3.26e-12  int_abs_dA=3.399e-12  A_min=0.000228  max_dA_fwd=-5.804e-06
+  [shape] epoch  45250  rmse=0.001118  max_abs_dA=0.002065  int_signed_dA=2.288e-12  int_abs_dA=2.742e-12  A_min=0.0001893  max_dA_fwd=-5.71e-06
+  [shape] epoch  45500  rmse=0.001072  max_abs_dA=0.00197  int_signed_dA=1.866e-12  int_abs_dA=2.664e-12  A_min=0.0002011  max_dA_fwd=-5.666e-06
+  [shape] epoch  45750  rmse=0.001098  max_abs_dA=0.002028  int_signed_dA=2.23e-12  int_abs_dA=2.708e-12  A_min=0.0001883  max_dA_fwd=-5.689e-06
+  [shape] epoch  46000  rmse=0.001085  max_abs_dA=0.002008  int_signed_dA=2.183e-12  int_abs_dA=2.678e-12  A_min=0.000163  max_dA_fwd=-5.688e-06
+  [shape] epoch  46250  rmse=0.001079  max_abs_dA=0.001997  int_signed_dA=2.123e-12  int_abs_dA=2.661e-12  A_min=0.0001771  max_dA_fwd=-5.677e-06
+  [shape] epoch  46500  rmse=0.0009682  max_abs_dA=0.001728  int_signed_dA=1.221e-12  int_abs_dA=2.475e-12  A_min=0.0001242  max_dA_fwd=-5.568e-06
+  [shape] epoch  46750  rmse=0.001088  max_abs_dA=0.002013  int_signed_dA=2.168e-12  int_abs_dA=2.674e-12  A_min=0.000182  max_dA_fwd=-5.679e-06
+  [shape] epoch  47000  rmse=0.001092  max_abs_dA=0.00202  int_signed_dA=2.207e-12  int_abs_dA=2.685e-12  A_min=0.0001797  max_dA_fwd=-5.682e-06
+  [shape] epoch  47250  rmse=0.001202  max_abs_dA=0.002189  int_signed_dA=2.694e-12  int_abs_dA=2.936e-12  A_min=0.0002055  max_dA_fwd=-5.747e-06
+  [shape] epoch  47500  rmse=0.001094  max_abs_dA=0.002021  int_signed_dA=2.234e-12  int_abs_dA=2.687e-12  A_min=0.0001815  max_dA_fwd=-5.677e-06
+  [shape] epoch  47750  rmse=0.0009906  max_abs_dA=0.001821  int_signed_dA=1.593e-12  int_abs_dA=2.489e-12  A_min=0.0001437  max_dA_fwd=-5.598e-06
+  [shape] epoch  48000  rmse=0.001086  max_abs_dA=0.002007  int_signed_dA=2.238e-12  int_abs_dA=2.676e-12  A_min=0.0001684  max_dA_fwd=-5.671e-06
+  [shape] epoch  48250  rmse=0.001083  max_abs_dA=0.002004  int_signed_dA=2.177e-12  int_abs_dA=2.659e-12  A_min=0.0001833  max_dA_fwd=-5.662e-06
+  [shape] epoch  48500  rmse=0.001072  max_abs_dA=0.001983  int_signed_dA=2.123e-12  int_abs_dA=2.634e-12  A_min=0.0001798  max_dA_fwd=-5.653e-06
+  [shape] epoch  48750  rmse=0.001077  max_abs_dA=0.001993  int_signed_dA=2.138e-12  int_abs_dA=2.642e-12  A_min=0.0001812  max_dA_fwd=-5.655e-06
+  [shape] epoch  49000  rmse=0.001069  max_abs_dA=0.001978  int_signed_dA=2.115e-12  int_abs_dA=2.627e-12  A_min=0.0001821  max_dA_fwd=-5.644e-06
+  [shape] epoch  49250  rmse=0.001414  max_abs_dA=0.00241  int_signed_dA=3.593e-12  int_abs_dA=3.727e-12  A_min=0.0002358  max_dA_fwd=-5.8e-06
+  [shape] epoch  49500  rmse=0.001081  max_abs_dA=0.001998  int_signed_dA=2.213e-12  int_abs_dA=2.656e-12  A_min=0.0001865  max_dA_fwd=-5.647e-06
+  [shape] epoch  49750  rmse=0.001078  max_abs_dA=0.001992  int_signed_dA=2.2e-12  int_abs_dA=2.643e-12  A_min=0.0001774  max_dA_fwd=-5.646e-06
+  [shape] epoch  50000  rmse=0.001092  max_abs_dA=0.002017  int_signed_dA=2.182e-12  int_abs_dA=2.667e-12  A_min=0.000202  max_dA_fwd=-5.65e-06
+  [shape] epoch  50250  rmse=0.001054  max_abs_dA=0.001951  int_signed_dA=2.058e-12  int_abs_dA=2.591e-12  A_min=0.000182  max_dA_fwd=-5.621e-06
+  [shape] epoch  50500  rmse=0.001072  max_abs_dA=0.001981  int_signed_dA=2.191e-12  int_abs_dA=2.632e-12  A_min=0.000186  max_dA_fwd=-5.63e-06
+  [shape] epoch  50750  rmse=0.001022  max_abs_dA=0.00189  int_signed_dA=1.844e-12  int_abs_dA=2.527e-12  A_min=0.0001722  max_dA_fwd=-5.594e-06
+  [shape] epoch  51000  rmse=0.001063  max_abs_dA=0.001966  int_signed_dA=2.139e-12  int_abs_dA=2.608e-12  A_min=0.0001871  max_dA_fwd=-5.618e-06
+  [shape] epoch  51250  rmse=0.001058  max_abs_dA=0.001958  int_signed_dA=2.099e-12  int_abs_dA=2.594e-12  A_min=0.0001854  max_dA_fwd=-5.613e-06
+  [shape] epoch  51500  rmse=0.001062  max_abs_dA=0.001963  int_signed_dA=2.131e-12  int_abs_dA=2.601e-12  A_min=0.0001929  max_dA_fwd=-5.611e-06
+  [shape] epoch  51750  rmse=0.001072  max_abs_dA=0.001981  int_signed_dA=2.163e-12  int_abs_dA=2.621e-12  A_min=0.0001985  max_dA_fwd=-5.615e-06
+  [shape] epoch  52000  rmse=0.001057  max_abs_dA=0.001955  int_signed_dA=2.127e-12  int_abs_dA=2.591e-12  A_min=0.0001916  max_dA_fwd=-5.601e-06
+  [shape] epoch  52250  rmse=0.001064  max_abs_dA=0.001966  int_signed_dA=2.181e-12  int_abs_dA=2.608e-12  A_min=0.000195  max_dA_fwd=-5.603e-06
+  [shape] epoch  52500  rmse=0.001055  max_abs_dA=0.001951  int_signed_dA=2.131e-12  int_abs_dA=2.585e-12  A_min=0.0001943  max_dA_fwd=-5.593e-06
+  [shape] epoch  52750  rmse=0.001209  max_abs_dA=0.002176  int_signed_dA=2.808e-12  int_abs_dA=2.977e-12  A_min=0.0002311  max_dA_fwd=-5.677e-06
+  [shape] epoch  53000  rmse=0.001045  max_abs_dA=0.001932  int_signed_dA=2.09e-12  int_abs_dA=2.564e-12  A_min=0.0001965  max_dA_fwd=-5.578e-06
+  [shape] epoch  53250  rmse=0.001002  max_abs_dA=0.001856  int_signed_dA=1.842e-12  int_abs_dA=2.478e-12  A_min=0.0001809  max_dA_fwd=-5.548e-06
+  [shape] epoch  53500  rmse=0.001119  max_abs_dA=0.002043  int_signed_dA=2.491e-12  int_abs_dA=2.748e-12  A_min=0.0002217  max_dA_fwd=-5.61e-06
+  [shape] epoch  53750  rmse=0.001037  max_abs_dA=0.001918  int_signed_dA=2.062e-12  int_abs_dA=2.542e-12  A_min=0.0001984  max_dA_fwd=-5.564e-06
+  [shape] epoch  54000  rmse=0.001032  max_abs_dA=0.00191  int_signed_dA=2.027e-12  int_abs_dA=2.531e-12  A_min=0.0001981  max_dA_fwd=-5.558e-06
+  [shape] epoch  54250  rmse=0.001045  max_abs_dA=0.001931  int_signed_dA=2.129e-12  int_abs_dA=2.563e-12  A_min=0.0002047  max_dA_fwd=-5.561e-06
+  [shape] epoch  54500  rmse=0.001054  max_abs_dA=0.001946  int_signed_dA=2.157e-12  int_abs_dA=2.574e-12  A_min=0.0002062  max_dA_fwd=-5.566e-06
+  [shape] epoch  54750  rmse=0.001057  max_abs_dA=0.001952  int_signed_dA=2.153e-12  int_abs_dA=2.578e-12  A_min=0.0002123  max_dA_fwd=-5.565e-06
+  [shape] epoch  55000  rmse=0.000952  max_abs_dA=0.001725  int_signed_dA=1.389e-12  int_abs_dA=2.407e-12  A_min=0.0001798  max_dA_fwd=-5.472e-06
+  [shape] epoch  55250  rmse=0.001027  max_abs_dA=0.0019  int_signed_dA=2.03e-12  int_abs_dA=2.517e-12  A_min=0.0002072  max_dA_fwd=-5.537e-06
+  [shape] epoch  55500  rmse=0.001089  max_abs_dA=0.001993  int_signed_dA=2.381e-12  int_abs_dA=2.665e-12  A_min=0.0002187  max_dA_fwd=-5.57e-06
+  [shape] epoch  55750  rmse=0.001046  max_abs_dA=0.001931  int_signed_dA=2.15e-12  int_abs_dA=2.557e-12  A_min=0.0002164  max_dA_fwd=-5.543e-06
+  [shape] epoch  56000  rmse=0.001017  max_abs_dA=0.00188  int_signed_dA=1.966e-12  int_abs_dA=2.494e-12  A_min=0.0002128  max_dA_fwd=-5.52e-06
+  [shape] epoch  56250  rmse=0.001027  max_abs_dA=0.001899  int_signed_dA=2.057e-12  int_abs_dA=2.514e-12  A_min=0.0002148  max_dA_fwd=-5.524e-06
+  [shape] epoch  56500  rmse=0.001028  max_abs_dA=0.0019  int_signed_dA=2.069e-12  int_abs_dA=2.515e-12  A_min=0.0002167  max_dA_fwd=-5.521e-06
+  [shape] epoch  56750  rmse=0.001021  max_abs_dA=0.001887  int_signed_dA=2.031e-12  int_abs_dA=2.499e-12  A_min=0.0002177  max_dA_fwd=-5.512e-06
+  [shape] epoch  57000  rmse=0.001034  max_abs_dA=0.001909  int_signed_dA=2.123e-12  int_abs_dA=2.528e-12  A_min=0.0002207  max_dA_fwd=-5.518e-06
+  [shape] epoch  57250  rmse=0.001017  max_abs_dA=0.00188  int_signed_dA=2.03e-12  int_abs_dA=2.49e-12  A_min=0.0002185  max_dA_fwd=-5.504e-06
+  [shape] epoch  57500  rmse=0.001041  max_abs_dA=0.00192  int_signed_dA=2.132e-12  int_abs_dA=2.537e-12  A_min=0.0002291  max_dA_fwd=-5.517e-06
+  [shape] epoch  57750  rmse=0.001025  max_abs_dA=0.001894  int_signed_dA=2.067e-12  int_abs_dA=2.502e-12  A_min=0.0002234  max_dA_fwd=-5.504e-06
+  [shape] epoch  58000  rmse=0.001006  max_abs_dA=0.00186  int_signed_dA=1.992e-12  int_abs_dA=2.467e-12  A_min=0.0002225  max_dA_fwd=-5.486e-06
+  [shape] epoch  58250  rmse=0.001016  max_abs_dA=0.001877  int_signed_dA=2.044e-12  int_abs_dA=2.485e-12  A_min=0.0002269  max_dA_fwd=-5.49e-06
+  [shape] epoch  58500  rmse=0.0009579  max_abs_dA=0.001743  int_signed_dA=1.496e-12  int_abs_dA=2.409e-12  A_min=0.0002172  max_dA_fwd=-5.435e-06
+  [shape] epoch  58750  rmse=0.001014  max_abs_dA=0.001874  int_signed_dA=2.034e-12  int_abs_dA=2.479e-12  A_min=0.0002316  max_dA_fwd=-5.482e-06
+  [shape] epoch  59000  rmse=0.001017  max_abs_dA=0.001877  int_signed_dA=2.074e-12  int_abs_dA=2.488e-12  A_min=0.0002352  max_dA_fwd=-5.479e-06
+  [shape] epoch  59250  rmse=0.001011  max_abs_dA=0.001868  int_signed_dA=2.036e-12  int_abs_dA=2.472e-12  A_min=0.0002337  max_dA_fwd=-5.474e-06
+  [shape] epoch  59500  rmse=0.0009954  max_abs_dA=0.00184  int_signed_dA=1.994e-12  int_abs_dA=2.446e-12  A_min=0.0002338  max_dA_fwd=-5.457e-06
+  [shape] epoch  59750  rmse=0.001016  max_abs_dA=0.001875  int_signed_dA=2.068e-12  int_abs_dA=2.48e-12  A_min=0.0002405  max_dA_fwd=-5.47e-06
+  [shape] epoch  59999  rmse=0.001027  max_abs_dA=0.001893  int_signed_dA=2.104e-12  int_abs_dA=2.5e-12  A_min=0.0002476  max_dA_fwd=-5.474e-06
+[spectral-pn] spn-L0.7-s42: loss 5.712e-02 -> 1.737e-07 (x328859 drop)
+[spectral-pn] RMSE=0.0010 max|dA|=0.0019 gamma_eff=2.2232e+09 gamma_ratio=0.9953
+[spectral-pn] snapshot=final best_epoch=59999 best_loss=1.737e-07 final_loss=1.737e-07
+[spectral-pn-shape] cancel=0.842 int_signed_dA=2.1044e-12 int_abs_dA=2.5005e-12 A_min=2.4758e-04 max_dA_fwd=-5.4741e-06
+[spectral-pn] saved: runs/transient/pn_sumrule_ladder_2d/ladder_L0.7_2d

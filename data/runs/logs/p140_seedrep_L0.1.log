@@ -1,0 +1,8 @@
+[2026-08-17 12:46:40] QUEUED p140_seedrep_L0.1 (4 arms: L=0.1, 1d+2d, seeds 0 and 1, 60000 epochs)
+[2026-08-17 12:48:40] GATE OPEN
+[2026-08-17 12:48:40] PAIR START L=0.1um seed=0 (1d + 2d parallel, joint comb)
+[2026-08-17 18:38:08] PAIR DONE seed=0 (worst exit 0)
+[2026-08-17 18:38:08] PAIR START L=0.1um seed=1 (1d + 2d parallel, joint comb)
+[2026-08-18 00:25:46] PAIR DONE seed=1 (worst exit 0)
+[2026-08-18 00:25:46] ALL 4 ARMS DONE -- manifest: runs/transient/pn_corridor_seedrep_L0.1/arms.tsv
+[2026-08-18 00:25:46] NOTHING SCORED. Score against the seed-42 pins in a separate step.
